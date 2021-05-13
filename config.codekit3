@@ -9,6 +9,58 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/deploy\/img\/attractionhero1.png" : {
+      "ft" : 32768,
+      "iS" : 621330,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/attractionhero1.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/attractionhero2.png" : {
+      "ft" : 32768,
+      "iS" : 299649,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/attractionhero2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/attractionhero3.png" : {
+      "ft" : 32768,
+      "iS" : 251602,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/attractionhero3.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/circlehero1.png" : {
+      "ft" : 32768,
+      "iS" : 426320,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/circlehero1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

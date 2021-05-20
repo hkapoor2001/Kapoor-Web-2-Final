@@ -3,7 +3,7 @@
 // Helpers Styles
 
 @import "helpers/_mixins";
-@import "helpers/variables";
+@import "helpers/_variables";
 
 // Base Styles
 @import "base/_normalize";
@@ -11,9 +11,9 @@
 @import "base/_typography";
 
 // Components Styles
-@import "base/_normalize";
-@import "base/_base";
-@import "base/_typography";
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_navigation";
 
 // Sections Styles
 @import "sections/_video";
@@ -26,5 +26,5 @@
 @import "sections/_mapanddirections";
 @import "sections/_getdirections";
 @import "sections/_stateparkmap";
-@import "sections/parking";
-@import "sections/contactus";
+@import "sections/_parking";
+@import "sections/_contactus";

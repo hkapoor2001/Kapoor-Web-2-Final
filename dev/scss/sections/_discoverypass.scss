@@ -1,0 +1,21 @@
+/* =============
+    Discoverypass
+============= */
+#discoverypass{
+    display: grid;
+    grid-template-columns:12.5% 25% 25% 25% 12.5%;
+    grid-template-areas:
+    ". h h h ."
+    ". lc lc rc .";
+    #heading{
+        grid-area: h;
+    }
+    #leftcolumn{
+        grid-area: lc;
+        border-right: 5px solid navy;
+    }
+    #rightcolumn{
+        padding-left: 16px;
+        grid-area: rc;
+    }
+}

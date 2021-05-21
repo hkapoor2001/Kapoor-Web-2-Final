@@ -338,32 +338,21 @@ template {
 }
 
 /* =============
-    Video
-============= */
-#videocontainer {
-  align-items: center;
-  background-image: url(../img/videoreoptimized.png);
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh #videotext;
-  min-height-font-size: 90;
-}
-
-/* =============
     Discoverypass
 ============= */
 #discoverypass {
   display: grid;
-  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+  grid-template-columns: 30% 13.3% 13.3% 13.3% 30%;
+  grid-template-rows: max-content;
   grid-template-areas: ". h h h ." ". lc lc rc .";
+  padding-bottom: 5%;
 }
 #discoverypass #heading {
   grid-area: h;
 }
 #discoverypass #leftcolumn {
   grid-area: lc;
-  border-right: 5px solid navy;
+  border-right: 8px solid #1B4561;
 }
 #discoverypass #rightcolumn {
   padding-left: 16px;

@@ -3,19 +3,22 @@
 ============= */
 #discoverypass{
     display: grid;
-    grid-template-columns:12.5% 25% 25% 25% 12.5%;
+    grid-template-columns:30% 13.3% 13.3% 13.3% 30%;
+    grid-template-rows: max-content;
     grid-template-areas:
     ". h h h ."
     ". lc lc rc .";
+
     #heading{
         grid-area: h;
     }
     #leftcolumn{
         grid-area: lc;
-        border-right: 5px solid navy;
+        border-right: 8px solid #1B4561;
     }
     #rightcolumn{
         padding-left: 16px;
         grid-area: rc;
     }
+    padding-bottom: 5%;
 }

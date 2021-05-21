@@ -345,7 +345,7 @@ template {
   grid-template-columns: 30% 13.3% 13.3% 13.3% 30%;
   grid-template-rows: max-content;
   grid-template-areas: ". h h h ." ". lc lc rc .";
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 #discoverypass #heading {
   grid-area: h;
@@ -353,8 +353,21 @@ template {
 #discoverypass #leftcolumn {
   grid-area: lc;
   border-right: 8px solid #1B4561;
+  padding-right: 5%;
+}
+#discoverypass #leftcolumn #discoveryheading {
+  font-family: "OpenSans-Regular", serif;
+  font-size: 16px;
+  font: black;
 }
 #discoverypass #rightcolumn {
-  padding-left: 16px;
+  padding-left: 15%;
   grid-area: rc;
+}
+#discoverypass #rightcolumn #discoverybutton {
+  margin-top: 50%;
+  background-color: #408274;
+  margin-left: 30%;
+  border-radius: 15%;
+  color: white;
 }

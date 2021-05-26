@@ -6,19 +6,24 @@
     min-height: 80vh;
     display: flex;
     background-position: right;
-    #wonderheader{
-        margin-top: 10%;
-        margin-left: 10%;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        font-size: 200;
-        color: #1B4561;
+    #comeforthewonderdiv{
+        p{
+            margin: 0%;
+        }
+        #wonderheader{
+            margin-left: 5%;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 65px;
+            color: #1B4561; 
+            margin-top: 3%;
+        }
     }
-    #wonderheader2{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 200;
-        font-weight: bold;
-        color: #1B4561;   
+    #wonderheaderp{
+        margin-left: 5%;
+        margin-right: 66%;
+        font-size: 30px;
+
     }
 
 

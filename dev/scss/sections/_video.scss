@@ -28,14 +28,17 @@
             background-image: url(../img/Videobackground.png);
             min-height: 70vh;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: center 0;
             display: flex;
             
-            #p{
+            #circledivtext{
                 font-family: 'OpenSans-Regular';
-                font-size: 25px;
+                font-size: 40px;
                 color: #000000;
+                margin-right: 45%;
+                margin-left: 5%;
+                margin-top: 3%;
             }
 
         }

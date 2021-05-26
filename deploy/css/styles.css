@@ -433,14 +433,17 @@ header #row2 {
   background-image: url(../img/Videobackground.png);
   min-height: 70vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center 0;
   display: flex;
 }
-#videocontainer #videotext #circlediv #p {
+#videocontainer #videotext #circlediv #circledivtext {
   font-family: "OpenSans-Regular";
-  font-size: 25px;
+  font-size: 40px;
   color: #000000;
+  margin-right: 45%;
+  margin-left: 5%;
+  margin-top: 3%;
 }
 #videocontainer #NiagaraFalls {
   font-family: "Playfair Display", serif;
@@ -630,6 +633,32 @@ header #row2 {
   color: white;
 }
 
+#feelthepower {
+  background-image: url(../img/circlehero2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  min-height: 80vh;
+  display: flex;
+}
+#feelthepower #feelthepowerdiv {
+  margin-right: 20%;
+  color: #1B4561;
+  margin-left: 50%;
+  margin-top: -10%;
+}
+#feelthepower #feelthepowerdiv #feelthepowerh {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  white-space: nowrap;
+}
+#feelthepower #feelthepowerdiv #feelthepowerp {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  margin-top: -4%;
+}
+
 /* =============
     history
 ============= */
@@ -749,19 +778,21 @@ header #row2 {
   display: flex;
   background-position: right;
 }
-#comeforthewonder #wonderheader {
-  margin-top: 10%;
-  margin-left: 10%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 200;
-  color: #1B4561;
+#comeforthewonder #comeforthewonderdiv p {
+  margin: 0%;
 }
-#comeforthewonder #wonderheader2 {
+#comeforthewonder #comeforthewonderdiv #wonderheader {
+  margin-left: 5%;
   font-family: "Open Sans", sans-serif;
-  font-size: 200;
   font-weight: bold;
+  font-size: 65px;
   color: #1B4561;
+  margin-top: 3%;
+}
+#comeforthewonder #wonderheaderp {
+  margin-left: 5%;
+  margin-right: 66%;
+  font-size: 30px;
 }
 
 #mapanddirections {
@@ -784,9 +815,36 @@ header #row2 {
   grid-area: mm;
 }
 
-#stateparkmap {
+#getdirections {
+  margin-top: 10%;
   display: grid;
-  grid-template-columns: 20% 80% 20%;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: ". gd .";
+}
+#getdirections #getdirectionsdiv {
+  grid-area: gd;
+}
+#getdirections #getdirectionsdiv #gdtext {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-areas: ". gtd .";
+}
+#getdirections #getdirectionsdiv #gdtext #gdt {
+  grid-area: gtd;
+}
+
+#getdirectionstext {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas: ". gdt1 .";
+}
+#getdirectionstext #getdirectionstextdiv {
+  grid-area: gdt1;
+}
+
+#stateparkmap {
+  margin-top: 10%;
+  display: grid;
   grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
 }
 #stateparkmap #stateparkmapheader {

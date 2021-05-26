@@ -1,0 +1,58 @@
+header{
+    display: grid;
+    grid-template-areas:
+    "r1"
+    "r2";
+    padding-top: .5%;
+    padding-bottom: .5%;
+
+    #row1{
+        grid-area: r1;
+        display: grid;
+        grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
+        grid-template-areas: 
+        ". hl h1 h2 h3 h4 h5 h6 .";
+    
+        #headerlogo{
+            grid-area: hl;
+            font-size: 25;
+        }
+        #header1{
+            grid-area: h1;
+            font-size: 25;
+        }
+        #header2{
+            grid-area: h2;
+            font-size: 25;
+        }
+        #header3{
+            grid-area: h3;
+            font-size: 25;
+        }
+        #header4{
+            grid-area: h4;
+            font-size: 25;
+        }
+        #header5{
+            grid-area: h5;
+            font-size: 25;
+        }
+        #header6{
+            grid-area: h6;
+            font-size: 25;
+        }
+        #headerbutton{
+            grid-area: hb;
+            font-size: 25;
+        }
+
+    }
+    
+    #row2{
+        grid-area: r2;
+        margin-left: 90%;
+    }
+    background-color: #1B4561;
+    color: white;
+    margin-bottom: -3%;
+}

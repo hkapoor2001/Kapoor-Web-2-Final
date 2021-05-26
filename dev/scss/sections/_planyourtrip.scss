@@ -1,0 +1,54 @@
+/* =============
+    planyourtrip
+============= */
+
+#planyourtrip{
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "r1"
+    "r2"
+    "r3";
+
+    #planrow1{
+
+        grid-area: r1;
+    }
+    
+    #planrow2{
+    
+        grid-area: r2;
+        display: grid;
+        grid-template-areas: "2 4 6";
+    
+        #plan2{
+            grid-area: 2;
+        }
+        #plan4{
+            grid-area: 4;
+        }
+        #plan6{
+            grid-area: 6;
+        }
+    
+    }
+    
+    #planrow3{
+    
+        grid-area: r3;
+        display: grid;
+        grid-template-areas: "3 5 7";
+    
+        #plan3{
+            grid-area: 3;
+        }
+        #plan5{
+            grid-area: 5;
+        }
+        #plan7{
+            grid-area: 7;
+        }
+    }
+    
+}

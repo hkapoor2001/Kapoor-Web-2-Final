@@ -338,6 +338,129 @@ template {
 }
 
 /* =============
+    Base
+============= */
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #EFA541;
+}
+
+header {
+  display: grid;
+  grid-template-areas: "r1" "r2";
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: #1B4561;
+  color: white;
+  margin-bottom: -3%;
+}
+header #row1 {
+  grid-area: r1;
+  display: grid;
+  grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
+  grid-template-areas: ". hl h1 h2 h3 h4 h5 h6 .";
+}
+header #row1 #headerlogo {
+  grid-area: hl;
+  font-size: 25;
+}
+header #row1 #header1 {
+  grid-area: h1;
+  font-size: 25;
+}
+header #row1 #header2 {
+  grid-area: h2;
+  font-size: 25;
+}
+header #row1 #header3 {
+  grid-area: h3;
+  font-size: 25;
+}
+header #row1 #header4 {
+  grid-area: h4;
+  font-size: 25;
+}
+header #row1 #header5 {
+  grid-area: h5;
+  font-size: 25;
+}
+header #row1 #header6 {
+  grid-area: h6;
+  font-size: 25;
+}
+header #row1 #headerbutton {
+  grid-area: hb;
+  font-size: 25;
+}
+header #row2 {
+  grid-area: r2;
+  margin-left: 90%;
+}
+
+#videocontainer {
+  display: grid;
+  grid-template-areas: "video1" "video2";
+  margin-top: 3%;
+}
+#videocontainer #videoimg {
+  grid-area: video1;
+  background-image: url(../img/videoreoptimized.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  min-height: 80vh;
+}
+#videocontainer #videotext {
+  grid-area: video2;
+  display: grid;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-areas: ". vt1 circle";
+  padding-top: 5%;
+  background-color: #D2E9FF;
+  font-family: "OpenSans-Regular";
+  font-size: 25px;
+  color: #000000;
+}
+#videocontainer #videotext #vt1 {
+  grid-area: vt1;
+}
+#videocontainer #videotext #circlediv {
+  grid-area: circle;
+  background-image: url(../img/circlehero1.png);
+  min-height: 50vh;
+  min-width: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-right: -10%;
+}
+#videocontainer #NiagaraFalls {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 200px;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 3%;
+  padding-left: 2%;
+}
+
+/* =============
     attractions
 ============= */
 #attractions {
@@ -345,16 +468,23 @@ template {
   grid-template-columns: 20% 30% 30% 20%;
   grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
   padding-bottom: 10%;
+  margin-top: 8%;
 }
 #attractions #attractionsmainhero {
   grid-area: h1;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-areas: "h h" "ht1 ht2";
+  grid-template-areas: "heading heading" "h h" "ht1 ht2";
+}
+#attractions #attractionsmainhero #attractionsheading {
+  grid-area: heading;
 }
 #attractions #attractionsmainhero #attractionsheroimage {
   grid-area: h;
-  max-width: 100%;
+  background-image: url(../img/attractionhero1.png);
+  background-size: cover;
+  min-height: 60vh;
+  background-position: center;
 }
 #attractions #attractionsmainhero #attractionsherotext1 {
   grid-area: ht1;
@@ -391,8 +521,12 @@ template {
   padding-top: 3%;
 }
 #attractions #attractionshero2 #attractionsherospot2 {
-  grid-area: ah2;
-  max-width: 100%;
+  background-image: url(../img/attractionhero2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1.5%;
+  min-height: 40vh;
+  background-position: center bottom;
 }
 #attractions #attractionshero2 #text1 {
   grid-area: t1;
@@ -482,4 +616,158 @@ template {
   margin-left: 30%;
   border-radius: 15%;
   color: white;
+}
+
+/* =============
+    history
+============= */
+#history {
+  display: grid;
+  grid-template-columns: 15% 40% 30% 15%;
+  grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
+  background-color: #1B4561;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+#history #historyheader {
+  grid-area: h;
+}
+#history #historycolumn1 {
+  grid-area: cr;
+  margin-right: 1.5%;
+}
+#history #historycolumn1 #historyhero1 {
+  width: 100%;
+}
+#history #historycolumn2 {
+  grid-area: cl1;
+  margin-left: 1.5%;
+}
+#history #historycolumn2 #historyhero2 {
+  width: 100%;
+}
+#history #historycolumn3 {
+  grid-area: cl2;
+  margin-left: 1.5%;
+}
+#history #historycolumn3 #historyhero3 {
+  width: 100%;
+}
+
+/* =============
+    planyourtrip
+============= */
+#planyourtrip {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "r1" "r2" "r3";
+}
+#planyourtrip #planrow1 {
+  grid-area: r1;
+}
+#planyourtrip #planrow2 {
+  grid-area: r2;
+  display: grid;
+  grid-template-areas: "2 4 6";
+}
+#planyourtrip #planrow2 #plan2 {
+  grid-area: 2;
+}
+#planyourtrip #planrow2 #plan4 {
+  grid-area: 4;
+}
+#planyourtrip #planrow2 #plan6 {
+  grid-area: 6;
+}
+#planyourtrip #planrow3 {
+  grid-area: r3;
+  display: grid;
+  grid-template-areas: "3 5 7";
+}
+#planyourtrip #planrow3 #plan3 {
+  grid-area: 3;
+}
+#planyourtrip #planrow3 #plan5 {
+  grid-area: 5;
+}
+#planyourtrip #planrow3 #plan7 {
+  grid-area: 7;
+}
+
+/* =============
+    footer
+============= */
+#footer {
+  display: grid;
+  grid-template-areas: "fr1" "fr2" "fr3" "fr4";
+  background-color: #1B4561;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  color: white;
+  font-family: OpenSans-Regular;
+  font-size: 25px;
+}
+#footer #footerlogodiv {
+  grid-area: fr1;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  grid-template-areas: ". fl .";
+}
+#footer #footerlogodiv #footerlogo {
+  grid-area: fl;
+}
+#footer #footerrow2 {
+  grid-area: fr2;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 .";
+  margin-left: 8.7%;
+}
+#footer #footerrow2 #footer1 {
+  grid-area: f1;
+}
+#footer #footerrow2 #footer2 {
+  grid-area: f2;
+}
+#footer #footerrow2 #footer3 {
+  grid-area: f3;
+}
+#footer #footerrow2 #footer4 {
+  grid-area: f4;
+}
+#footer #footerrow2 #footer5 {
+  grid-area: f5;
+}
+#footer #footerrow2 #footer6 {
+  grid-area: f6;
+}
+#footer #footerdirections {
+  grid-area: fr3;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  grid-template-areas: ". fd .";
+  margin-right: 4%;
+}
+#footer #footerdirections #footerdirectionstext {
+  grid-area: fd;
+}
+#footer #footericondiv {
+  grid-area: fr4;
+  display: grid;
+  grid-template-columns: 30% 10% 10% 10% 10% 30%;
+  grid-template-areas: ". fi1 fi2 fi3 fi4 .";
+  margin-left: 4%;
+}
+#footer #footericondiv #footericon1 {
+  grid-area: fi1;
+}
+#footer #footericondiv #footericon2 {
+  grid-area: fi2;
+}
+#footer #footericondiv #footericon3 {
+  grid-area: fi3;
+}
+#footer #footericondiv #footericon4 {
+  grid-area: fi4;
 }

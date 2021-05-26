@@ -1,0 +1,57 @@
+#videocontainer{
+    display: grid;
+    grid-template-areas: 
+    "video1"
+    "video2";
+
+    #videoimg{
+        grid-area: video1;
+        background-image: url(../img/videoreoptimized.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        display: flex;
+        min-height: 80vh;
+    }
+
+    #videotext{
+        grid-area: video2;
+        display: grid;
+        grid-template-columns: 10% 45% 45%;
+        grid-template-areas: ". vt1 circle";
+        padding-top: 5%;
+
+
+        background-color: #D2E9FF;
+        font-family: 'OpenSans-Regular';
+        font-size: 25px;
+        color: #000000;
+
+        #vt1{
+            grid-area: vt1;
+        }
+
+        #circlediv{
+            grid-area: circle;
+            background-image: url(../img/circlehero1.png);
+            min-height: 50vh;
+            min-width: 50vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            margin-right: -10%;
+
+        }
+    }
+    margin-top: 3%;
+
+    #NiagaraFalls{
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 200px;
+        color: #FFFFFF;
+        text-align: left;
+        margin-top: 3%;
+        padding-left: 2%;
+    }
+}

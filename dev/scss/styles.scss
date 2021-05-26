@@ -16,6 +16,7 @@
 @import "components/_navigation";
 
 // Sections Styles
+@import "layouts/_header";
 @import "sections/_video";
 @import "sections/_attractions";
 @import "sections/_discoverypass";
@@ -28,3 +29,4 @@
 @import "sections/_stateparkmap";
 @import "sections/_parking";
 @import "sections/_contactus";
+@import "layouts/_footer"

@@ -15,12 +15,20 @@
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-areas: 
+        "heading heading"
         "h h"
         "ht1 ht2";
 
+        #attractionsheading{
+            grid-area: heading;
+        }
+
         #attractionsheroimage{
             grid-area: h;
-            max-width: 100%;
+            background-image: url(../img/attractionhero1.png);
+            background-size: cover;
+            min-height: 60vh;
+            background-position: center;
         }
 
         #attractionsherotext1{
@@ -62,8 +70,12 @@
 
 
         #attractionsherospot2{
-            grid-area: ah2;
-            max-width: 100%;
+            background-image: url(../img/attractionhero2.png) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 1.5%;
+            min-height: 40vh;
+            background-position: center bottom;
         }
 
         #text1{
@@ -131,4 +143,5 @@
     }
 
     padding-bottom: 10%;
+    margin-top: 8%;
 }

@@ -8,21 +8,13 @@
         grid-area: video1;
         background-image: url(../img/videoreoptimized.png);
         background-repeat: no-repeat;
-        background-position: bottom center;
+        background-position: center;
         background-size: cover;
         display: flex;
         min-height: 80vh;
     }
 
     #videotext{
-        grid-area: video2;
-        display: grid;
-        grid-template-columns: 10% 45% 45%;
-        grid-template-areas: ". vt1 circle";
-        padding-top: 5%;
-
-
-        background-color: #D2E9FF;
         font-family: 'OpenSans-Regular';
         font-size: 25px;
         color: #000000;
@@ -33,13 +25,18 @@
 
         #circlediv{
             grid-area: circle;
-            background-image: url(../img/circlehero1.png);
-            min-height: 50vh;
-            min-width: 50vh;
+            background-image: url(../img/Videobackground.png);
+            min-height: 70vh;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: top;
-            margin-right: -10%;
+            background-position: center 0;
+            display: flex;
+            
+            #p{
+                font-family: 'OpenSans-Regular';
+                font-size: 25px;
+                color: #000000;
+            }
 
         }
     }
@@ -51,7 +48,18 @@
         font-size: 200px;
         color: #FFFFFF;
         text-align: left;
-        margin-top: 3%;
-        padding-left: 2%;
+        margin-top: 5%;
+        padding-left: 8%;
+        white-space: nowrap;
+    }
+    #yourstoexplore{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 150px;
+        color: #FFFFFF;
+        text-align: left;
+        padding-left: 22%;
+        margin-top: -18%;
+        white-space: nowrap;
     }
 }

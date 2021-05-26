@@ -1,0 +1,22 @@
+#mapanddirections{
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: 
+    ". mh mh ."
+    ". mt mm .";
+
+    #mapheader{
+        grid-area: mh;
+    }
+    #mapanddirectionstext{
+        grid-area: mt;
+        margin-right: 6%;
+    }
+    #googlemap{
+        grid-area: mm;
+    }
+    padding: 4%;
+    padding-bottom: 8%;
+    background-color: #1B4561;
+    color: white;
+}

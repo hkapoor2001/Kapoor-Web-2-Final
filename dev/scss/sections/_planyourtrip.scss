@@ -4,51 +4,66 @@
 
 #planyourtrip{
 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "r1"
-    "r2"
-    "r3";
-
-    #planrow1{
-
-        grid-area: r1;
-    }
-    
-    #planrow2{
-    
-        grid-area: r2;
+    #plangrid{
         display: grid;
-        grid-template-areas: "2 4 6";
-    
-        #plan2{
-            grid-area: 2;
+        grid-template-columns: 2% 32% 32% 32% 2%;
+        grid-template-areas: 
+        ". pg1h pg2h . ."
+        ". pg1 pg3 pg5 ."
+        ". pg2 pg4 pg6 .";
+
+        #pg1h{
+            grid-area: pg1h;
         }
-        #plan4{
-            grid-area: 4;
+        #pg2h{
+            grid-area: pg2h;
         }
-        #plan6{
-            grid-area: 6;
+        #pg1{
+            grid-area: pg1;
+            background-image: url(../img/planyourtriphero2.png);
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+            min-height: 20vh;
+            margin: 2%;
         }
-    
+        #pg2{
+            grid-area: pg2;
+            background-color: #D2E9FF;
+            padding: 8%;
+            padding-top: 10%;
+            padding-bottom: 13%;
+            margin: 2%;
+        }
+        #pg3{
+            grid-area: pg3;
+            background-image: url(../img/planyourtriphero3.png);
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+            min-height: 20vh;
+            margin: 2%;
+        }
+        #pg4{
+            grid-area: pg4;
+            background-color: #D2E9FF;
+            padding: 8%;
+            padding-top: 10%;
+            padding-bottom: 13%;
+            margin: 2%;
+        }
+        #pg5{
+            background-color: #1B4561;
+            grid-area: pg5;
+            margin: 2%;
+        }
+        #pg6{
+            background-color: #1B4561;
+            grid-area: pg6;
+            margin: 2%;
+        }
     }
-    
-    #planrow3{
-    
-        grid-area: r3;
-        display: grid;
-        grid-template-areas: "3 5 7";
-    
-        #plan3{
-            grid-area: 3;
-        }
-        #plan5{
-            grid-area: 5;
-        }
-        #plan7{
-            grid-area: 7;
-        }
-    }
+
+    margin-bottom: 8%;
     
 }

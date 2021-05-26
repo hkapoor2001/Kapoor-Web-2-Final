@@ -354,12 +354,6 @@ h3 {
   font-weight: bold;
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 50px;
-  color: #EFA541;
-}
-
 header {
   display: grid;
   grid-template-areas: "r1" "r2";
@@ -421,18 +415,12 @@ header #row2 {
   grid-area: video1;
   background-image: url(../img/videoreoptimized.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
   background-size: cover;
   display: flex;
   min-height: 80vh;
 }
 #videocontainer #videotext {
-  grid-area: video2;
-  display: grid;
-  grid-template-columns: 10% 45% 45%;
-  grid-template-areas: ". vt1 circle";
-  padding-top: 5%;
-  background-color: #D2E9FF;
   font-family: "OpenSans-Regular";
   font-size: 25px;
   color: #000000;
@@ -442,13 +430,17 @@ header #row2 {
 }
 #videocontainer #videotext #circlediv {
   grid-area: circle;
-  background-image: url(../img/circlehero1.png);
-  min-height: 50vh;
-  min-width: 50vh;
+  background-image: url(../img/Videobackground.png);
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  margin-right: -10%;
+  background-position: center 0;
+  display: flex;
+}
+#videocontainer #videotext #circlediv #p {
+  font-family: "OpenSans-Regular";
+  font-size: 25px;
+  color: #000000;
 }
 #videocontainer #NiagaraFalls {
   font-family: "Playfair Display", serif;
@@ -456,8 +448,19 @@ header #row2 {
   font-size: 200px;
   color: #FFFFFF;
   text-align: left;
-  margin-top: 3%;
-  padding-left: 2%;
+  margin-top: 5%;
+  padding-left: 8%;
+  white-space: nowrap;
+}
+#videocontainer #yourstoexplore {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 150px;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 22%;
+  margin-top: -18%;
+  white-space: nowrap;
 }
 
 /* =============
@@ -527,6 +530,7 @@ header #row2 {
   margin-right: 1.5%;
   min-height: 40vh;
   background-position: center bottom;
+  grid-area: ah2;
 }
 #attractions #attractionshero2 #text1 {
   grid-area: t1;
@@ -556,7 +560,13 @@ header #row2 {
   padding-top: 3%;
 }
 #attractions #attractionshero3 #attractionsherospot3 {
-  grid-area: ah3;
+  background-image: url(../img/attractionhero3.png);
+  background-size: cover;
+  min-height: 25vh;
+  background-repeat: none;
+  margin-right: 1.5%;
+  min-height: 40vh;
+  background-position: center bottom;
 }
 #attractions #attractionshero3 #text2 {
   grid-area: t3;
@@ -574,6 +584,8 @@ header #row2 {
   color: white;
   margin-left: 80%;
   margin-top: 10%;
+  font-family: OpenSans;
+  font-weight: regular;
 }
 #attractions #seemoreattractions {
   grid-area: b;
@@ -655,44 +667,166 @@ header #row2 {
   width: 100%;
 }
 
+#planyourtriphero {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#planyourtriphero #planmainhero {
+  background-image: url(../img/planyourtriphero1.png);
+  min-height: 30vh;
+  background-size: cover;
+  background-position: right;
+}
+
 /* =============
     planyourtrip
 ============= */
 #planyourtrip {
+  margin-bottom: 8%;
+}
+#planyourtrip #plangrid {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "r1" "r2" "r3";
+  grid-template-columns: 2% 32% 32% 32% 2%;
+  grid-template-areas: ". pg1h pg2h . ." ". pg1 pg3 pg5 ." ". pg2 pg4 pg6 .";
 }
-#planyourtrip #planrow1 {
-  grid-area: r1;
+#planyourtrip #plangrid #pg1h {
+  grid-area: pg1h;
 }
-#planyourtrip #planrow2 {
-  grid-area: r2;
+#planyourtrip #plangrid #pg2h {
+  grid-area: pg2h;
+}
+#planyourtrip #plangrid #pg1 {
+  grid-area: pg1;
+  background-image: url(../img/planyourtriphero2.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  min-height: 20vh;
+  margin: 2%;
+}
+#planyourtrip #plangrid #pg2 {
+  grid-area: pg2;
+  background-color: #D2E9FF;
+  padding: 8%;
+  padding-top: 10%;
+  padding-bottom: 13%;
+  margin: 2%;
+}
+#planyourtrip #plangrid #pg3 {
+  grid-area: pg3;
+  background-image: url(../img/planyourtriphero3.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  min-height: 20vh;
+  margin: 2%;
+}
+#planyourtrip #plangrid #pg4 {
+  grid-area: pg4;
+  background-color: #D2E9FF;
+  padding: 8%;
+  padding-top: 10%;
+  padding-bottom: 13%;
+  margin: 2%;
+}
+#planyourtrip #plangrid #pg5 {
+  background-color: #1B4561;
+  grid-area: pg5;
+  margin: 2%;
+}
+#planyourtrip #plangrid #pg6 {
+  background-color: #1B4561;
+  grid-area: pg6;
+  margin: 2%;
+}
+
+#comeforthewonder {
+  margin-top: 12%;
+  background-image: url(../img/circlehero3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 80vh;
+  display: flex;
+  background-position: right;
+}
+#comeforthewonder #wonderheader {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 200;
+  color: #1B4561;
+}
+#comeforthewonder #wonderheader2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 200;
+  font-weight: bold;
+  color: #1B4561;
+}
+
+#mapanddirections {
   display: grid;
-  grid-template-areas: "2 4 6";
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-areas: ". mh mh ." ". mt mm .";
+  padding: 4%;
+  padding-bottom: 8%;
+  background-color: #1B4561;
+  color: white;
 }
-#planyourtrip #planrow2 #plan2 {
-  grid-area: 2;
+#mapanddirections #mapheader {
+  grid-area: mh;
 }
-#planyourtrip #planrow2 #plan4 {
-  grid-area: 4;
+#mapanddirections #mapanddirectionstext {
+  grid-area: mt;
+  margin-right: 6%;
 }
-#planyourtrip #planrow2 #plan6 {
-  grid-area: 6;
+#mapanddirections #googlemap {
+  grid-area: mm;
 }
-#planyourtrip #planrow3 {
-  grid-area: r3;
+
+#stateparkmap {
   display: grid;
-  grid-template-areas: "3 5 7";
+  grid-template-columns: 20% 80% 20%;
+  grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
 }
-#planyourtrip #planrow3 #plan3 {
-  grid-area: 3;
+#stateparkmap #stateparkmapheader {
+  grid-area: spmh;
 }
-#planyourtrip #planrow3 #plan5 {
-  grid-area: 5;
+#stateparkmap #stateparkmaphero {
+  grid-area: spmhero;
+  background-image: url(../img/stateparkmaphero1.png);
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-#planyourtrip #planrow3 #plan7 {
-  grid-area: 7;
+#stateparkmap #stateparkmapbutton {
+  grid-area: spmb;
+  margin-left: 60%;
+  margin-right: 17%;
+}
+
+#parking {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-areas: ". parkingdiv .";
+  margin-top: 14%;
+  margin-bottom: 2%;
+}
+#parking #parkingdiv {
+  grid-area: parkingdiv;
+}
+
+#contactus {
+  display: grid;
+  grid-template-columns: 10% 40% 50%;
+  grid-template-areas: ". contactus1 .";
+  background-color: #D2E9FF;
+  padding-top: 2%;
+  padding-bottom: 8%;
+  margin-top: 15%;
+}
+#contactus #contactusgrid {
+  grid-area: contactus1;
 }
 
 /* =============

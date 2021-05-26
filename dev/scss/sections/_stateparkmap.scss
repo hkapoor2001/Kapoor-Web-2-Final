@@ -1,0 +1,24 @@
+#stateparkmap{
+    display: grid;
+    grid-template-columns: 20% 80% 20%;
+    grid-template-areas: 
+    ". spmh ."
+    ". spmhero ."
+    ". spmb .";
+
+    #stateparkmapheader{
+        grid-area: spmh;
+    }
+    #stateparkmaphero{
+        grid-area: spmhero;
+        background-image: url(../img/stateparkmaphero1.png) ;
+        min-height: 80vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #stateparkmapbutton{
+        grid-area: spmb;
+        margin-left: 60%;
+        margin-right: 17%;
+    }
+}

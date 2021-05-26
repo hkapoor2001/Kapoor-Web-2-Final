@@ -1,0 +1,10 @@
+#parking{
+    display: grid;
+    grid-template-columns: 35% 30% 35% ;
+    grid-template-areas: ". parkingdiv .";
+    #parkingdiv{
+        grid-area: parkingdiv;
+    }
+    margin-top: 14%;
+    margin-bottom: 2%;
+}

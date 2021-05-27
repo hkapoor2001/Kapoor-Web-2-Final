@@ -1,30 +1,27 @@
 #comeforthewonder{
-    margin-top: 12%;
+    margin-top: 18%;
     background-image: url(../img/circlehero3.png);
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     background-position: right;
     #comeforthewonderdiv{
-        p{
-            margin: 0%;
-        }
+        margin-top: -3%;
         #wonderheader{
-            margin-left: 5%;
+            margin-left: 10%;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
-            font-size: 65px;
+            font-size: 75px;
             color: #1B4561; 
             margin-top: 3%;
         }
+        #wonderheaderp{
+            margin-left: 10%;
+            margin-right: 60%;
+            font-size: 30px;
+    
+        }
+    
     }
-    #wonderheaderp{
-        margin-left: 5%;
-        margin-right: 66%;
-        font-size: 30px;
-
-    }
-
-
 }

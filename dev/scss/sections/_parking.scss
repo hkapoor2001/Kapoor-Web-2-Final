@@ -1,4 +1,12 @@
 #parking{
+    h1{
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 70px;
+        color: #EFA541;
+    }
+    p{
+        font-size: 30px;
+    }
     display: grid;
     grid-template-columns: 35% 30% 35% ;
     grid-template-areas: ". parkingdiv .";

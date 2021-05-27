@@ -1,3 +1,15 @@
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+/* =============
+    Variables
+============= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -358,52 +370,75 @@ header {
   display: grid;
   grid-template-areas: "r1" "r2";
   padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  font-size: 40px;
   background-color: #1B4561;
   color: white;
   margin-bottom: -3%;
 }
 header #row1 {
+  margin-bottom: -1%;
   grid-area: r1;
   display: grid;
   grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
   grid-template-areas: ". hl h1 h2 h3 h4 h5 h6 .";
 }
 header #row1 #headerlogo {
+  padding-top: 3%;
   grid-area: hl;
   font-size: 25;
 }
 header #row1 #header1 {
+  padding-top: 1%;
   grid-area: h1;
   font-size: 25;
 }
 header #row1 #header2 {
+  padding-top: 1%;
   grid-area: h2;
   font-size: 25;
 }
 header #row1 #header3 {
+  padding-top: 1%;
   grid-area: h3;
   font-size: 25;
 }
 header #row1 #header4 {
+  padding-top: 1%;
   grid-area: h4;
   font-size: 25;
 }
 header #row1 #header5 {
+  padding-top: 1%;
   grid-area: h5;
   font-size: 25;
 }
 header #row1 #header6 {
+  padding-top: 1%;
   grid-area: h6;
   font-size: 25;
 }
 header #row1 #headerbutton {
+  padding-top: 1%;
   grid-area: hb;
   font-size: 25;
 }
 header #row2 {
   grid-area: r2;
-  margin-left: 90%;
+}
+header #row2 #headerbutton {
+  white-space: nowrap;
+  background-color: #408274;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 81.42%;
+  border-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  margin-top: 1%;
 }
 
 #videocontainer {
@@ -476,6 +511,11 @@ header #row2 {
   padding-bottom: 10%;
   margin-top: 8%;
 }
+#attractions h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
+}
 #attractions #attractionsmainhero {
   grid-area: h1;
   display: grid;
@@ -501,6 +541,7 @@ header #row2 {
   padding-bottom: 3%;
   padding-top: 3%;
   margin-top: 0%;
+  font-size: 30px;
 }
 #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
   margin-top: 15%;
@@ -517,6 +558,7 @@ header #row2 {
   padding-right: 7%;
   padding-top: 3%;
   padding-bottom: 5%;
+  font-size: 30px;
 }
 #attractions #attractionshero2 {
   grid-area: h2;
@@ -543,13 +585,14 @@ header #row2 {
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 3%;
-  padding-top: 0%;
+  padding-top: 3%;
+  font-size: 30px;
 }
 #attractions #attractionshero2 #ah2button {
   background-color: #408274;
   color: white;
   margin-left: 80%;
-  margin-top: 10%;
+  margin-top: 3%;
   font-family: OpenSans;
   font-weight: regular;
   font-size: 16px;
@@ -580,13 +623,14 @@ header #row2 {
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 3%;
-  padding-top: 0%;
+  padding-top: 3%;
+  font-size: 30px;
 }
 #attractions #attractionshero3 #ah3button {
   background-color: #408274;
   color: white;
   margin-left: 80%;
-  margin-top: 10%;
+  margin-top: 5%;
   font-family: OpenSans;
   font-weight: regular;
 }
@@ -608,6 +652,22 @@ header #row2 {
   grid-template-areas: ". h h h ." ". lc lc rc .";
   padding-bottom: 15%;
 }
+#discoverypass h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
+}
+#discoverypass h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+}
+#discoverypass h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+#discoverypass p {
+  font-size: 30px;
+}
 #discoverypass #heading {
   grid-area: h;
 }
@@ -616,10 +676,8 @@ header #row2 {
   border-right: 8px solid #1B4561;
   padding-right: 5%;
 }
-#discoverypass #leftcolumn #discoveryheading {
-  font-family: "OpenSans-Regular", serif;
-  font-size: 16px;
-  font: black;
+#discoverypass #leftcolumn p {
+  font-size: 25px;
 }
 #discoverypass #rightcolumn {
   padding-left: 15%;
@@ -631,6 +689,9 @@ header #row2 {
   margin-left: 30%;
   border-radius: 15%;
   color: white;
+}
+#discoverypass #rightcolumn p {
+  font-size: 25px;
 }
 
 #feelthepower {
@@ -668,8 +729,16 @@ header #row2 {
   grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
   background-color: #1B4561;
   color: white;
-  padding-top: 4%;
+  padding-top: 2%;
   padding-bottom: 6%;
+}
+#history h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 80px;
+  color: #EFA541;
+}
+#history p {
+  font-size: 30px;
 }
 #history #historyheader {
   grid-area: h;
@@ -699,6 +768,12 @@ header #row2 {
 #planyourtriphero {
   margin-top: 8%;
   margin-bottom: 8%;
+}
+#planyourtriphero h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
+  margin-left: 2%;
 }
 #planyourtriphero #planmainhero {
   background-image: url(../img/planyourtriphero1.png);
@@ -736,10 +811,12 @@ header #row2 {
 #planyourtrip #plangrid #pg2 {
   grid-area: pg2;
   background-color: #D2E9FF;
-  padding: 8%;
-  padding-top: 10%;
-  padding-bottom: 13%;
+  padding-top: 5%;
+  padding-bottom: 8%;
   margin: 2%;
+  font-size: 30px;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 #planyourtrip #plangrid #pg3 {
   grid-area: pg3;
@@ -753,45 +830,55 @@ header #row2 {
 #planyourtrip #plangrid #pg4 {
   grid-area: pg4;
   background-color: #D2E9FF;
-  padding: 8%;
-  padding-top: 10%;
-  padding-bottom: 13%;
+  padding-top: 5%;
+  padding-bottom: 8%;
   margin: 2%;
+  font-size: 30px;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 #planyourtrip #plangrid #pg5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: white;
   background-color: #1B4561;
   grid-area: pg5;
   margin: 2%;
+  padding: 8%;
 }
 #planyourtrip #plangrid #pg6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: white;
   background-color: #1B4561;
   grid-area: pg6;
   margin: 2%;
+  padding: 8%;
 }
 
 #comeforthewonder {
-  margin-top: 12%;
+  margin-top: 18%;
   background-image: url(../img/circlehero3.png);
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   background-position: right;
 }
-#comeforthewonder #comeforthewonderdiv p {
-  margin: 0%;
+#comeforthewonder #comeforthewonderdiv {
+  margin-top: -3%;
 }
 #comeforthewonder #comeforthewonderdiv #wonderheader {
-  margin-left: 5%;
+  margin-left: 10%;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 75px;
   color: #1B4561;
   margin-top: 3%;
 }
-#comeforthewonder #wonderheaderp {
-  margin-left: 5%;
-  margin-right: 66%;
+#comeforthewonder #comeforthewonderdiv #wonderheaderp {
+  margin-left: 10%;
+  margin-right: 60%;
   font-size: 30px;
 }
 
@@ -806,10 +893,16 @@ header #row2 {
 }
 #mapanddirections #mapheader {
   grid-area: mh;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 35px;
+  color: #EFA541;
 }
 #mapanddirections #mapanddirectionstext {
   grid-area: mt;
   margin-right: 6%;
+}
+#mapanddirections #mapanddirectionstext p {
+  font-size: 25px;
 }
 #mapanddirections #googlemap {
   grid-area: mm;
@@ -829,6 +922,9 @@ header #row2 {
   grid-template-columns: 40% 20% 40%;
   grid-template-areas: ". gtd .";
 }
+#getdirections #getdirectionsdiv #gdtext p {
+  font-size: 30px;
+}
 #getdirections #getdirectionsdiv #gdtext #gdt {
   grid-area: gtd;
 }
@@ -845,10 +941,14 @@ header #row2 {
 #stateparkmap {
   margin-top: 10%;
   display: grid;
+  grid-template-columns: 20% 60% 20%;
   grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
 }
 #stateparkmap #stateparkmapheader {
   grid-area: spmh;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
 }
 #stateparkmap #stateparkmaphero {
   grid-area: spmhero;
@@ -859,8 +959,7 @@ header #row2 {
 }
 #stateparkmap #stateparkmapbutton {
   grid-area: spmb;
-  margin-left: 60%;
-  margin-right: 17%;
+  margin-left: 80%;
 }
 
 #parking {
@@ -869,6 +968,14 @@ header #row2 {
   grid-template-areas: ". parkingdiv .";
   margin-top: 14%;
   margin-bottom: 2%;
+}
+#parking h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
+}
+#parking p {
+  font-size: 30px;
 }
 #parking #parkingdiv {
   grid-area: parkingdiv;
@@ -882,6 +989,26 @@ header #row2 {
   padding-top: 2%;
   padding-bottom: 8%;
   margin-top: 15%;
+}
+#contactus p {
+  font-weight: bold;
+}
+#contactus h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 70px;
+  color: #EFA541;
+}
+#contactus #contact1 {
+  font-size: 25px;
+}
+#contactus #contact2 {
+  font-size: 28px;
+}
+#contactus #contact3 {
+  font-size: 30px;
+}
+#contactus #footericondiv {
+  font-size: 100px;
 }
 #contactus #contactusgrid {
   grid-area: contactus1;

@@ -1,4 +1,25 @@
 #contactus{
+    p{
+        font-weight: bold;
+    }
+    h1{
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 70px;
+        color: #EFA541;
+    }
+    #contact1{
+        font-size: 25px;
+    }
+    #contact2{
+        font-size: 28px;
+    }
+    #contact3{
+        font-size: 30px;
+    }
+
+    #footericondiv{
+        font-size: 100px;
+    }
     display: grid;
     grid-template-columns: 10% 40% 50%;
     grid-template-areas: ". contactus1 .";

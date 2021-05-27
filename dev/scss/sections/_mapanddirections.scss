@@ -7,10 +7,16 @@
 
     #mapheader{
         grid-area: mh;
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 35px;
+        color: #EFA541;
     }
     #mapanddirectionstext{
         grid-area: mt;
         margin-right: 6%;
+        p{
+            font-size: 25px;
+        }
     }
     #googlemap{
         grid-area: mm;

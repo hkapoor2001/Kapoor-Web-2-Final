@@ -4,9 +4,10 @@ header{
     "r1"
     "r2";
     padding-top: .5%;
-    padding-bottom: .5%;
+    font-size: 40px;
 
     #row1{
+        margin-bottom: -1%;
         grid-area: r1;
         display: grid;
         grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
@@ -14,34 +15,42 @@ header{
         ". hl h1 h2 h3 h4 h5 h6 .";
     
         #headerlogo{
+            padding-top: 3%;
             grid-area: hl;
             font-size: 25;
         }
         #header1{
+            padding-top: 1%;
             grid-area: h1;
             font-size: 25;
         }
         #header2{
+            padding-top: 1%;
             grid-area: h2;
             font-size: 25;
         }
         #header3{
+            padding-top: 1%;
             grid-area: h3;
             font-size: 25;
         }
         #header4{
+            padding-top: 1%;
             grid-area: h4;
             font-size: 25;
         }
         #header5{
+            padding-top: 1%;
             grid-area: h5;
             font-size: 25;
         }
         #header6{
+            padding-top: 1%;
             grid-area: h6;
             font-size: 25;
         }
         #headerbutton{
+            padding-top: 1%;
             grid-area: hb;
             font-size: 25;
         }
@@ -49,8 +58,23 @@ header{
     }
     
     #row2{
+        #headerbutton{
+            white-space: nowrap;
+            background-color: #408274;
+            padding-right: 3%;
+            padding-left: 3%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-left: 81.42%;
+            border-style: none;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 40px;
+            margin-top: 1%;
+        }
         grid-area: r2;
-        margin-left: 90%;
+        
     }
     background-color: #1B4561;
     color: white;

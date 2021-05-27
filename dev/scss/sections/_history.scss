@@ -3,6 +3,15 @@
 ============= */
 
 #history{
+    h1{
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 80px;
+        color: #EFA541;
+    }
+    p{
+        font-size: 30px;
+    }
+
     display: grid;
     grid-template-columns: 15% 40% 30% 15%;
     grid-template-areas:
@@ -40,7 +49,7 @@
 
     background-color: #1B4561;
     color: white;
-    padding-top: 4%;
+    padding-top: 2%;
     padding-bottom: 6%;
 }
     

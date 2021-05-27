@@ -3,11 +3,15 @@
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-areas:". gd .";
+    
 
     #getdirectionsdiv{
         grid-area: gd;
         
         #gdtext{
+            p{
+                font-size: 30px;
+            }
         display: grid;
         grid-template-columns: 40% 20% 40%;
         grid-template-areas: ". gtd .";

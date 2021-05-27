@@ -1,27 +1,29 @@
 #stateparkmap{
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-areas: 
-    ". spmh ."
-    ". spmhero ."
-    ". spmb .";
-
-    #stateparkmapheader{
-        grid-area: spmh;
-        font-family: 'PlayfairDisplay-Bold';
-        font-size: 70px;
-        color: #EFA541;
-    }
-    #stateparkmaphero{
-        grid-area: spmhero;
-        background-image: url(../img/stateparkmaphero1.png) ;
-        min-height: 80vh;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    #stateparkmapbutton{
-        grid-area: spmb;
-        margin-left: 80%;
+    @include xl {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas: 
+        ". spmh ."
+        ". spmhero ."
+        ". spmb .";
+    
+        #stateparkmapheader{
+            grid-area: spmh;
+            font-family: 'PlayfairDisplay-Bold';
+            font-size: 70px;
+            color: #EFA541;
+        }
+        #stateparkmaphero{
+            grid-area: spmhero;
+            background-image: url(../img/stateparkmaphero1.png) ;
+            min-height: 80vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #stateparkmapbutton{
+            grid-area: spmb;
+            margin-left: 80%;
+        }
     }
 }

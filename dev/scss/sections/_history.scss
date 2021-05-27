@@ -3,53 +3,64 @@
 ============= */
 
 #history{
-    h1{
-        font-family: 'PlayfairDisplay-Bold';
-        font-size: 80px;
-        color: #EFA541;
+    #historyhero1{
+        max-width: 100%;
     }
-    p{
-        font-size: 30px;
+    #historyhero2{
+        max-width: 100%;
     }
-
-    display: grid;
-    grid-template-columns: 15% 40% 30% 15%;
-    grid-template-areas:
-    ". h h ."
-    ". cr cl1 ."
-    ". cr cl2 .";
-
-    #historyheader{
-        grid-area: h;
+    #historyhero3{
+        max-width: 100%;
     }
-
-    #historycolumn1{
-        grid-area: cr;
-        #historyhero1{
-            width: 100%;
+    @include xl {
+        h1{
+            font-family: 'PlayfairDisplay-Bold';
+            font-size: 80px;
+            color: #EFA541;
         }
-        margin-right: 1.5%;
-    }
-
-    #historycolumn2{
-        grid-area: cl1;
-        #historyhero2{
-            width: 100%;
+        p{
+            font-size: 30px;
         }
-        margin-left: 1.5%;
-    }
-
-    #historycolumn3{
-        grid-area: cl2;
-        #historyhero3{
-            width: 100%;
+    
+        display: grid;
+        grid-template-columns: 15% 40% 30% 15%;
+        grid-template-areas:
+        ". h h ."
+        ". cr cl1 ."
+        ". cr cl2 .";
+    
+        #historyheader{
+            grid-area: h;
         }
-        margin-left: 1.5%;
+    
+        #historycolumn1{
+            grid-area: cr;
+            #historyhero1{
+                width: 100%;
+            }
+            margin-right: 1.5%;
+        }
+    
+        #historycolumn2{
+            grid-area: cl1;
+            #historyhero2{
+                width: 100%;
+            }
+            margin-left: 1.5%;
+        }
+    
+        #historycolumn3{
+            grid-area: cl2;
+            #historyhero3{
+                width: 100%;
+            }
+            margin-left: 1.5%;
+        }
+    
+        background-color: #1B4561;
+        color: white;
+        padding-top: 2%;
+        padding-bottom: 6%;
     }
-
-    background-color: #1B4561;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 6%;
 }
     

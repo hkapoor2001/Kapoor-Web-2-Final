@@ -368,122 +368,157 @@ h3 {
 
 header {
   display: grid;
-  grid-template-areas: "r1" "r2";
-  padding-top: 0.5%;
-  font-size: 40px;
+  grid-template-columns: 10% 20% 20% 20% 30% 0%;
+  grid-template-areas: ". logo . . menu .";
   background-color: #1B4561;
+}
+header #header1 {
+  display: none;
+}
+header #header2 {
+  display: none;
+}
+header #header3 {
+  display: none;
+}
+header #header4 {
+  display: none;
+}
+header #header5 {
+  display: none;
+}
+header #header6 {
+  display: none;
+}
+header #headerbutton {
+  display: none;
+}
+header #mobilemenu {
+  display: inline;
+  grid-area: menu;
+  font-size: 60px;
+  margin-top: 13%;
+  margin-left: 40%;
   color: white;
-  margin-bottom: -3%;
 }
-header #row1 {
-  margin-bottom: -1%;
-  grid-area: r1;
-  display: grid;
-  grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
-  grid-template-areas: ". hl h1 h2 h3 h4 h5 h6 .";
+header #headerlogo {
+  grid-area: logo;
 }
-header #row1 #headerlogo {
-  padding-top: 3%;
-  grid-area: hl;
-  font-size: 25;
-}
-header #row1 #header1 {
-  padding-top: 1%;
-  grid-area: h1;
-  font-size: 25;
-}
-header #row1 #header2 {
-  padding-top: 1%;
-  grid-area: h2;
-  font-size: 25;
-}
-header #row1 #header3 {
-  padding-top: 1%;
-  grid-area: h3;
-  font-size: 25;
-}
-header #row1 #header4 {
-  padding-top: 1%;
-  grid-area: h4;
-  font-size: 25;
-}
-header #row1 #header5 {
-  padding-top: 1%;
-  grid-area: h5;
-  font-size: 25;
-}
-header #row1 #header6 {
-  padding-top: 1%;
-  grid-area: h6;
-  font-size: 25;
-}
-header #row1 #headerbutton {
-  padding-top: 1%;
-  grid-area: hb;
-  font-size: 25;
-}
-header #row2 {
-  grid-area: r2;
-}
-header #row2 #headerbutton {
-  white-space: nowrap;
-  background-color: #408274;
-  padding-right: 3%;
-  padding-left: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-left: 81.42%;
-  border-style: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  color: white;
-  font-size: 40px;
-  margin-top: 1%;
+@media (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "r1" "r2";
+    padding-top: 0.5%;
+    font-size: 40px;
+    background-color: #1B4561;
+    color: white;
+    margin-bottom: -3%;
+  }
+  header #mobilemenu {
+    display: none;
+  }
+  header #row1 {
+    margin-bottom: -1%;
+    grid-area: r1;
+    display: grid;
+    grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
+    grid-template-areas: ". hl h1 h2 h3 h4 h5 h6 .";
+  }
+  header #row1 #headerlogo {
+    padding-top: 3%;
+    grid-area: hl;
+    font-size: 25;
+  }
+  header #row1 #header1 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h1;
+    font-size: 25;
+  }
+  header #row1 #header2 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h2;
+    font-size: 25;
+  }
+  header #row1 #header3 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h3;
+    font-size: 25;
+  }
+  header #row1 #header4 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h4;
+    font-size: 25;
+  }
+  header #row1 #header5 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h5;
+    font-size: 25;
+  }
+  header #row1 #header6 {
+    display: grid;
+    padding-top: 1%;
+    grid-area: h6;
+    font-size: 25;
+  }
+  header #row1 #headerbutton {
+    display: grid;
+    padding-top: 1%;
+    grid-area: hb;
+    font-size: 25;
+  }
+  header #row2 {
+    grid-area: r2;
+  }
+  header #row2 #headerbutton {
+    display: inline;
+    white-space: nowrap;
+    background-color: #408274;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 81.42%;
+    border-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-top: 1%;
+  }
 }
 
-#videocontainer {
-  display: grid;
-  grid-template-areas: "video1" "video2";
-  margin-top: 3%;
-}
 #videocontainer #videoimg {
-  grid-area: video1;
   background-image: url(../img/videoreoptimized.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
-  min-height: 80vh;
+  min-height: 30vh;
+  margin-bottom: 0%;
 }
-#videocontainer #videotext {
-  font-family: "OpenSans-Regular";
-  font-size: 25px;
-  color: #000000;
-}
-#videocontainer #videotext #vt1 {
-  grid-area: vt1;
-}
-#videocontainer #videotext #circlediv {
-  grid-area: circle;
-  background-image: url(../img/Videobackground.png);
-  min-height: 70vh;
+#videocontainer #circlediv {
+  background-image: url(../img/videobackgroundmobile.png);
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 0;
-  display: flex;
+  background-repeat: no-repeat;
 }
-#videocontainer #videotext #circlediv #circledivtext {
-  font-family: "OpenSans-Regular";
-  font-size: 40px;
-  color: #000000;
-  margin-right: 45%;
-  margin-left: 5%;
-  margin-top: 3%;
+#videocontainer #circlediv #circledivtext {
+  font-size: 20px;
+  padding-top: 6%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 #videocontainer #NiagaraFalls {
   font-family: "Playfair Display", serif;
   font-weight: bold;
-  font-size: 200px;
+  font-size: 40px;
   color: #FFFFFF;
   text-align: left;
   margin-top: 5%;
@@ -493,600 +528,879 @@ header #row2 #headerbutton {
 #videocontainer #yourstoexplore {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 150px;
+  font-size: 35px;
   color: #FFFFFF;
   text-align: left;
   padding-left: 22%;
-  margin-top: -18%;
+  margin-top: -12%;
   white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  #videocontainer {
+    display: grid;
+    grid-template-areas: "video1" "video2";
+    margin-top: 3%;
+  }
+  #videocontainer #videoimg {
+    grid-area: video1;
+    background-image: url(../img/videoreoptimized.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    min-height: 80vh;
+    margin-bottom: 0%;
+  }
+  #videocontainer #videotext {
+    font-family: "OpenSans-Regular";
+    font-size: 25px;
+    color: #000000;
+  }
+  #videocontainer #videotext #vt1 {
+    grid-area: vt1;
+  }
+  #videocontainer #videotext #circlediv {
+    grid-area: circle;
+    background-image: url(../img/Videobackground.png);
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 0;
+    display: flex;
+  }
+  #videocontainer #videotext #circlediv #circledivtext {
+    font-family: "OpenSans-Regular";
+    font-size: 40px;
+    color: #000000;
+    margin-right: 45%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  #videocontainer #NiagaraFalls {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 200px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 5%;
+    padding-left: 8%;
+    white-space: nowrap;
+  }
+  #videocontainer #yourstoexplore {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 150px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 22%;
+    margin-top: -18%;
+    white-space: nowrap;
+  }
 }
 
 /* =============
     attractions
 ============= */
-#attractions {
-  display: grid;
-  grid-template-columns: 20% 30% 30% 20%;
-  grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
-  padding-bottom: 10%;
-  margin-top: 8%;
-}
-#attractions h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-}
 #attractions #attractionsmainhero {
-  grid-area: h1;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "heading heading" "h h" "ht1 ht2";
+  margin-top: -20%;
 }
 #attractions #attractionsmainhero #attractionsheading {
-  grid-area: heading;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 20px;
+  color: #EFA541;
+  margin-left: 2%;
 }
 #attractions #attractionsmainhero #attractionsheroimage {
-  grid-area: h;
   background-image: url(../img/attractionhero1.png);
   background-size: cover;
-  min-height: 60vh;
+  min-height: 28vh;
   background-position: center;
+  margin-bottom: 5%;
 }
 #attractions #attractionsmainhero #attractionsherotext1 {
-  grid-area: ht1;
-  color: white;
-  background-color: #1B4561;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  margin-top: 0%;
-  font-size: 30px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 16px;
 }
 #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
-  margin-top: 15%;
-  margin-bottom: 0%;
   background-color: #408274;
-  margin-left: 85%;
-  margin-right: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 #attractions #attractionsmainhero #attractionsherotext2 {
-  grid-area: ht2;
-  background-color: #D2E9FF;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-  font-size: 30px;
+  display: none;
 }
-#attractions #attractionshero2 {
-  grid-area: h2;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas: "ah2" "t1";
-  padding-top: 3%;
+#attractions #seemoreattractions {
+  display: none;
 }
 #attractions #attractionshero2 #attractionsherospot2 {
   background-image: url(../img/attractionhero2.png);
+  min-height: 28vh;
   background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 1.5%;
-  min-height: 40vh;
-  background-position: center bottom;
-  grid-area: ah2;
+  background-position: center;
+  margin-bottom: 5%;
 }
 #attractions #attractionshero2 #text1 {
-  grid-area: t1;
-  background-color: #1B4561;
-  margin-right: 1.5%;
-  color: white;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  font-size: 30px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 16px;
 }
 #attractions #attractionshero2 #ah2button {
   background-color: #408274;
-  color: white;
-  margin-left: 80%;
-  margin-top: 3%;
-  font-family: OpenSans;
-  font-weight: regular;
-  font-size: 16px;
-}
-#attractions #attractionshero3 {
-  grid-area: h3;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas: "ah3" "t2";
+  padding-left: 3%;
+  padding-right: 3%;
   padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 #attractions #attractionshero3 #attractionsherospot3 {
   background-image: url(../img/attractionhero3.png);
+  min-height: 28vh;
   background-size: cover;
-  min-height: 25vh;
-  background-repeat: none;
-  margin-right: 1.5%;
-  min-height: 40vh;
-  background-position: center bottom;
+  background-position: center;
+  margin-bottom: 5%;
 }
 #attractions #attractionshero3 #text2 {
-  grid-area: t3;
-  grid-area: t2;
-  background-color: #1B4561;
-  margin-right: 1.5%;
-  color: white;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  font-size: 30px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 16px;
 }
 #attractions #attractionshero3 #ah3button {
   background-color: #408274;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   color: white;
-  margin-left: 80%;
-  margin-top: 5%;
-  font-family: OpenSans;
-  font-weight: regular;
+  font-family: "Open Sans", sans-serif;
 }
-#attractions #seemoreattractions {
-  grid-area: b;
-  margin-left: 60%;
-  margin-top: 2%;
-  background-color: #408274;
-  color: white;
+@media (min-width: 1024px) {
+  #attractions {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
+    padding-bottom: 10%;
+    margin-top: 8%;
+  }
+  #attractions #attractionsmainhero {
+    grid-area: h1;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "heading heading" "h h" "ht1 ht2";
+  }
+  #attractions #attractionsmainhero #attractionsheading {
+    grid-area: heading;
+  }
+  #attractions #attractionsmainhero #attractionsheroimage {
+    grid-area: h;
+    background-image: url(../img/attractionhero1.png);
+    background-size: cover;
+    min-height: 60vh;
+    background-position: center;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 {
+    grid-area: ht1;
+    color: white;
+    background-color: #1B4561;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 30px;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #attractionsmainhero #attractionsherotext2 {
+    display: inline;
+    grid-area: ht2;
+    background-color: #D2E9FF;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 30px;
+  }
+  #attractions #attractionshero2 {
+    grid-area: h2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah2" "t1";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero2 #attractionsherospot2 {
+    background-image: url(../img/attractionhero2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 1.5%;
+    min-height: 40vh;
+    background-position: center bottom;
+    grid-area: ah2;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero2 #text1 {
+    grid-area: t1;
+    background-color: #1B4561;
+    margin-right: 1.5%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-right: 1.5%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 30px;
+  }
+  #attractions #attractionshero2 #ah2button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+    font-size: 30px;
+  }
+  #attractions #attractionshero3 {
+    grid-area: h3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah3" "t2";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero3 #attractionsherospot3 {
+    background-image: url(../img/attractionhero3.png);
+    background-size: cover;
+    min-height: 25vh;
+    background-repeat: none;
+    margin-right: 1.5%;
+    min-height: 40vh;
+    background-position: center bottom;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero3 #text2 {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    grid-area: t3;
+    grid-area: t2;
+    background-color: #1B4561;
+    margin-right: 1.5%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 30px;
+  }
+  #attractions #attractionshero3 #ah3button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #seemoreattractions {
+    display: inline;
+    grid-area: b;
+    margin-left: 60%;
+    margin-top: 2%;
+    background-color: #408274;
+    color: white;
+  }
+  #attractions h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
 }
 
 /* =============
     Discoverypass
 ============= */
 #discoverypass {
+  padding-top: 10%;
+  padding-bottom: 10%;
   display: grid;
-  grid-template-columns: 30% 13.3% 13.3% 13.3% 30%;
-  grid-template-rows: max-content;
-  grid-template-areas: ". h h h ." ". lc lc rc .";
-  padding-bottom: 15%;
+  grid-template-columns: 100%;
+  grid-template-areas: "h" "lc" "rc";
 }
-#discoverypass h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-}
-#discoverypass h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-}
-#discoverypass h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-}
-#discoverypass p {
-  font-size: 30px;
-}
-#discoverypass #heading {
+#discoverypass #discoverypassheading {
   grid-area: h;
+}
+#discoverypass #discoverypassheading h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 40px;
+  color: #EFA541;
+  margin-left: 5%;
+}
+#discoverypass #discoverypassheading p {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 7%;
+  border-bottom: 8px solid #1B4561;
 }
 #discoverypass #leftcolumn {
   grid-area: lc;
-  border-right: 8px solid #1B4561;
-  padding-right: 5%;
-}
-#discoverypass #leftcolumn p {
-  font-size: 25px;
+  border-bottom: 8px solid #1B4561;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 7%;
 }
 #discoverypass #rightcolumn {
-  padding-left: 15%;
   grid-area: rc;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 7%;
 }
 #discoverypass #rightcolumn #discoverybutton {
-  margin-top: 50%;
   background-color: #408274;
-  margin-left: 30%;
-  border-radius: 15%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
-#discoverypass #rightcolumn p {
-  font-size: 25px;
+@media (min-width: 1200px) {
+  #discoverypass {
+    padding-top: 0%;
+    display: grid;
+    grid-template-columns: 30% 13.3% 13.3% 13.3% 30%;
+    grid-template-rows: max-content;
+    grid-template-areas: ". h h h ." ". lc lc rc .";
+    padding-bottom: 15%;
+  }
+  #discoverypass h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+  #discoverypass h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+  }
+  #discoverypass h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+  }
+  #discoverypass p {
+    font-size: 30px;
+  }
+  #discoverypass #discoverypassheading {
+    grid-area: h;
+  }
+  #discoverypass #discoverypassheading p {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+    border-bottom: none;
+  }
+  #discoverypass #leftcolumn {
+    grid-area: lc;
+    border-right: 8px solid #1B4561;
+    padding-right: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+    border-bottom: none;
+  }
+  #discoverypass #leftcolumn p {
+    font-size: 25px;
+  }
+  #discoverypass #rightcolumn {
+    padding-left: 15%;
+    grid-area: rc;
+  }
+  #discoverypass #rightcolumn #discoverybutton {
+    margin-top: 50%;
+    background-color: #408274;
+    margin-left: 30%;
+    border-radius: 15%;
+    color: white;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-bottom: 0%;
+  }
+  #discoverypass #rightcolumn p {
+    font-size: 25px;
+  }
 }
 
-#feelthepower {
-  background-image: url(../img/circlehero2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom left;
-  min-height: 80vh;
-  display: flex;
-}
-#feelthepower #feelthepowerdiv {
-  margin-right: 20%;
-  color: #1B4561;
-  margin-left: 50%;
-  margin-top: -10%;
-}
-#feelthepower #feelthepowerdiv #feelthepowerh {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 50px;
-  white-space: nowrap;
-}
-#feelthepower #feelthepowerdiv #feelthepowerp {
-  font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-  margin-top: -4%;
+@media (min-width: 1200px) {
+  #feelthepower {
+    background-image: url(../img/circlehero2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    min-height: 80vh;
+    display: flex;
+  }
+  #feelthepower #feelthepowerdiv {
+    margin-right: 20%;
+    color: #1B4561;
+    margin-left: 50%;
+    margin-top: -10%;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerh {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    white-space: nowrap;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerp {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    margin-top: -4%;
+  }
 }
 
 /* =============
     history
 ============= */
-#history {
-  display: grid;
-  grid-template-columns: 15% 40% 30% 15%;
-  grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
-  background-color: #1B4561;
-  color: white;
-  padding-top: 2%;
-  padding-bottom: 6%;
+#history #historyhero1 {
+  max-width: 100%;
 }
-#history h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 80px;
-  color: #EFA541;
+#history #historyhero2 {
+  max-width: 100%;
 }
-#history p {
-  font-size: 30px;
+#history #historyhero3 {
+  max-width: 100%;
 }
-#history #historyheader {
-  grid-area: h;
-}
-#history #historycolumn1 {
-  grid-area: cr;
-  margin-right: 1.5%;
-}
-#history #historycolumn1 #historyhero1 {
-  width: 100%;
-}
-#history #historycolumn2 {
-  grid-area: cl1;
-  margin-left: 1.5%;
-}
-#history #historycolumn2 #historyhero2 {
-  width: 100%;
-}
-#history #historycolumn3 {
-  grid-area: cl2;
-  margin-left: 1.5%;
-}
-#history #historycolumn3 #historyhero3 {
-  width: 100%;
+@media (min-width: 1200px) {
+  #history {
+    display: grid;
+    grid-template-columns: 15% 40% 30% 15%;
+    grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
+    background-color: #1B4561;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 6%;
+  }
+  #history h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 80px;
+    color: #EFA541;
+  }
+  #history p {
+    font-size: 30px;
+  }
+  #history #historyheader {
+    grid-area: h;
+  }
+  #history #historycolumn1 {
+    grid-area: cr;
+    margin-right: 1.5%;
+  }
+  #history #historycolumn1 #historyhero1 {
+    width: 100%;
+  }
+  #history #historycolumn2 {
+    grid-area: cl1;
+    margin-left: 1.5%;
+  }
+  #history #historycolumn2 #historyhero2 {
+    width: 100%;
+  }
+  #history #historycolumn3 {
+    grid-area: cl2;
+    margin-left: 1.5%;
+  }
+  #history #historycolumn3 #historyhero3 {
+    width: 100%;
+  }
 }
 
-#planyourtriphero {
-  margin-top: 8%;
-  margin-bottom: 8%;
-}
-#planyourtriphero h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-  margin-left: 2%;
-}
-#planyourtriphero #planmainhero {
-  background-image: url(../img/planyourtriphero1.png);
-  min-height: 30vh;
-  background-size: cover;
-  background-position: right;
+@media (min-width: 1200px) {
+  #planyourtriphero {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  #planyourtriphero h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+    margin-left: 2%;
+  }
+  #planyourtriphero #planmainhero {
+    background-image: url(../img/planyourtriphero1.png);
+    min-height: 30vh;
+    background-size: cover;
+    background-position: right;
+  }
 }
 
 /* =============
     planyourtrip
 ============= */
-#planyourtrip {
-  margin-bottom: 8%;
-}
-#planyourtrip #plangrid {
-  display: grid;
-  grid-template-columns: 2% 32% 32% 32% 2%;
-  grid-template-areas: ". pg1h pg2h . ." ". pg1 pg3 pg5 ." ". pg2 pg4 pg6 .";
-}
-#planyourtrip #plangrid #pg1h {
-  grid-area: pg1h;
-}
-#planyourtrip #plangrid #pg2h {
-  grid-area: pg2h;
-}
-#planyourtrip #plangrid #pg1 {
-  grid-area: pg1;
-  background-image: url(../img/planyourtriphero2.png);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-  min-height: 20vh;
-  margin: 2%;
-}
-#planyourtrip #plangrid #pg2 {
-  grid-area: pg2;
-  background-color: #D2E9FF;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  margin: 2%;
-  font-size: 30px;
-  padding-right: 2%;
-  padding-left: 2%;
-}
-#planyourtrip #plangrid #pg3 {
-  grid-area: pg3;
-  background-image: url(../img/planyourtriphero3.png);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-  min-height: 20vh;
-  margin: 2%;
-}
-#planyourtrip #plangrid #pg4 {
-  grid-area: pg4;
-  background-color: #D2E9FF;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  margin: 2%;
-  font-size: 30px;
-  padding-right: 2%;
-  padding-left: 2%;
-}
-#planyourtrip #plangrid #pg5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: white;
-  background-color: #1B4561;
-  grid-area: pg5;
-  margin: 2%;
-  padding: 8%;
-}
-#planyourtrip #plangrid #pg6 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  color: white;
-  background-color: #1B4561;
-  grid-area: pg6;
-  margin: 2%;
-  padding: 8%;
-}
-
-#comeforthewonder {
-  margin-top: 18%;
-  background-image: url(../img/circlehero3.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100vh;
-  display: flex;
-  background-position: right;
-}
-#comeforthewonder #comeforthewonderdiv {
-  margin-top: -3%;
-}
-#comeforthewonder #comeforthewonderdiv #wonderheader {
-  margin-left: 10%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 75px;
-  color: #1B4561;
-  margin-top: 3%;
-}
-#comeforthewonder #comeforthewonderdiv #wonderheaderp {
-  margin-left: 10%;
-  margin-right: 60%;
-  font-size: 30px;
+@media (min-width: 1200px) {
+  #planyourtrip {
+    margin-bottom: 8%;
+  }
+  #planyourtrip #plangrid {
+    display: grid;
+    grid-template-columns: 2% 32% 32% 32% 2%;
+    grid-template-areas: ". pg1h pg2h . ." ". pg1 pg3 pg5 ." ". pg2 pg4 pg6 .";
+  }
+  #planyourtrip #plangrid #pg1h {
+    grid-area: pg1h;
+  }
+  #planyourtrip #plangrid #pg2h {
+    grid-area: pg2h;
+  }
+  #planyourtrip #plangrid #pg1 {
+    grid-area: pg1;
+    background-image: url(../img/planyourtriphero2.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    min-height: 20vh;
+    margin: 2%;
+  }
+  #planyourtrip #plangrid #pg2 {
+    grid-area: pg2;
+    background-color: #D2E9FF;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin: 2%;
+    font-size: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  #planyourtrip #plangrid #pg3 {
+    grid-area: pg3;
+    background-image: url(../img/planyourtriphero3.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    min-height: 20vh;
+    margin: 2%;
+  }
+  #planyourtrip #plangrid #pg4 {
+    grid-area: pg4;
+    background-color: #D2E9FF;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin: 2%;
+    font-size: 30px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  #planyourtrip #plangrid #pg5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #1B4561;
+    grid-area: pg5;
+    margin: 2%;
+    padding: 8%;
+  }
+  #planyourtrip #plangrid #pg6 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #1B4561;
+    grid-area: pg6;
+    margin: 2%;
+    padding: 8%;
+  }
 }
 
-#mapanddirections {
-  display: grid;
-  grid-template-columns: 20% 30% 30% 20%;
-  grid-template-areas: ". mh mh ." ". mt mm .";
-  padding: 4%;
-  padding-bottom: 8%;
-  background-color: #1B4561;
-  color: white;
+@media (min-width: 1200px) {
+  #comeforthewonder {
+    margin-top: 18%;
+    background-image: url(../img/circlehero3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    background-position: right;
+  }
+  #comeforthewonder #comeforthewonderdiv {
+    margin-top: -3%;
+  }
+  #comeforthewonder #comeforthewonderdiv #wonderheader {
+    margin-left: 10%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    color: #1B4561;
+    margin-top: 3%;
+  }
+  #comeforthewonder #comeforthewonderdiv #wonderheaderp {
+    margin-left: 10%;
+    margin-right: 60%;
+    font-size: 30px;
+  }
 }
-#mapanddirections #mapheader {
-  grid-area: mh;
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 35px;
-  color: #EFA541;
-}
-#mapanddirections #mapanddirectionstext {
-  grid-area: mt;
-  margin-right: 6%;
-}
-#mapanddirections #mapanddirectionstext p {
-  font-size: 25px;
-}
+
 #mapanddirections #googlemap {
-  grid-area: mm;
+  display: none;
+}
+@media (min-width: 1200px) {
+  #mapanddirections {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". mh mh ." ". mt mm .";
+    padding: 4%;
+    padding-bottom: 8%;
+    background-color: #1B4561;
+    color: white;
+  }
+  #mapanddirections #mapheader {
+    grid-area: mh;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 35px;
+    color: #EFA541;
+  }
+  #mapanddirections #mapanddirectionstext {
+    grid-area: mt;
+    margin-right: 6%;
+  }
+  #mapanddirections #mapanddirectionstext p {
+    font-size: 25px;
+  }
+  #mapanddirections #googlemap {
+    grid-area: mm;
+    display: inline;
+  }
 }
 
-#getdirections {
-  margin-top: 10%;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-areas: ". gd .";
-}
-#getdirections #getdirectionsdiv {
-  grid-area: gd;
-}
-#getdirections #getdirectionsdiv #gdtext {
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-areas: ". gtd .";
-}
-#getdirections #getdirectionsdiv #gdtext p {
-  font-size: 30px;
-}
-#getdirections #getdirectionsdiv #gdtext #gdt {
-  grid-area: gtd;
-}
-
-#getdirectionstext {
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-  grid-template-areas: ". gdt1 .";
-}
-#getdirectionstext #getdirectionstextdiv {
-  grid-area: gdt1;
+@media (min-width: 1200px) {
+  #getdirections {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: ". gd .";
+  }
+  #getdirections #getdirectionsdiv {
+    grid-area: gd;
+  }
+  #getdirections #getdirectionsdiv #gdtext {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-areas: ". gtd .";
+  }
+  #getdirections #getdirectionsdiv #gdtext p {
+    font-size: 30px;
+  }
+  #getdirections #getdirectionsdiv #gdtext #gdt {
+    grid-area: gtd;
+  }
 }
 
-#stateparkmap {
-  margin-top: 10%;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
-}
-#stateparkmap #stateparkmapheader {
-  grid-area: spmh;
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-}
-#stateparkmap #stateparkmaphero {
-  grid-area: spmhero;
-  background-image: url(../img/stateparkmaphero1.png);
-  min-height: 80vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-#stateparkmap #stateparkmapbutton {
-  grid-area: spmb;
-  margin-left: 80%;
+@media (min-width: 1200px) {
+  #getdirectionstext {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: ". gdt1 .";
+  }
+  #getdirectionstext #getdirectionstextdiv {
+    grid-area: gdt1;
+  }
 }
 
-#parking {
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
-  grid-template-areas: ". parkingdiv .";
-  margin-top: 14%;
-  margin-bottom: 2%;
-}
-#parking h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-}
-#parking p {
-  font-size: 30px;
-}
-#parking #parkingdiv {
-  grid-area: parkingdiv;
+@media (min-width: 1200px) {
+  #stateparkmap {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
+  }
+  #stateparkmap #stateparkmapheader {
+    grid-area: spmh;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+  #stateparkmap #stateparkmaphero {
+    grid-area: spmhero;
+    background-image: url(../img/stateparkmaphero1.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #stateparkmap #stateparkmapbutton {
+    grid-area: spmb;
+    margin-left: 80%;
+  }
 }
 
-#contactus {
-  display: grid;
-  grid-template-columns: 10% 40% 50%;
-  grid-template-areas: ". contactus1 .";
-  background-color: #D2E9FF;
-  padding-top: 2%;
-  padding-bottom: 8%;
-  margin-top: 15%;
+@media (min-width: 1200px) {
+  #parking {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas: ". parkingdiv .";
+    margin-top: 14%;
+    margin-bottom: 2%;
+  }
+  #parking h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+  #parking p {
+    font-size: 30px;
+  }
+  #parking #parkingdiv {
+    grid-area: parkingdiv;
+  }
 }
-#contactus p {
-  font-weight: bold;
-}
-#contactus h1 {
-  font-family: "PlayfairDisplay-Bold";
-  font-size: 70px;
-  color: #EFA541;
-}
-#contactus #contact1 {
-  font-size: 25px;
-}
-#contactus #contact2 {
-  font-size: 28px;
-}
-#contactus #contact3 {
-  font-size: 30px;
-}
-#contactus #footericondiv {
-  font-size: 100px;
-}
-#contactus #contactusgrid {
-  grid-area: contactus1;
+
+@media (min-width: 1200px) {
+  #contactus {
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-areas: ". contactus1 .";
+    background-color: #D2E9FF;
+    padding-top: 2%;
+    padding-bottom: 8%;
+    margin-top: 15%;
+  }
+  #contactus p {
+    font-weight: bold;
+  }
+  #contactus h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+  #contactus #contact1 {
+    font-size: 25px;
+  }
+  #contactus #contact2 {
+    font-size: 28px;
+  }
+  #contactus #contact3 {
+    font-size: 30px;
+  }
+  #contactus #footericondiv {
+    font-size: 100px;
+  }
+  #contactus #contactusgrid {
+    grid-area: contactus1;
+  }
 }
 
 /* =============
     footer
 ============= */
-#footer {
-  display: grid;
-  grid-template-areas: "fr1" "fr2" "fr3" "fr4";
-  background-color: #1B4561;
-  padding-bottom: 5%;
-  padding-top: 1.5%;
-  color: white;
-  font-family: OpenSans-Regular;
-  font-size: 25px;
-}
-#footer #footerlogodiv {
-  grid-area: fr1;
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  grid-template-areas: ". fl .";
-}
-#footer #footerlogodiv #footerlogo {
-  grid-area: fl;
-}
-#footer #footerrow2 {
-  grid-area: fr2;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 .";
-  margin-left: 8.7%;
-}
-#footer #footerrow2 #footer1 {
-  grid-area: f1;
-}
-#footer #footerrow2 #footer2 {
-  grid-area: f2;
-}
-#footer #footerrow2 #footer3 {
-  grid-area: f3;
-}
-#footer #footerrow2 #footer4 {
-  grid-area: f4;
-}
-#footer #footerrow2 #footer5 {
-  grid-area: f5;
-}
-#footer #footerrow2 #footer6 {
-  grid-area: f6;
-}
-#footer #footerdirections {
-  grid-area: fr3;
-  display: grid;
-  grid-template-columns: 45% 10% 45%;
-  grid-template-areas: ". fd .";
-  margin-right: 4%;
-}
-#footer #footerdirections #footerdirectionstext {
-  grid-area: fd;
-}
-#footer #footericondiv {
-  grid-area: fr4;
-  display: grid;
-  grid-template-columns: 30% 10% 10% 10% 10% 30%;
-  grid-template-areas: ". fi1 fi2 fi3 fi4 .";
-  margin-left: 4%;
-}
-#footer #footericondiv #footericon1 {
-  grid-area: fi1;
-}
-#footer #footericondiv #footericon2 {
-  grid-area: fi2;
-}
-#footer #footericondiv #footericon3 {
-  grid-area: fi3;
-}
-#footer #footericondiv #footericon4 {
-  grid-area: fi4;
+@media (min-width: 1024px) {
+  #footer {
+    display: grid;
+    grid-template-areas: "fr1" "fr2" "fr3" "fr4";
+    background-color: #1B4561;
+    padding-bottom: 5%;
+    padding-top: 1.5%;
+    color: white;
+    font-family: OpenSans-Regular;
+    font-size: 25px;
+  }
+  #footer #footerlogodiv {
+    grid-area: fr1;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: ". fl .";
+  }
+  #footer #footerlogodiv #footerlogo {
+    grid-area: fl;
+  }
+  #footer #footerrow2 {
+    grid-area: fr2;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 .";
+    margin-left: 8.7%;
+  }
+  #footer #footerrow2 #footer1 {
+    grid-area: f1;
+  }
+  #footer #footerrow2 #footer2 {
+    grid-area: f2;
+  }
+  #footer #footerrow2 #footer3 {
+    grid-area: f3;
+  }
+  #footer #footerrow2 #footer4 {
+    grid-area: f4;
+  }
+  #footer #footerrow2 #footer5 {
+    grid-area: f5;
+  }
+  #footer #footerrow2 #footer6 {
+    grid-area: f6;
+  }
+  #footer #footerdirections {
+    grid-area: fr3;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-areas: ". fd .";
+    margin-right: 4%;
+  }
+  #footer #footerdirections #footerdirectionstext {
+    grid-area: fd;
+  }
+  #footer #footericondiv {
+    grid-area: fr4;
+    display: grid;
+    grid-template-columns: 30% 10% 10% 10% 10% 30%;
+    grid-template-areas: ". fi1 fi2 fi3 fi4 .";
+    margin-left: 4%;
+  }
+  #footer #footericondiv #footericon1 {
+    grid-area: fi1;
+  }
+  #footer #footericondiv #footericon2 {
+    grid-area: fi2;
+  }
+  #footer #footericondiv #footericon3 {
+    grid-area: fi3;
+  }
+  #footer #footericondiv #footericon4 {
+    grid-area: fi4;
+  }
 }

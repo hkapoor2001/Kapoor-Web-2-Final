@@ -3,88 +3,90 @@
 ============= */
 
 #footer{
-    display: grid;
-    grid-template-areas: 
-    "fr1"
-    "fr2"
-    "fr3"
-    "fr4";
-
-    #footerlogodiv{
-        grid-area: fr1;
+    @include lg {
         display: grid;
-        grid-template-columns: 45% 10% 45%;
-        grid-template-areas: ". fl .";
-        #footerlogo{
-            grid-area: fl;
-        }   
-    }
-    
-    #footerrow2{
-        grid-area: fr2;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-areas: 
-        ". f1 f2 f3 ."
-        ". f4 f5 f6 .";
-        margin-left: 8.7%;
+        "fr1"
+        "fr2"
+        "fr3"
+        "fr4";
     
-        #footer1{
-            grid-area: f1;
+        #footerlogodiv{
+            grid-area: fr1;
+            display: grid;
+            grid-template-columns: 45% 10% 45%;
+            grid-template-areas: ". fl .";
+            #footerlogo{
+                grid-area: fl;
+            }   
         }
-        #footer2{
-            grid-area: f2;
+        
+        #footerrow2{
+            grid-area: fr2;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-areas: 
+            ". f1 f2 f3 ."
+            ". f4 f5 f6 .";
+            margin-left: 8.7%;
+        
+            #footer1{
+                grid-area: f1;
+            }
+            #footer2{
+                grid-area: f2;
+            }
+            #footer3{
+                grid-area: f3;
+            }
+            #footer4{
+                grid-area: f4;
+            }
+            #footer5{
+                grid-area: f5;
+            }
+            #footer6{
+                grid-area: f6;
+            }
         }
-        #footer3{
-            grid-area: f3;
+        
+        #footerdirections{
+            grid-area: fr3;
+            display: grid;
+            grid-template-columns: 45% 10% 45%;
+            grid-template-areas: ". fd .";
+            #footerdirectionstext{
+                grid-area: fd;
+            }   
+            margin-right: 4%;
         }
-        #footer4{
-            grid-area: f4;
+        
+        #footericondiv{
+            grid-area: fr4;
+            display: grid;
+            grid-template-columns: 30% 10% 10% 10% 10% 30%;
+            grid-template-areas: ". fi1 fi2 fi3 fi4 .";
+            margin-left: 4%;
+        
+        
+            #footericon1{
+                grid-area: fi1;
+            }
+            #footericon2{
+                grid-area: fi2;
+            }
+            #footericon3{
+                grid-area: fi3;
+            }
+            #footericon4{
+                grid-area: fi4;
+            }
         }
-        #footer5{
-            grid-area: f5;
-        }
-        #footer6{
-            grid-area: f6;
-        }
+        background-color: #1B4561;
+        padding-bottom: 5%;
+        padding-top: 1.5%;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 25px;
     }
-    
-    #footerdirections{
-        grid-area: fr3;
-        display: grid;
-        grid-template-columns: 45% 10% 45%;
-        grid-template-areas: ". fd .";
-        #footerdirectionstext{
-            grid-area: fd;
-        }   
-        margin-right: 4%;
-    }
-    
-    #footericondiv{
-        grid-area: fr4;
-        display: grid;
-        grid-template-columns: 30% 10% 10% 10% 10% 30%;
-        grid-template-areas: ". fi1 fi2 fi3 fi4 .";
-        margin-left: 4%;
-    
-    
-        #footericon1{
-            grid-area: fi1;
-        }
-        #footericon2{
-            grid-area: fi2;
-        }
-        #footericon3{
-            grid-area: fi3;
-        }
-        #footericon4{
-            grid-area: fi4;
-        }
-    }
-    background-color: #1B4561;
-    padding-bottom: 5%;
-    padding-top: 1.5%;
-    color: white;
-    font-family: OpenSans-Regular;
-    font-size: 25px;
 }

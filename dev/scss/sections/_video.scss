@@ -1,54 +1,34 @@
 #videocontainer{
-    display: grid;
-    grid-template-areas: 
-    "video1"
-    "video2";
-
     #videoimg{
-        grid-area: video1;
         background-image: url(../img/videoreoptimized.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         display: flex;
-        min-height: 80vh;
+        min-height: 30vh;
+        margin-bottom: 0%;
     }
 
-    #videotext{
-        font-family: 'OpenSans-Regular';
-        font-size: 25px;
-        color: #000000;
+    #circlediv{
+        background-image: url(../img/videobackgroundmobile.png);
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
 
-        #vt1{
-            grid-area: vt1;
-        }
-
-        #circlediv{
-            grid-area: circle;
-            background-image: url(../img/Videobackground.png);
-            min-height: 70vh;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center 0;
-            display: flex;
-            
-            #circledivtext{
-                font-family: 'OpenSans-Regular';
-                font-size: 40px;
-                color: #000000;
-                margin-right: 45%;
-                margin-left: 5%;
-                margin-top: 3%;
-            }
-
+        #circledivtext{
+            font-size: 20px;
+            padding-top: 6%;
+            margin-right: 10%;
+            margin-left: 10%;
+ 
         }
     }
-    margin-top: 3%;
 
     #NiagaraFalls{
         font-family: 'Playfair Display', serif;
         font-weight: bold;
-        font-size: 200px;
+        font-size: 40px;
         color: #FFFFFF;
         text-align: left;
         margin-top: 5%;
@@ -58,11 +38,81 @@
     #yourstoexplore{
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        font-size: 150px;
+        font-size: 35px;
         color: #FFFFFF;
         text-align: left;
         padding-left: 22%;
-        margin-top: -18%;
+        margin-top: -12%;
         white-space: nowrap;
+    }
+
+    @include xl {
+        display: grid;
+        grid-template-areas: 
+        "video1"
+        "video2";
+    
+        #videoimg{
+            grid-area: video1;
+            background-image: url(../img/videoreoptimized.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            min-height: 80vh;
+            margin-bottom: 0%;
+        }
+    
+        #videotext{
+            font-family: 'OpenSans-Regular';
+            font-size: 25px;
+            color: #000000;
+    
+            #vt1{
+                grid-area: vt1;
+            }
+    
+            #circlediv{
+                grid-area: circle;
+                background-image: url(../img/Videobackground.png);
+                min-height: 70vh;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center 0;
+                display: flex;
+                
+                #circledivtext{
+                    font-family: 'OpenSans-Regular';
+                    font-size: 40px;
+                    color: #000000;
+                    margin-right: 45%;
+                    margin-left: 5%;
+                    margin-top: 3%;
+                }
+    
+            }
+        }
+        margin-top: 3%;
+    
+        #NiagaraFalls{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 200px;
+            color: #FFFFFF;
+            text-align: left;
+            margin-top: 5%;
+            padding-left: 8%;
+            white-space: nowrap;
+        }
+        #yourstoexplore{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 150px;
+            color: #FFFFFF;
+            text-align: left;
+            padding-left: 22%;
+            margin-top: -18%;
+            white-space: nowrap;
+        }
     }
 }

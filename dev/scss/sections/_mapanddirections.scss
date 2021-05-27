@@ -1,28 +1,35 @@
 #mapanddirections{
-    display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
-    grid-template-areas: 
-    ". mh mh ."
-    ". mt mm .";
-
-    #mapheader{
-        grid-area: mh;
-        font-family: 'PlayfairDisplay-Bold';
-        font-size: 35px;
-        color: #EFA541;
-    }
-    #mapanddirectionstext{
-        grid-area: mt;
-        margin-right: 6%;
-        p{
-            font-size: 25px;
-        }
-    }
     #googlemap{
-        grid-area: mm;
+        display: none;
     }
-    padding: 4%;
-    padding-bottom: 8%;
-    background-color: #1B4561;
-    color: white;
+
+    @include xl {
+        display: grid;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-areas: 
+        ". mh mh ."
+        ". mt mm .";
+    
+        #mapheader{
+            grid-area: mh;
+            font-family: 'PlayfairDisplay-Bold';
+            font-size: 35px;
+            color: #EFA541;
+        }
+        #mapanddirectionstext{
+            grid-area: mt;
+            margin-right: 6%;
+            p{
+                font-size: 25px;
+            }
+        }
+        #googlemap{
+            grid-area: mm;
+            display: inline;
+        }
+        padding: 4%;
+        padding-bottom: 8%;
+        background-color: #1B4561;
+        color: white;
+    }
 }

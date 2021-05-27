@@ -112,6 +112,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/googlemap.png" : {
+      "ft" : 32768,
+      "iS" : 390108,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/googlemap.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/historyhero1.png" : {
       "ft" : 32768,
       "iS" : 358710,

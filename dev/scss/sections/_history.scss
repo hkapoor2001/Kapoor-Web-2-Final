@@ -3,6 +3,20 @@
 ============= */
 
 #history{
+    background-color: #1B4561;
+    color: white;
+    padding-bottom: 17%;
+    padding-top: 5%;
+    p{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    h1{
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 40px;
+        color: #EFA541;
+        margin-left: 5%;
+    }
     #historyhero1{
         max-width: 100%;
     }
@@ -13,6 +27,10 @@
         max-width: 100%;
     }
     @include xl {
+        p{
+            margin-right: 0%;
+            margin-left: 0%;
+        }
         h1{
             font-family: 'PlayfairDisplay-Bold';
             font-size: 80px;

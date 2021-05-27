@@ -1,5 +1,38 @@
 #feelthepower{
+    background-image: url(../img/circlehero2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    min-height: 40vh;
+    display: flex;
+    padding-top: 5%;
+
+    #feelthepowerdiv{
+        margin-right: 20%;
+        #feelthepowerh{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            white-space: nowrap;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            margin-left: 5%;
+            
+        }
+        #feelthepowerp{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            margin-bottom: 120%;
+            margin-right: 5%;
+            margin-left: 5%;
+
+        }
+
+        color: #1B4561;
+    }
+    
     @include xl {
+        padding-top: 5%;
         background-image: url(../img/circlehero2.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -13,11 +46,15 @@
                 font-weight: bold;
                 font-size: 50px;
                 white-space: nowrap;
+                margin-right: 0%;
+                margin-left: 0%;
             }
             #feelthepowerp{
                 font-family: 'Open Sans', sans-serif;
                 font-size: 25px;
                 margin-top: -4%;
+                margin-right: 0%;
+                margin-left: 0%;
             }
     
             color: #1B4561;

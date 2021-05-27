@@ -3,6 +3,60 @@
 ============= */
 
 #planyourtrip{
+
+
+    #pg1{
+        background-image: url(../img/planyourtriphero2.png);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        min-height: 25vh;
+        margin-bottom: 8%;
+    }
+    #pg2{
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 12%;
+
+    }
+
+    #pg3{
+        background-image: url(../img/planyourtriphero3.png);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        min-height: 25vh;
+        margin-bottom: 8%;
+    }
+    #pg4{
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 12%;
+    }
+    #pg5{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: white;
+        background-color: #1B4561;
+        padding: 8%;
+        margin-bottom: 12%;
+    }
+    #pg6{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: white;
+        background-color: #1B4561;
+        padding: 12%;
+        margin-bottom: 25%;
+    }
+    
+    
+
+
+
+
+
+
     @include xl {
         #plangrid{
             display: grid;

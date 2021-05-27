@@ -1,4 +1,28 @@
 #comeforthewonder{
+    background-image: url(../img/circlehero3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 40vh;
+    display: flex;
+    background-position: bottom right;
+
+    #comeforthewonderdiv{
+        #wonderheader{
+            margin-left: 10%;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #1B4561; 
+            margin-top: -3%;
+        }
+        #wonderheaderp{
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 16px;
+            padding-bottom: 90%;
+        }
+    }
+
     @include xl {
         margin-top: 18%;
         background-image: url(../img/circlehero3.png);

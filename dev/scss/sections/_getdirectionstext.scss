@@ -1,5 +1,29 @@
 #getdirectionstext{
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 20%;
+
+    h1{
+        font-family: 'Open Sans';
+        font-weight: bold;
+        color: #1B4561;
+        font-size: 30px;
+    }
+
+    .getdirectionsbuttonsclass{
+        display: block;
+        width: 100%;
+        padding: 20%;
+        background-color: #408274;
+        margin-bottom: 5%;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
     @include xl {
+        padding-top: 0%;
         display: grid;
         grid-template-columns: 30% 40% 30%;
         grid-template-areas:". gdt1 .";

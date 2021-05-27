@@ -1,9 +1,32 @@
 #mapanddirections{
+    background-color: #1B4561;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color: white;
+
+    #mapheader{
+        grid-area: mh;
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 20px;
+        color: #EFA541;
+        white-space: nowrap;
+    }
+
+    #mobilemaphero{
+        background-image: url(../img/googlemap.png) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+    }
+
+
     #googlemap{
         display: none;
     }
 
     @include xl {
+        padding-top: 0%;
+        padding-bottom: 0%;
         display: grid;
         grid-template-columns: 20% 30% 30% 20%;
         grid-template-areas: 

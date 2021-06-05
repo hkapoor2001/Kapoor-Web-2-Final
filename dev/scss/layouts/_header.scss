@@ -1,140 +1,71 @@
 header{
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 30% 0%;
-    grid-template-areas: ". logo . . menu .";
     background-color: #1B4561;
-
-
-
-    #header1{
-        display: none;
-    }
-    #header2{
-        display: none;
-    }
-    #header3{
-        display: none;
-    }
-    #header4{
-        display: none;
-    }
-    #header5{
-        display: none;
-    }
-    #header6{
-        display: none;
-    }
-    #headerbutton{
-        display: none;
-    }
-
+    color: white;
     #mobilemenu{
-        display: inline;
-        grid-area: menu;
-        font-size: 60px;
-        margin-top: 13%;
-        margin-left: 40%;
-        color: white;
+        display: none;
     }
-
-    #headerlogo{
-        grid-area: logo;
+    #mobilelogo{
+        display: none;
     }
-
+    #desktopnav{
+        display: flex;
+        justify-content: space-evenly;
+        #headerlogo{
+            width: 8%;
+        }
+    }
     
-    @include lg {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas:
-        "r1"
-        "r2";
-        padding-top: .5%;
-        font-size: 40px;
+    #row2{
+        display: flex;
+        justify-content: flex-end;
+        #headerbutton{
+            background-color: #408274;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
 
-        #mobilemenu{
+    @include md{
+        #desktopnav{
             display: none;
         }
-    
-        #row1{
-            margin-bottom: -1%;
-            grid-area: r1;
-            display: grid;
-            grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
-            grid-template-areas: 
-            ". hl h1 h2 h3 h4 h5 h6 .";
-        
-            #headerlogo{
-                padding-top: 3%;
-                grid-area: hl;
-                font-size: 25;
-            }
-            #header1{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h1;
-                font-size: 25;
-            }
-            #header2{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h2;
-                font-size: 25;
-            }
-            #header3{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h3;
-                font-size: 25;
-            }
-            #header4{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h4;
-                font-size: 25;
-            }
-            #header5{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h5;
-                font-size: 25;
-            }
-            #header6{
-                display: grid;
-                padding-top: 1%;
-                grid-area: h6;
-                font-size: 25;
-            }
-            #headerbutton{
-                display: grid;
-                padding-top: 1%;
-                grid-area: hb;
-                font-size: 25;
-            }
-    
-        }
-        
         #row2{
+            display: none;
+        }
+    }
+
+    @include xl{
+        #desktopnav{
+            display: flex;
+        }
+        #row2{
+            display: flex;
+
             #headerbutton{
-                display: inline;
-                white-space: nowrap;
-                background-color: #408274;
-                padding-right: 3%;
-                padding-left: 3%;
                 padding-top: 1%;
                 padding-bottom: 1%;
-                margin-left: 81.42%;
-                border-style: none;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                color: white;
+                padding-right: 1%;
+                padding-left: 1%;
                 font-size: 40px;
-                margin-top: 1%;
+                border: none;
             }
-            grid-area: r2;
-            
         }
-        background-color: #1B4561;
-        color: white;
-        margin-bottom: -3%;
+        p{
+            font-size: 28px;
+        }
+    }
+
+    @include lg{
+        #p{
+            font-size: 16px;
+        }
+        #headerbutton{
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-right: 1%;
+            padding-left: 1%;
+            font-size: 16px;
+            border: none;
+        }
     }
 }

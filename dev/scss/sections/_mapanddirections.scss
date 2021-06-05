@@ -1,7 +1,6 @@
 #mapanddirections{
     background-color: #1B4561;
     padding-top: 10%;
-    padding-bottom: 5%;
     color: white;
 
     #mapheader{
@@ -17,6 +16,14 @@
         background-size: contain;
         background-repeat: no-repeat;
         min-height: 60vh;
+    }
+
+    #mapanddirectionstext{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: 15%;
+        margin-top: -15%;
+        font-size: 16px;
     }
 
 
@@ -40,8 +47,10 @@
             color: #EFA541;
         }
         #mapanddirectionstext{
-            grid-area: mt;
+            margin-left: 0%;
             margin-right: 6%;
+            padding-bottom: 0%;
+            grid-area: mt;
             p{
                 font-size: 25px;
             }

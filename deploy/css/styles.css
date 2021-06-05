@@ -367,243 +367,131 @@ h3 {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 10% 20% 20% 20% 30% 0%;
-  grid-template-areas: ". logo . . menu .";
   background-color: #1B4561;
-}
-header #header1 {
-  display: none;
-}
-header #header2 {
-  display: none;
-}
-header #header3 {
-  display: none;
-}
-header #header4 {
-  display: none;
-}
-header #header5 {
-  display: none;
-}
-header #header6 {
-  display: none;
-}
-header #headerbutton {
-  display: none;
-}
-header #mobilemenu {
-  display: inline;
-  grid-area: menu;
-  font-size: 60px;
-  margin-top: 13%;
-  margin-left: 40%;
   color: white;
 }
-header #headerlogo {
-  grid-area: logo;
+header #mobilemenu {
+  display: none;
 }
-@media (min-width: 1024px) {
-  header {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "r1" "r2";
-    padding-top: 0.5%;
-    font-size: 40px;
-    background-color: #1B4561;
-    color: white;
-    margin-bottom: -3%;
-  }
-  header #mobilemenu {
+header #mobilelogo {
+  display: none;
+}
+header #desktopnav {
+  display: flex;
+  justify-content: space-evenly;
+}
+header #desktopnav #headerlogo {
+  width: 8%;
+}
+header #row2 {
+  display: flex;
+  justify-content: flex-end;
+}
+header #row2 #headerbutton {
+  background-color: #408274;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 768px) {
+  header #desktopnav {
     display: none;
   }
-  header #row1 {
-    margin-bottom: -1%;
-    grid-area: r1;
-    display: grid;
-    grid-template-columns: 1% 15% 15% 15% 15% 15% 15% 8%;
-    grid-template-areas: ". hl h1 h2 h3 h4 h5 h6 .";
+  header #row2 {
+    display: none;
   }
-  header #row1 #headerlogo {
-    padding-top: 3%;
-    grid-area: hl;
-    font-size: 25;
-  }
-  header #row1 #header1 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h1;
-    font-size: 25;
-  }
-  header #row1 #header2 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h2;
-    font-size: 25;
-  }
-  header #row1 #header3 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h3;
-    font-size: 25;
-  }
-  header #row1 #header4 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h4;
-    font-size: 25;
-  }
-  header #row1 #header5 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h5;
-    font-size: 25;
-  }
-  header #row1 #header6 {
-    display: grid;
-    padding-top: 1%;
-    grid-area: h6;
-    font-size: 25;
-  }
-  header #row1 #headerbutton {
-    display: grid;
-    padding-top: 1%;
-    grid-area: hb;
-    font-size: 25;
+}
+@media (min-width: 1200px) {
+  header #desktopnav {
+    display: flex;
   }
   header #row2 {
-    grid-area: r2;
+    display: flex;
   }
   header #row2 #headerbutton {
-    display: inline;
-    white-space: nowrap;
-    background-color: #408274;
-    padding-right: 3%;
-    padding-left: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin-left: 81.42%;
-    border-style: none;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    color: white;
+    padding-right: 1%;
+    padding-left: 1%;
     font-size: 40px;
-    margin-top: 1%;
+    border: none;
+  }
+  header p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  header #p {
+    font-size: 16px;
+  }
+  header #headerbutton {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 16px;
+    border: none;
   }
 }
 
-#videocontainer #videoimg {
-  background-image: url(../img/videoreoptimized.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#videocontainer #videoimg #video {
+  max-width: 100%;
+}
+#videocontainer #videotext {
+  background-color: #D2E9FF;
   display: flex;
-  min-height: 30vh;
-  margin-bottom: 0%;
-}
-#videocontainer #circlediv {
-  background-image: url(../img/videobackgroundmobile.png);
-  min-height: 100vh;
+  background-image: url(../img/Videobackground.png);
+  min-width: 80vh;
+  min-height: 60vh;
+  max-height: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
+  background-position: bottom right;
   background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: -1%;
 }
-#videocontainer #circlediv #circledivtext {
+#videocontainer #videotext p {
   font-size: 20px;
-  padding-top: 6%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
-#videocontainer #NiagaraFalls {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: left;
-  margin-top: 5%;
-  padding-left: 8%;
-  white-space: nowrap;
-}
-#videocontainer #yourstoexplore {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 35px;
-  color: #FFFFFF;
-  text-align: left;
-  padding-left: 22%;
-  margin-top: -12%;
-  white-space: nowrap;
-}
-@media (min-width: 1200px) {
-  #videocontainer {
-    display: grid;
-    grid-template-areas: "video1" "video2";
-    margin-top: 3%;
-  }
-  #videocontainer #videoimg {
-    grid-area: video1;
-    background-image: url(../img/videoreoptimized.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    min-height: 80vh;
-    margin-bottom: 0%;
-  }
+@media (min-width: 768px) {
   #videocontainer #videotext {
-    font-family: "OpenSans-Regular";
-    font-size: 25px;
-    color: #000000;
+    margin-top: -1%;
   }
-  #videocontainer #videotext #vt1 {
-    grid-area: vt1;
+  #videocontainer #videotext p {
+    font-size: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 5%;
   }
-  #videocontainer #videotext #circlediv {
-    grid-area: circle;
-    background-image: url(../img/Videobackground.png);
-    min-height: 70vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center 0;
-    display: flex;
+}
+@media (min-width: 1024px) {
+  #videocontainer #videotext {
+    margin-top: -1%;
   }
-  #videocontainer #videotext #circlediv #circledivtext {
-    font-family: "OpenSans-Regular";
-    font-size: 40px;
-    color: #000000;
+  #videocontainer #videotext p {
+    font-size: 30px;
     margin-right: 45%;
     margin-left: 5%;
-    margin-top: 3%;
+    padding-top: 5%;
   }
-  #videocontainer #NiagaraFalls {
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-    font-size: 200px;
-    color: #FFFFFF;
-    text-align: left;
-    margin-top: 5%;
-    padding-left: 8%;
-    white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  #videocontainer #videotext {
+    margin-top: -1%;
   }
-  #videocontainer #yourstoexplore {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 150px;
-    color: #FFFFFF;
-    text-align: left;
-    padding-left: 22%;
-    margin-top: -18%;
-    white-space: nowrap;
+  #videocontainer #videotext p {
+    font-size: 40px;
+    margin-right: 45%;
+    margin-left: 5%;
+    padding-top: 5%;
+    margin-top: -1%;
   }
 }
 
 /* =============
     attractions
 ============= */
-#attractions #attractionsmainhero {
-  margin-top: -20%;
-}
 #attractions #attractionsmainhero #attractionsheading {
   font-family: "PlayfairDisplay-Bold";
   font-size: 20px;
@@ -612,15 +500,12 @@ header #headerlogo {
 }
 #attractions #attractionsmainhero #attractionsheroimage {
   background-image: url(../img/attractionhero1.png);
+  min-height: 505px;
   background-size: cover;
-  min-height: 28vh;
   background-position: center;
   margin-bottom: 5%;
 }
 #attractions #attractionsmainhero #attractionsherotext1 {
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-bottom: 5%;
   font-size: 16px;
 }
 #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
@@ -640,7 +525,7 @@ header #headerlogo {
 }
 #attractions #attractionshero2 #attractionsherospot2 {
   background-image: url(../img/attractionhero2.png);
-  min-height: 28vh;
+  min-height: 505px;
   background-size: cover;
   background-position: center;
   margin-bottom: 5%;
@@ -662,7 +547,7 @@ header #headerlogo {
 }
 #attractions #attractionshero3 #attractionsherospot3 {
   background-image: url(../img/attractionhero3.png);
-  min-height: 28vh;
+  min-height: 505px;
   background-size: cover;
   background-position: center;
   margin-bottom: 5%;
@@ -682,14 +567,13 @@ header #headerlogo {
   color: white;
   font-family: "Open Sans", sans-serif;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #attractions {
     padding-top: 10%;
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 0% 50% 50% 0%;
     grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
     padding-bottom: 10%;
-    margin-top: 8%;
   }
   #attractions #attractionsmainhero {
     grid-area: h1;
@@ -703,10 +587,11 @@ header #headerlogo {
   #attractions #attractionsmainhero #attractionsheroimage {
     grid-area: h;
     background-image: url(../img/attractionhero1.png);
-    background-size: cover;
-    min-height: 60vh;
-    background-position: center;
-    margin-bottom: 0%;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    max-height: 100%;
   }
   #attractions #attractionsmainhero #attractionsherotext1 {
     grid-area: ht1;
@@ -720,7 +605,155 @@ header #headerlogo {
     margin-right: 0%;
     margin-left: 0%;
     margin-bottom: 0%;
-    font-size: 30px;
+    font-size: 20px;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
+    background-color: #408274;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #attractionsmainhero #attractionsherotext2 {
+    display: inline;
+    grid-area: ht2;
+    background-color: #D2E9FF;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero2 {
+    grid-area: h2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah2" "t1";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero2 #attractionsherospot2 {
+    background-image: url(../img/attractionhero2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1.5%;
+    min-height: 35vh;
+    background-position: center bottom;
+    grid-area: ah2;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero2 #text1 {
+    grid-area: t1;
+    background-color: #1B4561;
+    margin-right: 1.5%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-right: 1.5%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero2 #ah2button {
+    background-color: #408274;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #attractionshero3 {
+    grid-area: h3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah3" "t2";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero3 #attractionsherospot3 {
+    background-image: url(../img/attractionhero3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 505px;
+    background-position: top;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero3 #text2 {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    grid-area: t3;
+    grid-area: t2;
+    background-color: #1B4561;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero3 #ah3button {
+    background-color: #408274;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #seemoreattractions {
+    display: block;
+    grid-area: b;
+    background-color: #408274;
+    color: white;
+  }
+  #attractions h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+}
+@media (min-width: 1024px) {
+  #attractions {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
+    padding-bottom: 10%;
+  }
+  #attractions #attractionsmainhero {
+    grid-area: h1;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "heading heading" "h h" "ht1 ht2";
+  }
+  #attractions #attractionsmainhero #attractionsheading {
+    grid-area: heading;
+  }
+  #attractions #attractionsmainhero #attractionsheroimage {
+    grid-area: h;
+    background-image: url(../img/attractionhero1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 {
+    grid-area: ht1;
+    color: white;
+    background-color: #1B4561;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
   }
   #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
     padding-left: 7%;
@@ -745,7 +778,7 @@ header #headerlogo {
     padding-right: 7%;
     padding-top: 3%;
     padding-bottom: 5%;
-    font-size: 30px;
+    font-size: 20px;
   }
   #attractions #attractionshero2 {
     grid-area: h2;
@@ -757,10 +790,10 @@ header #headerlogo {
   }
   #attractions #attractionshero2 #attractionsherospot2 {
     background-image: url(../img/attractionhero2.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin-right: 1.5%;
-    min-height: 40vh;
+    min-height: 35vh;
     background-position: center bottom;
     grid-area: ah2;
     margin-bottom: 0%;
@@ -777,7 +810,7 @@ header #headerlogo {
     margin-right: 1.5%;
     margin-left: 0%;
     margin-bottom: 0%;
-    font-size: 30px;
+    font-size: 20px;
   }
   #attractions #attractionshero2 #ah2button {
     padding-left: 7%;
@@ -793,7 +826,7 @@ header #headerlogo {
     font-family: "Open Sans", sans-serif;
     white-space: nowrap;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
   }
   #attractions #attractionshero3 {
     grid-area: h3;
@@ -805,11 +838,10 @@ header #headerlogo {
   }
   #attractions #attractionshero3 #attractionsherospot3 {
     background-image: url(../img/attractionhero3.png);
-    background-size: cover;
-    min-height: 25vh;
-    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 505px;
     margin-right: 1.5%;
-    min-height: 40vh;
     background-position: center bottom;
     margin-bottom: 0%;
   }
@@ -826,7 +858,7 @@ header #headerlogo {
     padding-right: 2%;
     padding-bottom: 3%;
     padding-top: 3%;
-    font-size: 30px;
+    font-size: 20px;
   }
   #attractions #attractionshero3 #ah3button {
     padding-left: 7%;
@@ -840,7 +872,182 @@ header #headerlogo {
     margin-right: 0%;
     color: white;
     font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #seemoreattractions {
+    display: inline;
+    grid-area: b;
+    margin-left: 60%;
+    margin-top: 2%;
+    background-color: #408274;
+    color: white;
+  }
+  #attractions h1 {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 70px;
+    color: #EFA541;
+  }
+}
+@media (min-width: 1200px) {
+  #attractions {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
+    padding-bottom: 10%;
+  }
+  #attractions #attractionsmainhero {
+    grid-area: h1;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "heading heading" "h h" "ht1 ht2";
+  }
+  #attractions #attractionsmainhero #attractionsheading {
+    grid-area: heading;
+  }
+  #attractions #attractionsmainhero #attractionsheroimage {
+    grid-area: h;
+    background-image: url(../img/attractionhero1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 {
+    grid-area: ht1;
+    color: white;
+    background-color: #1B4561;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+  }
+  #attractions #attractionsmainhero #attractionsherotext2 {
+    display: inline;
+    grid-area: ht2;
+    background-color: #D2E9FF;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero2 {
+    grid-area: h2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah2" "t1";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero2 #attractionsherospot2 {
+    background-image: url(../img/attractionhero2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1.5%;
+    min-height: 35vh;
+    background-position: center bottom;
+    grid-area: ah2;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero2 #text1 {
+    grid-area: t1;
+    background-color: #1B4561;
+    margin-right: 1.5%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-right: 1.5%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero2 #ah2button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    border: none;
+    font-size: 20px;
+  }
+  #attractions #attractionshero3 {
+    grid-area: h3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ah3" "t2";
+    padding-top: 3%;
+  }
+  #attractions #attractionshero3 #attractionsherospot3 {
+    background-image: url(../img/attractionhero3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 505px;
+    margin-right: 1.5%;
+    background-position: center bottom;
+    margin-bottom: 0%;
+  }
+  #attractions #attractionshero3 #text2 {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    grid-area: t3;
+    grid-area: t2;
+    background-color: #1B4561;
+    margin-right: 1.5%;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 20px;
+  }
+  #attractions #attractionshero3 #ah3button {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    background-color: #408274;
+    margin-left: 70%;
+    margin-right: 0%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
     white-space: nowrap;
     border: none;
   }
@@ -868,6 +1075,10 @@ header #headerlogo {
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "h" "lc" "rc";
+}
+#discoverypass #discoverybuttonflex {
+  display: flex;
+  justify-content: center;
 }
 #discoverypass #discoverypassheading {
   grid-area: h;
@@ -905,6 +1116,7 @@ header #headerlogo {
   padding-bottom: 3%;
   color: white;
   font-family: "Open Sans", sans-serif;
+  margin-top: 5%;
 }
 @media (min-width: 1200px) {
   #discoverypass {
@@ -965,6 +1177,7 @@ header #headerlogo {
     margin-left: 0%;
     margin-right: 0%;
     padding-bottom: 0%;
+    margin-top: 0%;
   }
   #discoverypass #rightcolumn p {
     font-size: 25px;
@@ -1019,7 +1232,7 @@ header #headerlogo {
   #feelthepower #feelthepowerdiv #feelthepowerh {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     white-space: nowrap;
     margin-right: 0%;
     margin-left: 0%;
@@ -1148,9 +1361,22 @@ header #headerlogo {
 /* =============
     planyourtrip
 ============= */
+#planyourtrip .planyourtripbuttonflex {
+  display: flex;
+  justify-content: center;
+}
+#planyourtrip .planyourtripbutton {
+  background-color: #408274;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
 #planyourtrip #pg1 {
   background-image: url(../img/planyourtriphero2.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 25vh;
@@ -1163,7 +1389,7 @@ header #headerlogo {
 }
 #planyourtrip #pg3 {
   background-image: url(../img/planyourtriphero3.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 25vh;
@@ -1208,7 +1434,7 @@ header #headerlogo {
   #planyourtrip #plangrid #pg1 {
     grid-area: pg1;
     background-image: url(../img/planyourtriphero2.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 20vh;
@@ -1227,7 +1453,7 @@ header #headerlogo {
   #planyourtrip #plangrid #pg3 {
     grid-area: pg3;
     background-image: url(../img/planyourtriphero3.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 20vh;
@@ -1316,7 +1542,6 @@ header #headerlogo {
 #mapanddirections {
   background-color: #1B4561;
   padding-top: 10%;
-  padding-bottom: 5%;
   color: white;
 }
 #mapanddirections #mapheader {
@@ -1331,6 +1556,13 @@ header #headerlogo {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 60vh;
+}
+#mapanddirections #mapanddirectionstext {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 15%;
+  margin-top: -15%;
+  font-size: 16px;
 }
 #mapanddirections #googlemap {
   display: none;
@@ -1354,8 +1586,10 @@ header #headerlogo {
     color: #EFA541;
   }
   #mapanddirections #mapanddirectionstext {
-    grid-area: mt;
+    margin-left: 0%;
     margin-right: 6%;
+    padding-bottom: 0%;
+    grid-area: mt;
   }
   #mapanddirections #mapanddirectionstext p {
     font-size: 25px;
@@ -1423,9 +1657,41 @@ header #headerlogo {
   }
 }
 
+#stateparkmap {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+#stateparkmap #stateparkmapheader {
+  grid-area: spmh;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 35px;
+  color: #EFA541;
+  margin-left: 5%;
+}
+#stateparkmap #stateparkmaphero {
+  grid-area: spmhero;
+  background-image: url(../img/stateparkmaphero1.png);
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#stateparkmap #stateparkbuttonflex {
+  display: flex;
+  justify-content: center;
+}
+#stateparkmap #stateparkbuttonflex #stateparkmapbutton {
+  background-color: #408274;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
 @media (min-width: 1200px) {
   #stateparkmap {
     margin-top: 10%;
+    margin-bottom: 0%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
@@ -1435,6 +1701,8 @@ header #headerlogo {
     font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
     color: #EFA541;
+    margin-right: 5%;
+    margin-left: 0%;
   }
   #stateparkmap #stateparkmaphero {
     grid-area: spmhero;
@@ -1449,6 +1717,20 @@ header #headerlogo {
   }
 }
 
+#parking {
+  padding-bottom: 5%;
+}
+#parking h1 {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 40px;
+  color: #EFA541;
+  margin-left: 5%;
+}
+#parking p {
+  font-size: 16px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 @media (min-width: 1200px) {
   #parking {
     display: grid;
@@ -1456,20 +1738,82 @@ header #headerlogo {
     grid-template-areas: ". parkingdiv .";
     margin-top: 14%;
     margin-bottom: 2%;
+    padding-bottom: 0%;
   }
   #parking h1 {
     font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
     color: #EFA541;
+    margin-left: 0%;
   }
   #parking p {
     font-size: 30px;
+    margin-right: 0%;
+    margin-left: 0%;
   }
   #parking #parkingdiv {
     grid-area: parkingdiv;
   }
 }
 
+#contactus {
+  background-color: #D2E9FF;
+  padding-top: 2%;
+  padding-bottom: 8%;
+  margin-top: 15%;
+}
+#contactus #contactusheader {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 40px;
+  color: #EFA541;
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#contactus .contactustextclass {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 30%;
+  margin-left: 5%;
+}
+#contactus p {
+  font-family: "Open Sans", sans-serif;
+}
+#contactus #contact1 {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+#contactus #contact2 {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+#contactus #contact3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10%;
+}
+#contactus #contactusgrid {
+  grid-area: contactus1;
+}
+#contactus #contactusicondiv {
+  font-size: 40px;
+  margin-left: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  grid-template-areas: ". contactusicon1 contactusicon2 contactusicon3 contactusicon4 .";
+}
+#contactus #contactusicondiv #contactusicon1 {
+  grid-area: contactusicon1;
+}
+#contactus #contactusicondiv #contactusicon2 {
+  grid-area: contactusicon2;
+}
+#contactus #contactusicondiv #contactusicon3 {
+  grid-area: contactusicon3;
+}
+#contactus #contactusicondiv #contactusicon4 {
+  grid-area: contactusicon4;
+}
 @media (min-width: 1200px) {
   #contactus {
     display: grid;
@@ -1482,23 +1826,33 @@ header #headerlogo {
   }
   #contactus p {
     font-weight: bold;
+    margin-right: 0%;
+    margin-left: 0%;
   }
-  #contactus h1 {
+  #contactus #contactusheader {
     font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
     color: #EFA541;
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
   #contactus #contact1 {
     font-size: 25px;
+    padding-bottom: 0%;
   }
   #contactus #contact2 {
     font-size: 28px;
+    padding-bottom: 0%;
   }
   #contactus #contact3 {
     font-size: 30px;
+    padding-bottom: 0%;
   }
-  #contactus #footericondiv {
+  #contactus #contactusicondiv {
     font-size: 100px;
+    margin-left: 0%;
+    padding-bottom: 0%;
   }
   #contactus #contactusgrid {
     grid-area: contactus1;
@@ -1508,6 +1862,54 @@ header #headerlogo {
 /* =============
     footer
 ============= */
+#footer {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  background-color: #1B4561;
+  color: white;
+  font-family: "OpenSans-Regular";
+  font-size: 16px;
+}
+#footer #footerlogomobilediv {
+  display: flex;
+  justify-content: center;
+}
+#footer #mobilelogotext {
+  display: flex;
+  justify-content: center;
+  font-family: "OpenSans-Regular";
+  font-size: 20px;
+}
+#footer #footerrow2 {
+  margin-left: 20%;
+  margin-right: 50%;
+  font-weight: bold;
+}
+#footer #footerdirections {
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: "OpenSans-Regular";
+}
+#footer #footericondiv {
+  font-size: 40px;
+  grid-area: fr4;
+  display: grid;
+  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  grid-template-areas: ". fi1 fi2 fi3 fi4 .";
+  margin-left: 4%;
+}
+#footer #footericondiv #footericon1 {
+  grid-area: fi1;
+}
+#footer #footericondiv #footericon2 {
+  grid-area: fi2;
+}
+#footer #footericondiv #footericon3 {
+  grid-area: fi3;
+}
+#footer #footericondiv #footericon4 {
+  grid-area: fi4;
+}
 @media (min-width: 1024px) {
   #footer {
     display: grid;
@@ -1529,6 +1931,7 @@ header #headerlogo {
     grid-area: fl;
   }
   #footer #footerrow2 {
+    margin-left: 0%;
     grid-area: fr2;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -1554,6 +1957,8 @@ header #headerlogo {
     grid-area: f6;
   }
   #footer #footerdirections {
+    margin-left: 0%;
+    margin-right: 0%;
     grid-area: fr3;
     display: grid;
     grid-template-columns: 45% 10% 45%;

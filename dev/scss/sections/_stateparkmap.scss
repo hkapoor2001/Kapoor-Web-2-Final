@@ -1,6 +1,42 @@
 #stateparkmap{
+    #stateparkmapheader{
+        grid-area: spmh;
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 35px;
+        color: #EFA541;
+        margin-left: 5%;
+    }
+    
+
+    #stateparkmaphero{
+        grid-area: spmhero;
+        background-image: url(../img/stateparkmaphero1.png) ;
+        min-height: 40vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #stateparkbuttonflex{
+        display: flex;
+        justify-content: center;
+        #stateparkmapbutton{
+            background-color: #408274;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+
     @include xl {
         margin-top: 10%;
+        margin-bottom: 0%;
         display: grid;
         grid-template-columns: 20% 60% 20%;
         grid-template-areas: 
@@ -13,6 +49,8 @@
             font-family: 'PlayfairDisplay-Bold';
             font-size: 70px;
             color: #EFA541;
+            margin-right: 5%;
+            margin-left: 0%;
         }
         #stateparkmaphero{
             grid-area: spmhero;

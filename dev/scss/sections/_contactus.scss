@@ -1,25 +1,101 @@
 #contactus{
+
+    #contactusheader{
+        font-family: 'PlayfairDisplay-Bold';
+        font-size: 40px;
+        color: #EFA541;
+        margin-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .contactustextclass{
+        font-family: 'Open Sans', sans-serif;
+        margin-right: 30%;
+        margin-left: 5%;
+
+    }
+
+    p{
+        font-family: 'Open Sans', sans-serif;
+    }
+    #contact1{
+        font-size: 16px;
+        padding-bottom: 5%;
+    }
+    #contact2{
+        font-size: 16px;
+        padding-bottom: 5%;
+    }
+    #contact3{
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10%;
+    }
+    
+    background-color: #D2E9FF;
+    padding-top: 2%;
+    padding-bottom: 8%;
+    margin-top: 15%;
+
+    #contactusgrid{
+        grid-area: contactus1;
+    }
+    #contactusicondiv{
+        font-size: 40px;
+        margin-left: 5%;
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+        grid-template-areas: 
+        ". contactusicon1 contactusicon2 contactusicon3 contactusicon4 .";
+        #contactusicon1{
+            grid-area: contactusicon1;
+        }
+        #contactusicon2{
+            grid-area: contactusicon2;
+        }
+        #contactusicon3{
+            grid-area: contactusicon3;
+        }
+        #contactusicon4{
+            grid-area: contactusicon4;
+        }
+    }
+
+
+
     @include xl {
         p{
             font-weight: bold;
+            margin-right: 0%;
+            margin-left: 0%;
         }
-        h1{
+        #contactusheader{
             font-family: 'PlayfairDisplay-Bold';
             font-size: 70px;
             color: #EFA541;
+            margin-left: 0%;
+            padding-top: 0%;
+            padding-bottom: 0%;
         }
         #contact1{
             font-size: 25px;
+            padding-bottom: 0%;
         }
         #contact2{
             font-size: 28px;
+            padding-bottom: 0%;
         }
         #contact3{
             font-size: 30px;
+            padding-bottom: 0%;
         }
     
-        #footericondiv{
+        #contactusicondiv{
             font-size: 100px;
+            margin-left: 0%;
+            padding-bottom: 0%;
         }
         display: grid;
         grid-template-columns: 10% 40% 50%;

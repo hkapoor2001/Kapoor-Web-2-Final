@@ -26,46 +26,39 @@
 <body>
     <header>
     <div id="row1">
-        <img src="img/logo1.png" alt="Logo" id="headerlogo">
-        <p id="header1">Attractions</p>
-        <p id="header2">Discovery Pass</p>
-        <p id="header3">History of Niagara</p>
-        <p id="header4">Maps and Directions</p>
-        <p id="header5">Plan your Trip</p>
-        <p id="header6">Contact Us</p> 
+        <div id="mobilelogo">
+        </div>
+        <div id="desktopnav">
+            <div id="headerlogo">
+                <img src="img/logo1.png" alt="logo">
+            </div>
+            <p id="header1">Attractions</p>
+            <p id="header2">Discovery Pass</p>
+            <p id="header3">History of Niagara</p>
+            <p id="header4">Maps and Directions</p>
+            <p id="header5">Plan your Trip</p>
+            <p id="header6">Contact Us</p> 
+        </div>
+        <div id="mobilemenu">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
-    
-    <div id="mobilemenu">
-        <i class="fas fa-bars"></i>
-    </div>
-    
-    <div id="row2">
+    <div id=row2>
         <button id="headerbutton">Buy Discovery Passes</button>
     </div>
+    
+    
     </header>
     <div id="videocontainer">
         
             <div id="videoimg">
-                <div id="videoflextext">
-                    <div>
-                        <p id="NiagaraFalls">Niagara Falls</p>
-                    </div>
-                    <div>
-                        <p id="yourstoexplore">yours to explore</p>
-                    </div>
-                </div>
+                <img src="img/Videohighreswithtext.png" alt="" id="video">
             </div>
         
             <div id="videotext">
-                <div id="vt1">
-                </div>
-                <div id="circlediv">
-                    <div id="circledivtext">
-                        <p>
-                            Open 365 days a year, Niagara Falls State Park has awe-inspiring scenery! It also features thrilling attractions, interactive exhibits, miles of hiking trails, and delectable dining options in a family-friendly environment. It's an adventure-packed experience! No passport is needed to experience an unforgettable and breathtaking Niagara Falls vacation.
-                        </p>
-                    </div>
-                </div>
+                <p>
+                    Open 365 days a year, Niagara Falls State Park has awe-inspiring scenery! It also features thrilling attractions, interactive exhibits, miles of hiking trails, and delectable dining options in a family-friendly environment. It's an adventure-packed experience! No passport is needed to experience an unforgettable and breathtaking Niagara Falls vacation.
+                </p>
             </div>
             
         </div>
@@ -77,7 +70,6 @@
                         <h1>Attractions</h1>
                     </section>
                     <section id="attractionsheroimage">
-                        
                     </section>
                     <section id="attractionsherotext1">
                         <p>Looking for a fun way to "explore the roar?" The Niagara Falls Maid of the Mist tour takes visitors on an excursion into the basin of Niagara Falls State Park’s Horseshoe Falls. The Maid of the Mist boat tour in Niagara Falls, NY has been described by generations of visitors as one of the highlights of their trip.</p>
@@ -149,7 +141,9 @@
                             <p>Child (6-12 years old)*       $35</p>
                             <p>*Niagara Falls offers FREE admission to all Park attractions to children 5 and under. Aquarium of Niagara honors Children 5 and under FREE with Discovery Pass.</p>
                             <p>There is a one dollar transaction fee per ticket for online Discovery Pass orders.</p>
-                            <button id="discoverybutton">Buy Discovery Passes</button>
+                            <div id="discoverybuttonflex">
+                                <button id="discoverybutton">Buy Discovery Passes</button>
+                            </div>
                         </section>
                         </div>
                 </div>
@@ -199,7 +193,9 @@
                                         <div id="pg2">
                                             <p>Experience Niagara Falls this winter and save. Check out the coupons that can be used through February 28, 2021!
                                                 Winter at Niagara Falls is really wonderful. And saving money isn't bad either. You can experience both with the Niagara Falls USA Winter Wonder Savings Pass. </p>
-                                                <button>Read More</button>  
+                                                <div class="planyourtripbuttonflex">
+                                                    <button class="planyourtripbutton">Read More</button>
+                                                </div>  
                                         </div>
                                         <div id="pg2h">
                                             <h2>Discover Niagara Shuttle</h2>
@@ -211,25 +207,29 @@
                                             <p>
                                                 Park your car and experience Niagara's iconic landscape, rich history and the thriving culture and communities along the scenic Niagara River with the ease and convenience of a hop-on/hop-off shuttle. Enjoy a day of discovery as you connect to 15 destination sites along the 14-mile route from the "Falls to the Fort." 
                                             </p>
-                                            <button>Read More</button>   
+                                            <div class="planyourtripbuttonflex">
+                                                <button class="planyourtripbutton">Read More</button>
+                                            </div>     
                                         </div>
                                     
                                         <div id="pg5">
                                             <h2>Download the Walking Tour App</h2>
-                                            <button>Read More</button>
+                                            <div class="planyourtripbuttonflex">
+                                                <button class="planyourtripbutton">Read More</button>
+                                            </div>
                                         </div>
                                     
                                         <div id="pg6">
                                             <h2>Niagara Falls Weather</h2>
-                                            <button>Read More</button>
+                                            <div class="planyourtripbuttonflex">
+                                                <button class="planyourtripbutton">Read More</button>
+                                            </div>
                                         </div>    
                                     </div>
                                 </section>
     <section id="comeforthewonder">
                                         <div id="comeforthewonderdiv">
-                                            <div id="comeforthewonderdiv">
-                                                <h1 id="wonderheader">Come for the Wonder, <br/> Stay for the Adventure</h1>
-                                            </div>
+                                            <h1 id="wonderheader">Come for the Wonder, <br/> Stay for the Adventure</h1>
                                             <div id="wonderheaderp">
                                                 <p>With plenty of things to do in Niagara Falls- from exploring awe-inspiring natural beauty, hiking  miles of trails through Niagara State park, or getting soaked on the Hurricane Deck- it’s the perfect destination for a family vacation or nature retreat. A Niagara falls trip is guarenteed to have something for everyone!</p> 
                                             </div>  
@@ -239,24 +239,22 @@
                                             <div id="mapheader">
                                                 <h1>Maps and Directions</h1>
                                             </div>
+                                            <div id="googlemap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46611.81778583913!2d-79.04384676166707!3d43.09950013457371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d363ea29e633b7%3A0x61975ae4b9c5aab3!2sNiagara%20Falls%2C%20NY!5e0!3m2!1sen!2sus!4v1621026711251!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                                            <div id="mobilemaphero"></div>
                                             <div id="mapanddirectionstext">
                                                 <p>Situated along the U.S./Canadian border, Niagara Falls State Park welcomes travelers from around the world. To reach Niagara Falls State Park, most visitors simply fly into the Buffalo Niagara International Airport (BUF) or drive in on Interstate 90. Plan your trip by using our map and directions to help you find the Falls with ease, and explore Niagara Falls State Park. </p>
                                                 <p>GPS Navigation
-                                            
-                                                    The best Niagara Falls address for your GPS system is:
-                                                    
-                                                    24 Buffalo Avenue
-                                                    
-                                                    Niagara Falls, NY, 14303
-                                                    
-                                                    The State Park does not have an actual physical address, therefore, this will bring you to the cross streets of 1st Street and Buffalo Avenue - which is the intersection at the entrance to the park and the base of the bridge to Goat Island.
-                                                    
-                                                    The exact coordinates of Niagara Falls are:
-                                                    
-                                                    Latitude 43.081528
-                                                    Longitude -79.064240</p></div>
-                                            <div id="googlemap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46611.81778583913!2d-79.04384676166707!3d43.09950013457371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d363ea29e633b7%3A0x61975ae4b9c5aab3!2sNiagara%20Falls%2C%20NY!5e0!3m2!1sen!2sus!4v1621026711251!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                                            <div id="mobilemaphero"></div>
+                                                </p>
+                                                <p>The best Niagara Falls address for your GPS system is:</p>
+                                                <p>24 Buffalo Avenue</p>
+                                                <p>Niagara Falls, NY, 14303</p>
+                                                <p>The State Park does not have an actual physical address, therefore, this will bring you to the cross streets of 1st Street and Buffalo Avenue - which is the intersection at the entrance to the park and the base of the bridge to Goat Island.
+                                                </p>
+                                                <p>The exact coordinates of Niagara Falls are:</p>
+                                                <p>
+                                                    Latitude 43.081528 <br/> Longitude -79.064240</p>
+                                            </div>
+                                        
                                         </section>
     <section id="getdirections">
                                             </section>
@@ -302,7 +300,9 @@
                                                         <h1 id="stateparkmapheader">Niagara State Park Map</h1>
                                                         <div id="stateparkmaphero">
                                                         </div>
-                                                        <button id="stateparkmapbutton">Download State Park Map</button>
+                                                        <div id="stateparkbuttonflex">
+                                                            <button id="stateparkmapbutton">Download State Park Map</button>
+                                                        </div>
                                                     </section>
     <section id="parking">
                                                             <div id="parkingdiv">
@@ -319,29 +319,34 @@
                                                         </section>
     <section id="contactus">
                                                                 <div id="contactusgrid">
-                                                                    <h1>
+                                                                    <h1 class="contactustextclass" id="contactusheader">
                                                                         Contact Us
                                                                     </h1>
-                                                                    <p id="contact1">Whether you have questions about Niagara Falls, the attractions, or need additional information to help you plan your trip, our accommodating staff will assist you with whatever you need. Simply contact us via the information below, or fill out the form to receive a timely response.
+                                                                    <p class="contactustextclass" id="contact1">Whether you have questions about Niagara Falls, the attractions, or need additional information to help you plan your trip, our accommodating staff will assist you with whatever you need. Simply contact us via the information below, or fill out the form to receive a timely response.
                                                                     </p>
-                                                                    <p id="contact2">
+                                                                    <p class="contactustextclass" id="contact2">
                                                                         Niagara Falls State Park Visitor Center <br/> 
                                                                         332 Prospect St <br/>
                                                                         Niagara Falls, NY 14303 <br/> 
                                                                         Phone: 716-278-1794
                                                                     </p>
-                                                                    <div id="footericondiv">
-                                                                        <i class="fab fa-facebook-square"></i>
-                                                                        <i class="fab fa-twitter"></i>
-                                                                        <i class="fab fa-youtube"></i>
-                                                                        <i class="fab fa-instagram"></i>
-                                                                        <p id="contact3">Call our  Visitor Center at 716-278-1794.</p>
-                                                                    </div>
+                                                                    <p class="contactustextclass" id="contact3">
+                                                                        Call our  Visitor Center at 716-278-1794.
+                                                                    </p>
+                                                                        <div id="contactusicondiv">
+                                                                            <i id="contactusicon1" class="fab fa-facebook-square"></i>
+                                                                            <i id="contactusicon2" class="fab fa-twitter"></i>
+                                                                            <i id="contactusicon3" class="fab fa-youtube"></i>
+                                                                            <i id="contactusicon4" class="fab fa-instagram"></i>
+                                                                        </div>
                                                                 </div>
                                                             </section>
     <footer id="footer">
-                                                                    <div id="footerlogodiv">
-                                                                        <img src="img/logo1.png" alt="Logo" id="footerlogo">
+                                                                    <div id="footerlogomobilediv">
+                                                                        <img src="img/mobile-logo-footer.png" alt="logo">
+                                                                    </div>
+                                                                    <div id="mobilelogotext">
+                                                                        <p>Niagara Falls</p>
                                                                     </div>
                                                                     <div id="footerrow2">
                                                                         <p id="footer1">Attractions</p>

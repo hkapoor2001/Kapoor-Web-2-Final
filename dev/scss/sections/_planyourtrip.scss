@@ -4,10 +4,25 @@
 
 #planyourtrip{
 
+    .planyourtripbuttonflex{
+        display: flex;
+        justify-content: center;
+    }
+
+    .planyourtripbutton{
+        background-color: #408274;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
 
     #pg1{
         background-image: url(../img/planyourtriphero2.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         min-height: 25vh;
@@ -22,7 +37,7 @@
 
     #pg3{
         background-image: url(../img/planyourtriphero3.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         min-height: 25vh;
@@ -75,7 +90,7 @@
             #pg1{
                 grid-area: pg1;
                 background-image: url(../img/planyourtriphero2.png);
-                background-repeat: none;
+                background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
                 min-height: 20vh;
@@ -94,7 +109,7 @@
             #pg3{
                 grid-area: pg3;
                 background-image: url(../img/planyourtriphero3.png);
-                background-repeat: none;
+                background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
                 min-height: 20vh;

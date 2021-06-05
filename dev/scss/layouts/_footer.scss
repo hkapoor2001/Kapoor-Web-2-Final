@@ -3,6 +3,65 @@
 ============= */
 
 #footer{
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: #1B4561;
+    color: white;
+    font-family: 'OpenSans-Regular';
+    font-size: 16px;
+
+
+    #footerlogomobilediv{
+        display: flex;
+        justify-content: center;
+    }
+    #mobilelogotext{
+        display: flex;
+        justify-content: center;
+        font-family: 'OpenSans-Regular';
+        font-size: 20px;
+    }
+
+    #footerrow2{
+        margin-left: 20%;
+        margin-right: 50%;
+        font-weight: bold;
+    }
+
+    #footerdirections{
+        margin-left: 30%;
+        margin-right: 30%;
+        font-family: 'OpenSans-Regular';
+    }
+
+    #footericondiv{
+        font-size: 40px;
+        grid-area: fr4;
+        display: grid;
+        grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+        grid-template-areas: ". fi1 fi2 fi3 fi4 .";
+        margin-left: 4%;
+    
+    
+        #footericon1{
+            grid-area: fi1;
+        }
+        #footericon2{
+            grid-area: fi2;
+        }
+        #footericon3{
+            grid-area: fi3;
+        }
+        #footericon4{
+            grid-area: fi4;
+        }
+    }
+
+
+
+
+
     @include lg {
         display: grid;
         grid-template-areas: 
@@ -22,6 +81,7 @@
         }
         
         #footerrow2{
+            margin-left: 0%;
             grid-area: fr2;
             display: grid;
             grid-template-columns: 20% 20% 20% 20% 20%;
@@ -51,6 +111,8 @@
         }
         
         #footerdirections{
+            margin-left: 0%;
+            margin-right: 0%;
             grid-area: fr3;
             display: grid;
             grid-template-columns: 45% 10% 45%;

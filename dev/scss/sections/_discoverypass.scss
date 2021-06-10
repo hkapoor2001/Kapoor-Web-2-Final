@@ -2,20 +2,19 @@
     Discoverypass
 ============= */
 #discoverypass{
-
-    #discoverybuttonflex{
-        display: flex;
-        justify-content: center;
-    }
-
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas: 
     "h"
     "lc"
-    "rc";
+    "rc"
+    "b";
+
+    p{
+        font-size: 16px;
+    }
+
     #discoverypassheading{
         grid-area: h;
         h1{
@@ -37,13 +36,23 @@
         margin-left: 5%;
         margin-right: 5%;
         padding-bottom: 7%;
+        p{
+            font-size: 16px;
+        }
     }
     #rightcolumn{
         grid-area: rc;
         margin-left: 5%;
         margin-right: 5%;
         padding-bottom: 7%;
-
+        p{
+            font-size: 16px;
+        }
+    }
+    #discoverybuttonflex{
+        grid-area: b;
+        display: flex;
+        justify-content: center;
         #discoverybutton{
             background-color: #408274;
             padding-left: 3%;
@@ -62,13 +71,14 @@
 
 
 
-    @include xl {
-        padding-top: 0%;
-        h1{
-            font-family: 'PlayfairDisplay-Bold';
-            font-size: 70px;
-            color: #EFA541;;
-        }
+    @include md {
+        grid-template-columns:10% 26.6% 26.6% 26.6% 10%;
+        grid-template-areas:
+        ". h h h ."
+        ". lc lc rc ."
+        ". lc lc b .";
+
+
         h2{
             font-family: 'Open Sans', sans-serif;
             font-size: 40px;
@@ -78,18 +88,16 @@
             font-size: 30px;
         }
         p{
-            font-size: 30px;
+            font-size: 16px;
         }
-        display: grid;
-        grid-template-columns:30% 13.3% 13.3% 13.3% 30%;
-        grid-template-rows: max-content;
-        grid-template-areas:
-        ". h h h ."
-        ". lc lc rc .";
     
     
         #discoverypassheading{
             grid-area: h;
+            h1{
+                font-size: 70px;
+                margin-left: 0%;
+            }
             p{
                 margin-left: 0%;
                 margin-right: 0%;
@@ -100,33 +108,60 @@
         #leftcolumn{
             grid-area: lc;
             border-right: 8px solid #1B4561;
+            border-bottom: none;
             padding-right: 5%;
             margin-left: 0%;
             margin-right: 0%;
             padding-bottom: 0%;
-            border-bottom: none;
             p{
-                font-size: 25px;
+                font-size: 16px;
             }
         }
         #rightcolumn{
             padding-left: 15%;
             grid-area: rc;
-            #discoverybutton{
-                margin-top: 50%;
-                background-color: #408274;
-                margin-left: 30%;
-                border-radius: 15%;
-                color: white;
-                margin-left: 0%;
-                margin-right: 0%;
-                padding-bottom: 0%;
-                margin-top: 0%;
-            }
             p{
-                font-size: 25px;
+                font-size: 16px;
+            }
+            }
+            #discoverybuttonflex{
+                grid-area: b;
+                justify-content: flex-end;
+                align-content: flex-end;
+                #discoverybutton{
+                    background-color: #408274;
+                    margin-left: 30%;
+                    margin-right: 0%;
+                    margin-top: 20%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    color: white;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+        }
+    }
+
+    @include lg{
+        grid-template-columns:15% 23.3% 23.3% 23.3% 15%;
+        p{
+            font-size: 20px;
+        }
+        #rightcolumn{
+            p{
+                font-size: 20px;
             }
         }
-        padding-bottom: 15%;
+        #leftcolumn{
+            p{
+                font-size: 20px;
+            }
+        }
     }
+
+    @include xl{
+        grid-template-columns:20% 20% 20% 20% 20%;
+    }
+
+
 }

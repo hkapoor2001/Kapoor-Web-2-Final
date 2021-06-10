@@ -3,6 +3,7 @@
 ============= */
 
 #attractions{
+    margin-top: 10%;
     #attractionsmainhero{
         #attractionsheading{
             font-family: 'PlayfairDisplay-Bold';
@@ -11,17 +12,18 @@
             margin-left: 2%;
         }
         #attractionsheroimage{
-            background-image: url(../img/attractionhero1.png);
-            min-height: 505px;
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 5%;
+            #maidofthemisthero{
+                width: 100%;
+            }
         }
         
         #attractionsherotext1{
+            margin-right: 5%;
+            margin-left: 5%;
             font-size: 16px;
+            margin-bottom: 5%;
             #ht1button{
-                background-color: #408274;
+                background-color: $green;
                 padding-left: 3%;
                 padding-right: 3%;
                 padding-top: 3%;
@@ -40,11 +42,9 @@
 
     #attractionshero2{
         #attractionsherospot2{
-            background-image: url(../img/attractionhero2.png);
-            min-height: 505px;
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 5%;
+            #caveofthewindshero{
+                width: 100%;
+            }
         }
         #text1{
             margin-right: 5%;
@@ -53,7 +53,7 @@
             font-size: 16px;
         }
         #ah2button{
-            background-color: #408274;
+            background-color: $green;
             padding-left: 3%;
             padding-right: 3%;
             padding-top: 3%;
@@ -66,11 +66,9 @@
 
     #attractionshero3{
         #attractionsherospot3{
-            background-image: url(../img/attractionhero3.png);
-            min-height: 505px;
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 5%;
+            #aquariumofniagarahero{
+                width: 100%;
+            }
         }
         #text2{
             margin-right: 5%;
@@ -89,14 +87,16 @@
         }  
     }
 
+
+
     @include md {
-        padding-top: 10%;
         display: grid;
-        grid-template-columns: 0% 50% 50% 00%;
+        grid-template-columns: 0% 50% 50% 0%;
         grid-template-areas: 
         ". h1 h1 ."
         ". h2 h3 ."
         ". . b .";
+        
         #attractionsmainhero{
             grid-area: h1;
             display: grid;
@@ -113,45 +113,42 @@
             #attractionsheroimage{
                 grid-area: h;
 
-
-                background-image: url(../img/attractionhero1.png);
-                background-size: contain;
-                background-position: bottom;
-                background-repeat: no-repeat;
-                min-height: 100%;
-                max-height: 100%;
             }
     
             #attractionsherotext1{
                 grid-area: ht1;
                 color: white;
-                background-color: #1B4561;
+                background-color: $ocean;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
                 margin-top: 0%;
-
-
                 margin-right: 0%;
                 margin-left: 0%;
                 margin-bottom: 0%;
                 font-size: 20px;
+
+                #ht1buttondiv{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 24%;
+                    #ht1button{
+                        background-color: $green;
+                        margin-right: 0%;
+                        color: white;
+                        font-family: 'Open Sans', sans-serif;
+                        white-space: nowrap;
+                        border: none;
+                }
+                }
     
-                #ht1button{
-                    background-color: #408274;
-                    margin-right: 0%;
-                    color: white;
-                    font-family: 'Open Sans', sans-serif;
-                    white-space: nowrap;
-                    border: none;
-            }
             }
             
             #attractionsherotext2{
                 display: inline;
                 grid-area: ht2;
-                background-color: #D2E9FF;
+                background-color: $lightblue;
                 padding-left: 7%;
                 padding-right: 7%;
                 padding-top: 3%;
@@ -165,47 +162,45 @@
             grid-area: h2;
             display:grid;
             grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
             grid-template-areas: 
             "ah2"
             "t1";
     
     
             #attractionsherospot2{
-                background-image: url(../img/attractionhero2.png) ;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 1.5%;
-                min-height: 35vh;
-                background-position: center bottom;
                 grid-area: ah2;
-                margin-bottom: 0%;
+                margin-right: 1%;
+
             }
     
             #text1{
                 grid-area: t1;
-                background-color: #1B4561;
-                margin-right: 1.5%;
+                background-color: $ocean;
                 color: white;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
-                margin-right: 1.5%;
+                margin-right: 1%;
                 margin-left: 0%;
                 margin-bottom: 0%;
                 font-size: 20px;
             }
             padding-top: 3%;
-    
-            #ah2button{
-                background-color: #408274;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                white-space: nowrap;
-                border: none;
+
+            #ah2buttonflex{
+                display: flex;
+                justify-content: flex-end;
+                #ah2button{
+                    background-color: $green;
+                    margin-right: 0%;
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+                    white-space: nowrap;
+                    border: none;
+                }
             }
+
         }
     
     
@@ -214,490 +209,77 @@
             grid-area: h3;
             display:grid;
             grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
             grid-template-areas: 
             "ah3"
             "t2";
             
     
             #attractionsherospot3{
-                background-image: url(../img/attractionhero3.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                min-height: 505px;
-                background-position: top ;
-                margin-bottom: 0%;
+                grid-area: ah3;
+                margin-left: 1%;
             }
     
             #text2{
-                margin-right: 0%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                grid-area: t3;
                 grid-area: t2;
-                background-color: #1B4561;
+                background-color: $ocean;
                 color: white;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
+                margin-right: 0%;
+                margin-left: 1%;
+                margin-bottom: 0%;
                 font-size: 20px;
     
             }
             padding-top: 3%;
-    
-            #ah3button{
-                background-color: #408274;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                white-space: nowrap;
-                border: none;
+
+            #ah3buttonflex{
+                display: flex;
+                justify-content: flex-end;
+                #ah3button{
+                    background-color: $green;
+                    margin-right: 0%;
+                    color: $white;
+                    font-family: 'Open Sans', sans-serif;
+                    white-space: nowrap;
+                    border: none;
+                }
             }
+
         }
     
         #seemoreattractions{
             display: block;
             grid-area: b;
-            background-color: #408274;
-            color: white;
+            background-color: $green;
+            font-family: 'Open Sans', sans-serif;
+            color: $white;
+            font-size: 20px;
+            margin-left: 1%;
+            margin-left: 50%;
+            margin-top: 2.5%;
+            padding: 3%;
+            border: none;
         }
-    
-        padding-bottom: 10%;
+
 
 
         h1{
             font-family: 'PlayfairDisplay-Bold';
             font-size: 70px;
-            color: #EFA541;
+            color: $orange;
         }
     }
 
 
-
-
-
-    
-    @include lg {
-        padding-top: 10%;
-        display: grid;
+    @include lg{
         grid-template-columns: 10% 40% 40% 10%;
-        grid-template-areas: 
-        ". h1 h1 ."
-        ". h2 h3 ."
-        ". . b .";
-        #attractionsmainhero{
-            grid-area: h1;
-            display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-areas: 
-            "heading heading"
-            "h h"
-            "ht1 ht2";
-    
-            #attractionsheading{
-                grid-area: heading;
-            }
-    
-            #attractionsheroimage{
-                grid-area: h;
-
-
-                background-image: url(../img/attractionhero1.png);
-                background-size: contain;
-                background-position: bottom;
-                background-repeat: no-repeat;
-                min-height: 100%;
-                max-height: 100%;
-            }
-    
-            #attractionsherotext1{
-                grid-area: ht1;
-                color: white;
-                background-color: #1B4561;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                margin-top: 0%;
-
-
-                margin-right: 0%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                font-size: 20px;
-    
-                #ht1button{
-                    padding-left: 7%;
-                    padding-right: 7%;
-                    padding-top: 1%;
-                    padding-bottom: 1%;
-                    margin-top: 15%;
-                    margin-bottom: 0%;
-                    background-color: #408274;
-                    margin-left: 70%;
-                    margin-right: 0%;
-                    color: white;
-                    font-family: 'Open Sans', sans-serif;
-                    white-space: nowrap;
-                    border: none;
-            }
-            }
-            
-            #attractionsherotext2{
-                display: inline;
-                grid-area: ht2;
-                background-color: #D2E9FF;
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 3%;
-                padding-bottom: 5%;
-                font-size: 20px;
-    
-            }
-        }
-    
-        #attractionshero2{
-            grid-area: h2;
-            display:grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
-            grid-template-areas: 
-            "ah2"
-            "t1";
-    
-    
-            #attractionsherospot2{
-                background-image: url(../img/attractionhero2.png) ;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 1.5%;
-                min-height: 35vh;
-                background-position: center bottom;
-                grid-area: ah2;
-                margin-bottom: 0%;
-            }
-    
-            #text1{
-                grid-area: t1;
-                background-color: #1B4561;
-                margin-right: 1.5%;
-                color: white;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                margin-right: 1.5%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                font-size: 20px;
-            }
-            padding-top: 3%;
-    
-            #ah2button{
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                margin-top: 15%;
-                margin-bottom: 0%;
-                background-color: #408274;
-                margin-left: 70%;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                white-space: nowrap;
-                border: none;
-                font-size: 20px;
-            }
-        }
-    
-    
-    
-        #attractionshero3{
-            grid-area: h3;
-            display:grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
-            grid-template-areas: 
-            "ah3"
-            "t2";
-            
-    
-            #attractionsherospot3{
-                background-image: url(../img/attractionhero3.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                min-height: 505px;
-                margin-right: 1.5%;
-                background-position: center bottom;
-                margin-bottom: 0%;
-            }
-    
-            #text2{
-                margin-right: 0%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                grid-area: t3;
-                grid-area: t2;
-                background-color: #1B4561;
-                margin-right: 1.5%;
-                color: white;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                font-size: 20px;
-    
-            }
-            padding-top: 3%;
-    
-            #ah3button{
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                margin-top: 15%;
-                margin-bottom: 0%;
-                background-color: #408274;
-                margin-left: 70%;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                font-size: 20px;
-                white-space: nowrap;
-                border: none;
-            }
-        }
-    
-        #seemoreattractions{
-            display: inline;
-            grid-area: b;
-            margin-left: 60%;
-            margin-top: 2%;
-            background-color: #408274;
-            color: white;
-        }
-    
-        padding-bottom: 10%;
-
-
-        h1{
-            font-family: 'PlayfairDisplay-Bold';
-            font-size: 70px;
-            color: #EFA541;
-        }
     }
-
-    @include xl {
-        padding-top: 10%;
-        display: grid;
+    
+    @include xl{
         grid-template-columns: 20% 30% 30% 20%;
-        grid-template-areas: 
-        ". h1 h1 ."
-        ". h2 h3 ."
-        ". . b .";
-        #attractionsmainhero{
-            grid-area: h1;
-            display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-areas: 
-            "heading heading"
-            "h h"
-            "ht1 ht2";
-    
-            #attractionsheading{
-                grid-area: heading;
-            }
-    
-            #attractionsheroimage{
-                grid-area: h;
-
-
-                background-image: url(../img/attractionhero1.png);
-                background-size: contain;
-                background-position: bottom;
-                background-repeat: no-repeat;
-                min-height: 100%;
-                max-height: 100%;
-            }
-    
-            #attractionsherotext1{
-                grid-area: ht1;
-                color: white;
-                background-color: #1B4561;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                margin-top: 0%;
-
-
-                margin-right: 0%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                font-size: 20px;
-    
-                #ht1button{
-                    padding-left: 7%;
-                    padding-right: 7%;
-                    padding-top: 1%;
-                    padding-bottom: 1%;
-                    margin-top: 15%;
-                    margin-bottom: 0%;
-                    background-color: #408274;
-                    margin-left: 70%;
-                    margin-right: 0%;
-                    color: white;
-                    font-family: 'Open Sans', sans-serif;
-                    white-space: nowrap;
-                    border: none;
-            }
-            }
-            
-            #attractionsherotext2{
-                display: inline;
-                grid-area: ht2;
-                background-color: #D2E9FF;
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 3%;
-                padding-bottom: 5%;
-                font-size: 20px;
-    
-            }
-        }
-    
-        #attractionshero2{
-            grid-area: h2;
-            display:grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
-            grid-template-areas: 
-            "ah2"
-            "t1";
-    
-    
-            #attractionsherospot2{
-                background-image: url(../img/attractionhero2.png) ;
-                background-size: contain;
-                background-repeat: no-repeat;
-                margin-right: 1.5%;
-                min-height: 35vh;
-                background-position: center bottom;
-                grid-area: ah2;
-                margin-bottom: 0%;
-            }
-    
-            #text1{
-                grid-area: t1;
-                background-color: #1B4561;
-                margin-right: 1.5%;
-                color: white;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                margin-right: 1.5%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                font-size: 20px;
-            }
-            padding-top: 3%;
-    
-            #ah2button{
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                margin-top: 15%;
-                margin-bottom: 0%;
-                background-color: #408274;
-                margin-left: 70%;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                white-space: nowrap;
-                border: none;
-                font-size: 20px;
-            }
-        }
-    
-    
-    
-        #attractionshero3{
-            grid-area: h3;
-            display:grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 50% 50%;
-            grid-template-areas: 
-            "ah3"
-            "t2";
-            
-    
-            #attractionsherospot3{
-                background-image: url(../img/attractionhero3.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                min-height: 505px;
-                margin-right: 1.5%;
-                background-position: center bottom;
-                margin-bottom: 0%;
-            }
-    
-            #text2{
-                margin-right: 0%;
-                margin-left: 0%;
-                margin-bottom: 0%;
-                grid-area: t3;
-                grid-area: t2;
-                background-color: #1B4561;
-                margin-right: 1.5%;
-                color: white;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 3%;
-                padding-top: 3%;
-                font-size: 20px;
-    
-            }
-            padding-top: 3%;
-    
-            #ah3button{
-                padding-left: 7%;
-                padding-right: 7%;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                margin-top: 15%;
-                margin-bottom: 0%;
-                background-color: #408274;
-                margin-left: 70%;
-                margin-right: 0%;
-                color: white;
-                font-family: 'Open Sans', sans-serif;
-                font-size: 20px;
-                white-space: nowrap;
-                border: none;
-            }
-        }
-    
-        #seemoreattractions{
-            display: inline;
-            grid-area: b;
-            margin-left: 60%;
-            margin-top: 2%;
-            background-color: #408274;
-            color: white;
-        }
-    
-        padding-bottom: 10%;
-
-
-        h1{
-            font-family: 'PlayfairDisplay-Bold';
-            font-size: 70px;
-            color: #EFA541;
-        }
     }
     
     }

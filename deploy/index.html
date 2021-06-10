@@ -26,22 +26,25 @@
 <body>
     <header>
     <div id="row1">
-        <div id="mobilelogo">
-        </div>
-        <div id="desktopnav">
+        <div id="desktopnav" data-nav="main-navigation">
             <div id="headerlogo">
                 <img src="img/logo1.png" alt="logo">
             </div>
-            <p id="header1">Attractions</p>
-            <p id="header2">Discovery Pass</p>
-            <p id="header3">History of Niagara</p>
-            <p id="header4">Maps and Directions</p>
-            <p id="header5">Plan your Trip</p>
-            <p id="header6">Contact Us</p> 
+            <a href="#attractions" id="header1"> Attractions </a>
+            <a href="#discoverypass" id="header2" >Discovery Pass</a>
+            <a href="#history" id="header3" >History of Niagara</a>
+            <a href="#mapanddirections" id="header4" >Map and Directions</a>
+            <a href="#planyourtrip" id="header5" >Plan Your Trip</a>
+            <a href="#contactus" id="header5" >Contact Us</a>
         </div>
+    
         <div id="mobilemenu">
-            <i class="fas fa-bars"></i>
+            <div id="mobilelogo">
+                <img src="img/logo1.png" alt="logo">
+            </div>
+            <i class="fas fa-bars" id="mobileburger"></i>
         </div>
+        
     </div>
     <div id=row2>
         <button id="headerbutton">Buy Discovery Passes</button>
@@ -64,16 +67,18 @@
         </div>
     <div id="attractions">
             
-            
                 <div id="attractionsmainhero">
                     <section id="attractionsheading">
                         <h1>Attractions</h1>
                     </section>
                     <section id="attractionsheroimage">
+                        <img src="img/attractionhero1.png" alt="Maid of the mist" id="maidofthemisthero">
                     </section>
                     <section id="attractionsherotext1">
                         <p>Looking for a fun way to "explore the roar?" The Niagara Falls Maid of the Mist tour takes visitors on an excursion into the basin of Niagara Falls State Park’s Horseshoe Falls. The Maid of the Mist boat tour in Niagara Falls, NY has been described by generations of visitors as one of the highlights of their trip.</p>
-                        <button id="ht1button">Read More</button>   
+                        <div id="ht1buttondiv">
+                            <button id="ht1button">Read More</button>  
+                        </div> 
                     </section>
                     <section id="attractionsherotext2">
                         <h2>Prices</h2>
@@ -91,19 +96,27 @@
             
             
                 <div id="attractionshero2">
-                    <div id="attractionsherospot2"></div>
+                    <div id="attractionsherospot2">
+                        <img src="img/attractionhero2.png" alt="Maid of the mist" id="caveofthewindshero">
+                    </div>
                     <div id="text1">
                         <p>The world changed at Niagara Falls! Go beyond the brink and get closer to the Falls than you ever imagined at the Cave of the Winds. Plus take in the wonder and history of the Falls at the new indoor multimedia experience, the World Changed Here Pavilion, which is open year-round!</p>
-                        <button id="ah2button">Read More</button>
+                        <div id="ah2buttonflex">
+                            <button id="ah2button">Read More</button>
+                        </div>
                     </div>   
                 </div>
             
             
                 <div id="attractionshero3">
-                    <div id="attractionsherospot3"></div>
+                    <div id="attractionsherospot3">
+                        <img src="img/attractionhero3.png" alt="Aquarium of Niagara" id="aquariumofniagarahero">
+                    </div>
                     <div id="text2">
                         <p>There's an ocean of discovery to experience at the Aquarium of Niagara. The aquarium has more than 30 exhibits including the Aliens of the Sea jellyfish exhibit, the state-of-the art Penguin Coast exhibit, and the soon-to-open M&T Bank Shark & Ray Bay featuring sharks and sting rays.</p>
-                        <button id="ah3button">Read More</button> 
+                        <div id="ah3buttonflex">
+                            <button id="ah3button">Read More</button> 
+                        </div>
                     </div>
                 </div>
             
@@ -141,10 +154,10 @@
                             <p>Child (6-12 years old)*       $35</p>
                             <p>*Niagara Falls offers FREE admission to all Park attractions to children 5 and under. Aquarium of Niagara honors Children 5 and under FREE with Discovery Pass.</p>
                             <p>There is a one dollar transaction fee per ticket for online Discovery Pass orders.</p>
-                            <div id="discoverybuttonflex">
-                                <button id="discoverybutton">Buy Discovery Passes</button>
-                            </div>
                         </section>
+                        <div id="discoverybuttonflex">
+                            <button id="discoverybutton">Buy Discovery Passes</button>
+                        </div>
                         </div>
                 </div>
     <section id="feelthepower">
@@ -155,6 +168,9 @@
                             <div id="feelthepowerp">
                                 <p>Experience the power of Niagara Falls up close when you ride the world famous Maid of the Mist Boat tour or stand under the Bridal Veil Falls in the Cave of the Winds. Learn more about Niagara Falls legends and daredevils at the Niagara Adventure Theater, visit the Aquarium of Niagara to meet new aquatic friends from under the sea and get hands-on at the Discovery Center. Do it all with a Niagara Falls USA Discovery Pass and make memories that will last a lifetime!</p>
                             </div>
+                        </div>
+                        <div id="circlehero2div">
+                            <img src="img/circlehero2.png" alt="Bridge" id="circlehero2">
                         </div>
                     </section>
     <section id="history">
@@ -179,7 +195,9 @@
                         
     <section id="planyourtriphero">
                                     <h1>Plan Your Trip</h1>
-                                    <div id="planmainhero"></div>  
+                                    <div id="planyourtripherodiv">
+                                            <img src="img/planyourtriphero1.png" alt="Boat in Niagara Falls" id="planyourtripheroimg">
+                                    </div>  
                             </section>
     <section id="planyourtrip">
                                     
@@ -188,6 +206,7 @@
                                             <h2>Niagara Falls USA Winter Wonder Savings Pass</h2>
                                         </div>
                                         <div id="pg1">
+                                            <img src="img/planyourtriphero2.png" alt="Niagara in winter" id="pg1hero">
                                         </div>
                                     
                                         <div id="pg2">
@@ -201,6 +220,7 @@
                                             <h2>Discover Niagara Shuttle</h2>
                                         </div>
                                         <div id="pg3">
+                                            <img src="img/planyourtriphero3.png" alt="Passangers in a bus" id="pg3hero">
                                         </div>
                                     
                                         <div id="pg4">
@@ -213,14 +233,14 @@
                                         </div>
                                     
                                         <div id="pg5">
-                                            <h2>Download the Walking Tour App</h2>
+                                            <h2 id="pg5header1">Download the Walking Tour App</h2>
                                             <div class="planyourtripbuttonflex">
                                                 <button class="planyourtripbutton">Read More</button>
                                             </div>
                                         </div>
                                     
                                         <div id="pg6">
-                                            <h2>Niagara Falls Weather</h2>
+                                            <h2 id="pg6header1">Niagara Falls Weather</h2>
                                             <div class="planyourtripbuttonflex">
                                                 <button class="planyourtripbutton">Read More</button>
                                             </div>
@@ -229,18 +249,22 @@
                                 </section>
     <section id="comeforthewonder">
                                         <div id="comeforthewonderdiv">
-                                            <h1 id="wonderheader">Come for the Wonder, <br/> Stay for the Adventure</h1>
-                                            <div id="wonderheaderp">
+                                            <div id="comeforthewonderh">
+                                                <h2 id="wonderheader">Come for the Wonder, <br/> Stay for the Adventure</h2>
+                                            </div>
+                                            <div id="comeforthewonderp">
                                                 <p>With plenty of things to do in Niagara Falls- from exploring awe-inspiring natural beauty, hiking  miles of trails through Niagara State park, or getting soaked on the Hurricane Deck- it’s the perfect destination for a family vacation or nature retreat. A Niagara falls trip is guarenteed to have something for everyone!</p> 
                                             </div>  
+                                        </div>
+                                        <div id="circlehero3div">
+                                            <img src="img/circlehero3.png" alt="Woman looking at Niagara Falls" id="circlehero3">
                                         </div>
                                     </section>
     <section id="mapanddirections">
                                             <div id="mapheader">
                                                 <h1>Maps and Directions</h1>
                                             </div>
-                                            <div id="googlemap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46611.81778583913!2d-79.04384676166707!3d43.09950013457371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d363ea29e633b7%3A0x61975ae4b9c5aab3!2sNiagara%20Falls%2C%20NY!5e0!3m2!1sen!2sus!4v1621026711251!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                                            <div id="mobilemaphero"></div>
+                                            <div id="googlemap"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46611.817765878026!2d-79.04376087767382!3d43.09950016079435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d363ea29e633b7%3A0x61975ae4b9c5aab3!2sNiagara%20Falls%2C%20NY!5e0!3m2!1sen!2sus!4v1623314112730!5m2!1sen!2sus" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
                                             <div id="mapanddirectionstext">
                                                 <p>Situated along the U.S./Canadian border, Niagara Falls State Park welcomes travelers from around the world. To reach Niagara Falls State Park, most visitors simply fly into the Buffalo Niagara International Airport (BUF) or drive in on Interstate 90. Plan your trip by using our map and directions to help you find the Falls with ease, and explore Niagara Falls State Park. </p>
                                                 <p>GPS Navigation
@@ -257,120 +281,129 @@
                                         
                                         </section>
     <section id="getdirections">
-                                            </section>
-    <section id="getdirectionstext">
                                                 
-                                                    <div id="getdirectionstextdiv">
-                                                
-                                                        <h1>
-                                                            Get Directions
-                                                        </h1>
-                                                
-                                                        <div id="getdirectionsbuttons">
-                                                            <button class="getdirectionsbuttonsclass">From Buffalo Niagara International Airport
-                                                            </button>
-                                                            <button class="getdirectionsbuttonsclass">
-                                                                Albany & Areas East
-                                                            </button>
-                                                            <button class="getdirectionsbuttonsclass">
-                                                                From the West
-                                                            </button>
-                                                            <button class="getdirectionsbuttonsclass">
-                                                                From the South
-                                                            </button>
-                                                            <button class="getdirectionsbuttonsclass">
-                                                                From Toronto, Canada
-                                                            </button>
-                                                        </div>
-                                                
-                                                        <div id="gdtext">
-                                                            <div id="gdt">
-                                                                <p>
-                                                                    NOTE: While there are four parking lots in the State Park, they tend to fill up early on weekends (including Friday) and holidays which results in severe traffic entering the park from the Niagara Scenic Parkway and in some cases, all the way onto Grand Island (I-190). In order to avoid that, you might consider using alternate means into the city. Rt. 62/Niagara Falls Blvd. either from the I-290 or the I-190 if you choose to stay on this road, is a perfect way to enter the downtown core while avoiding traffic backups. This route will take you on city streets and add a few minutes to your trip but could save a great deal of time stuck in traffic. Once in the downtown core, you way park in a number of city lots that are just moments from the park. Additionally, you may consider using an alternate GPS address of 10 Rainbow Blvd., Niagara Falls, NY 14303 to take you to the official Niagara USA Welcome Center and alternate parking options.
-                                                            
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                
-                                                
+                                                <div id="getdirectionsheader">
+                                                    <h1>
+                                                        Get Directions
+                                                    </h1>
+                                                </div>
+                                            
+                                                    <button id="getdirectionsbutton1" class="getdirectionsbuttonsclass">From Buffalo Niagara International Airport
+                                                    </button>
+                                                    <button id="getdirectionsbutton2" class="getdirectionsbuttonsclass">
+                                                        Albany & Areas East
+                                                    </button>
+                                                    <button id="getdirectionsbutton3" class="getdirectionsbuttonsclass">
+                                                        From the West
+                                                    </button>
+                                                    <button id="getdirectionsbutton4" class="getdirectionsbuttonsclass">
+                                                        From the South
+                                                    </button>
+                                                    <button id="getdirectionsbutton5" class="getdirectionsbuttonsclass">
+                                                        From Toronto, Canada
+                                                    </button>
+                                            
+                                                <div id="gdtext">
+                                                    <div id="gdt">
+                                                        <p>
+                                                            NOTE: While there are four parking lots in the State Park, they tend to fill up early on weekends (including Friday) and holidays which results in severe traffic entering the park from the Niagara Scenic Parkway and in some cases, all the way onto Grand Island (I-190). In order to avoid that, you might consider using alternate means into the city. Rt. 62/Niagara Falls Blvd. either from the I-290 or the I-190 if you choose to stay on this road, is a perfect way to enter the downtown core while avoiding traffic backups. This route will take you on city streets and add a few minutes to your trip but could save a great deal of time stuck in traffic. Once in the downtown core, you way park in a number of city lots that are just moments from the park. Additionally, you may consider using an alternate GPS address of 10 Rainbow Blvd., Niagara Falls, NY 14303 to take you to the official Niagara USA Welcome Center and alternate parking options.
+                                                    
+                                                        </p>
                                                     </div>
-                                                
-                                                </section>
+                                                </div>
+                                            
+                                            </section>
     <section id="stateparkmap">
-                                                        <h1 id="stateparkmapheader">Niagara State Park Map</h1>
-                                                        <div id="stateparkmaphero">
-                                                        </div>
-                                                        <div id="stateparkbuttonflex">
-                                                            <button id="stateparkmapbutton">Download State Park Map</button>
+                                                    <h1 id="stateparkmapheader">Niagara State Park Map</h1>
+                                                    <div id="stateparkmapherodiv">
+                                                        <img src="img/stateparkmaphero1.png" alt="State park map" id="stateparkmaphero">
+                                                    </div>
+                                                    <div id="stateparkmapbuttondiv">
+                                                        <button id="stateparkmapbutton">Download State Park Map</button>
+                                                    </div>
+                                                </section>
+    <section id="parking">
+                                                        <div id="parkingdiv">
+                                                        <h1>Parking</h1>
+                                                        <p>If you are driving to Niagara Falls, NY, there are several ways to access the park and plenty of parking options. With four lots at the Park and several city lots just footsteps from the Park, you will be ready to start your Niagara Falls adventure just as soon as you get out of the car!</p>
+                                                        <p>Parking Lot 1 is located at Prospect Point. This is the closest lot to the Visitor Center and the Maid of the Mist. (GPS address: Niagara Falls Visitor Center Parking Lot 1, Niagara Falls, NY 14303)
+                                                        </p>
+                                                        <p>Parking Lot 2 is located on Goat Island near the entrance to the Cave of the Winds tour and Top of the Falls Restaurant. (GPS address: Charging Station Rd, Goat Island, Niagara Falls, NY 14303)
+                                                        </p>
+                                                        <p>Parking Lot 3 is also located on the east end of Goat Island near Three Sisters Islands. (GPS address: Parking Lot 3, Niagara Falls, NY 14303)
+                                                        </p>
+                                                        <p>Parking Lot 4 is at the Niagara Gorge Discovery Center, just off the northbound Niagara Scenic Parkway. This is an ideal place to park if you wish to start at the Aquarium of Niagara, The Gorge Discovery Center or the Schoellkopf Site. This is also the in-park stop for the Discover Niagara Shuttle which will bring you from within the park to the attractions outside the park.</p>
                                                         </div>
                                                     </section>
-    <section id="parking">
-                                                            <div id="parkingdiv">
-                                                            <h1>Parking</h1>
-                                                            <p>If you are driving to Niagara Falls, NY, there are several ways to access the park and plenty of parking options. With four lots at the Park and several city lots just footsteps from the Park, you will be ready to start your Niagara Falls adventure just as soon as you get out of the car!</p>
-                                                            <p>Parking Lot 1 is located at Prospect Point. This is the closest lot to the Visitor Center and the Maid of the Mist. (GPS address: Niagara Falls Visitor Center Parking Lot 1, Niagara Falls, NY 14303)
-                                                            </p>
-                                                            <p>Parking Lot 2 is located on Goat Island near the entrance to the Cave of the Winds tour and Top of the Falls Restaurant. (GPS address: Charging Station Rd, Goat Island, Niagara Falls, NY 14303)
-                                                            </p>
-                                                            <p>Parking Lot 3 is also located on the east end of Goat Island near Three Sisters Islands. (GPS address: Parking Lot 3, Niagara Falls, NY 14303)
-                                                            </p>
-                                                            <p>Parking Lot 4 is at the Niagara Gorge Discovery Center, just off the northbound Niagara Scenic Parkway. This is an ideal place to park if you wish to start at the Aquarium of Niagara, The Gorge Discovery Center or the Schoellkopf Site. This is also the in-park stop for the Discover Niagara Shuttle which will bring you from within the park to the attractions outside the park.</p>
+    <section id="contactus">
+                                                            <div id="contactusgrid">
+                                                                <h1 class="contactustextclass" id="contactusheader">
+                                                                    Contact Us
+                                                                </h1>
+                                                                <p class="contactustextclass" id="contact1">Whether you have questions about Niagara Falls, the attractions, or need additional information to help you plan your trip, our accommodating staff will assist you with whatever you need. Simply contact us via the information below, or fill out the form to receive a timely response.
+                                                                </p>
+                                                                <p class="contactustextclass" id="contact2">
+                                                                    Niagara Falls State Park Visitor Center <br/> 
+                                                                    332 Prospect St <br/>
+                                                                    Niagara Falls, NY 14303 <br/> 
+                                                                    Phone: 716-278-1794
+                                                                </p>
+                                                                <p class="contactustextclass" id="contact3">
+                                                                    Call our  Visitor Center at 716-278-1794.
+                                                                </p>
+                                                                    <div id="contactusicondiv">
+                                                                        <i id="contactusicon1" class="fab fa-facebook-square"></i>
+                                                                        <i id="contactusicon2" class="fab fa-twitter"></i>
+                                                                        <i id="contactusicon3" class="fab fa-youtube"></i>
+                                                                        <i id="contactusicon4" class="fab fa-instagram"></i>
+                                                                    </div>
                                                             </div>
                                                         </section>
-    <section id="contactus">
-                                                                <div id="contactusgrid">
-                                                                    <h1 class="contactustextclass" id="contactusheader">
-                                                                        Contact Us
-                                                                    </h1>
-                                                                    <p class="contactustextclass" id="contact1">Whether you have questions about Niagara Falls, the attractions, or need additional information to help you plan your trip, our accommodating staff will assist you with whatever you need. Simply contact us via the information below, or fill out the form to receive a timely response.
-                                                                    </p>
-                                                                    <p class="contactustextclass" id="contact2">
-                                                                        Niagara Falls State Park Visitor Center <br/> 
-                                                                        332 Prospect St <br/>
-                                                                        Niagara Falls, NY 14303 <br/> 
+    <footer id="footer">
+                                                                <div id="footerlogomobilediv">
+                                                                    <img src="img/mobile-logo-footer.png" alt="logo">
+                                                                </div>
+                                                                <div id="footerdesktoplogodiv">
+                                                                    <img src="img/logofooter.png" id="footerlogodesktopid" alt="logo">
+                                                                </div>
+                                                                <div id="mobilelogotext">
+                                                                    <p>Niagara Falls</p>
+                                                                </div>
+                                                                <div id="footerrow2">
+                                                                    <div id="footer1">
+                                                                        <a href="#attractions" > Attractions </a>
+                                                                    </div>
+                                                                    <div id="footer2">
+                                                                        <a href="#discoverypass" >Discovery Pass</a>
+                                                                    </div>
+                                                                    <div id="footer3">
+                                                                        <a href="#history" >History of Niagara</a>
+                                                                    </div>
+                                                                    <div id="footer4">
+                                                                        <a href="#mapanddirections" >Map and Directions</a>
+                                                                    </div>
+                                                                    <div id="footer5">
+                                                                        <a href="#planyourtrip" >Plan Your Trip</a>
+                                                                    </div>
+                                                                    <div id="footer6">
+                                                                        <a href="#contactus" >Contact Us</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="footerdirections">
+                                                                    <p id="footerdirectionstext">
+                                                                        Niagara Falls State Park Visitor Center
+                                                                        332 Prospect St
+                                                                        Niagara Falls, NY 14303
                                                                         Phone: 716-278-1794
                                                                     </p>
-                                                                    <p class="contactustextclass" id="contact3">
-                                                                        Call our  Visitor Center at 716-278-1794.
-                                                                    </p>
-                                                                        <div id="contactusicondiv">
-                                                                            <i id="contactusicon1" class="fab fa-facebook-square"></i>
-                                                                            <i id="contactusicon2" class="fab fa-twitter"></i>
-                                                                            <i id="contactusicon3" class="fab fa-youtube"></i>
-                                                                            <i id="contactusicon4" class="fab fa-instagram"></i>
-                                                                        </div>
                                                                 </div>
-                                                            </section>
-    <footer id="footer">
-                                                                    <div id="footerlogomobilediv">
-                                                                        <img src="img/mobile-logo-footer.png" alt="logo">
-                                                                    </div>
-                                                                    <div id="mobilelogotext">
-                                                                        <p>Niagara Falls</p>
-                                                                    </div>
-                                                                    <div id="footerrow2">
-                                                                        <p id="footer1">Attractions</p>
-                                                                        <p id="footer2">Discovery Pass</p>
-                                                                        <p id="footer3">History of Niagara</p>
-                                                                        <p id="footer4">Maps and Directions</p>
-                                                                        <p id="footer5">Plan Your Trip</p>
-                                                                        <p id="footer6">Contact Us</p>
-                                                                    </div>
-                                                                    <div id="footerdirections">
-                                                                        <p id="footerdirectionstext">
-                                                                            Niagara Falls State Park Visitor Center
-                                                                            332 Prospect St
-                                                                            Niagara Falls, NY 14303
-                                                                            Phone: 716-278-1794
-                                                                        </p>
-                                                                    </div>
-                                                                    <div id="footericondiv">
-                                                                        <i class="fab fa-facebook-square" id="footericon1"></i>
-                                                                        <i class="fab fa-twitter" id="footericon2"></i>
-                                                                        <i class="fab fa-youtube" id="footericon3"></i>
-                                                                        <i class="fab fa-instagram" id="footericon4"></i>
-                                                                    </div>
-                                                                </footer>
+                                                                <div id="footericondiv">
+                                                                    <i class="fab fa-facebook-square" id="footericon1"></i>
+                                                                    <i class="fab fa-twitter" id="footericon2"></i>
+                                                                    <i class="fab fa-youtube" id="footericon3"></i>
+                                                                    <i class="fab fa-instagram" id="footericon4"></i>
+                                                                </div>
+                                                            </footer>
 </body>
 </html>
 

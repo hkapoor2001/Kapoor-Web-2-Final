@@ -1,53 +1,86 @@
 #comeforthewonder{
-    background-image: url(../img/circlehero3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 40vh;
-    display: flex;
-    background-position: bottom right;
-
-    #comeforthewonderdiv{
-        #wonderheader{
-            margin-left: 10%;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            color: #1B4561; 
-            margin-top: -3%;
-        }
-        #wonderheaderp{
-            margin-left: 10%;
-            margin-right: 10%;
-            font-size: 16px;
-            padding-bottom: 90%;
+    margin-top: 10%;
+    #circlehero3div{
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        #circlehero3{
+            width: 60%;
+            height: 60%;
         }
     }
 
-    @include xl {
-        margin-top: 18%;
-        background-image: url(../img/circlehero3.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        min-height: 100vh;
-        display: flex;
-        background-position: right;
-        #comeforthewonderdiv{
-            margin-top: -3%;
-            #wonderheader{
-                margin-left: 10%;
+    #comeforthewonderdiv{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-areas:
+        ". h ."
+        ". p .";
+        color: #1B4561;
+        #comeforthewonderh{
+            grid-area: h;
+            h2{
                 font-family: 'Open Sans', sans-serif;
                 font-weight: bold;
-                font-size: 75px;
-                color: #1B4561; 
-                margin-top: 3%;
+                font-size: 40px;
+                white-space: nowrap
             }
-            #wonderheaderp{
-                margin-left: 10%;
-                margin-right: 60%;
-                font-size: 30px;
-        
+        }
+        #comeforthewonderp{
+            grid-area: p;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+        padding-bottom: 5%;
+    }
+
+    @include md{
+        #comeforthewonderdiv{
+            grid-template-columns: 10% 40% 50%;
+            #comeforthewonderh{
+                h2{
+                    font-size: 30px;
+                    white-space: nowrap
+                }
+                margin-bottom: -8%;
             }
-        
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include lg{
+        #comeforthewonderdiv{
+            grid-template-columns: 15% 40% 45%;
+            #comeforthewonderh{
+                h2{
+                    font-size: 40px;
+                    white-space: nowrap;  
+                }
+                margin-bottom: -8%;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include xl{
+        #circlehero3div{
+            #circlehero3{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        #comeforthewonderdiv{
+            margin-bottom: -8%;
+            #comeforthewonderh{
+                h2{
+                    font-size: 50px; 
+                }
+                margin-bottom: -8%;
+            }
         }
     }
 }

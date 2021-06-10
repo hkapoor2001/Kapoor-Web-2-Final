@@ -368,44 +368,76 @@ h3 {
 
 header {
   background-color: #1B4561;
-  color: white;
+  color: #ffff;
 }
-header #mobilemenu {
+header a {
+  color: #ffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+header #row1 {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+header #row1 #mobilemenu {
+  display: grid;
+  grid-template-columns: 1% 10% 74% 10% 5%;
+  grid-template-areas: ". logo . burger .";
+}
+header #row1 #mobilemenu #mobilelogo {
+  grid-area: logo;
+}
+header #row1 #mobilemenu #mobileburger {
+  grid-area: burger;
+  font-size: 80px;
+}
+header #row1 #desktopnav {
   display: none;
-}
-header #mobilelogo {
-  display: none;
-}
-header #desktopnav {
-  display: flex;
-  justify-content: space-evenly;
-}
-header #desktopnav #headerlogo {
-  width: 8%;
 }
 header #row2 {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
 }
-header #row2 #headerbutton {
-  background-color: #408274;
-  color: white;
-  font-family: "Open Sans", sans-serif;
-}
-@media (min-width: 768px) {
-  header #desktopnav {
+@media (min-width: 1024px) {
+  header #row1 #p {
+    font-size: 16px;
+  }
+  header #row1 #mobilemenu {
     display: none;
   }
+  header #row1 #desktopnav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header #row1 #desktopnav #headerlogo {
+    width: 8%;
+  }
   header #row2 {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header #row2 #headerbutton {
+    background-color: #408274;
+    color: #ffff;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
+  header a {
+    font-size: 20px;
+  }
   header #desktopnav {
     display: flex;
+    justify-content: space-evenly;
   }
-  header #row2 {
-    display: flex;
+  header #desktopnav #headerlogo {
+    width: 8%;
   }
   header #row2 #headerbutton {
     padding-top: 1%;
@@ -413,23 +445,12 @@ header #row2 #headerbutton {
     padding-right: 1%;
     padding-left: 1%;
     font-size: 40px;
-    border: none;
   }
   header p {
     font-size: 28px;
   }
-}
-@media (min-width: 1024px) {
-  header #p {
-    font-size: 16px;
-  }
-  header #headerbutton {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    padding-left: 1%;
-    font-size: 16px;
-    border: none;
+  header #mobilemenu {
+    display: none;
   }
 }
 
@@ -440,8 +461,8 @@ header #row2 #headerbutton {
   background-color: #D2E9FF;
   display: flex;
   background-image: url(../img/Videobackground.png);
-  min-width: 80vh;
-  min-height: 60vh;
+  min-width: 30vh;
+  min-height: 50vh;
   max-height: 100%;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -450,41 +471,28 @@ header #row2 #headerbutton {
   margin-top: -1%;
 }
 #videocontainer #videotext p {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 5%;
   margin-left: 5%;
+  margin-bottom: 35%;
 }
 @media (min-width: 768px) {
-  #videocontainer #videotext {
-    margin-top: -1%;
-  }
   #videocontainer #videotext p {
-    font-size: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
     padding-top: 5%;
+    margin-right: 40%;
   }
 }
 @media (min-width: 1024px) {
-  #videocontainer #videotext {
-    margin-top: -1%;
-  }
   #videocontainer #videotext p {
     font-size: 30px;
-    margin-right: 45%;
-    margin-left: 5%;
-    padding-top: 5%;
   }
 }
 @media (min-width: 1200px) {
   #videocontainer #videotext {
-    margin-top: -1%;
+    min-height: 80vh;
   }
   #videocontainer #videotext p {
     font-size: 40px;
-    margin-right: 45%;
-    margin-left: 5%;
-    padding-top: 5%;
     margin-top: -1%;
   }
 }
@@ -492,21 +500,23 @@ header #row2 #headerbutton {
 /* =============
     attractions
 ============= */
+#attractions {
+  margin-top: 10%;
+}
 #attractions #attractionsmainhero #attractionsheading {
   font-family: "PlayfairDisplay-Bold";
   font-size: 20px;
   color: #EFA541;
   margin-left: 2%;
 }
-#attractions #attractionsmainhero #attractionsheroimage {
-  background-image: url(../img/attractionhero1.png);
-  min-height: 505px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5%;
+#attractions #attractionsmainhero #attractionsheroimage #maidofthemisthero {
+  width: 100%;
 }
 #attractions #attractionsmainhero #attractionsherotext1 {
+  margin-right: 5%;
+  margin-left: 5%;
   font-size: 16px;
+  margin-bottom: 5%;
 }
 #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
   background-color: #408274;
@@ -523,12 +533,8 @@ header #row2 #headerbutton {
 #attractions #seemoreattractions {
   display: none;
 }
-#attractions #attractionshero2 #attractionsherospot2 {
-  background-image: url(../img/attractionhero2.png);
-  min-height: 505px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5%;
+#attractions #attractionshero2 #attractionsherospot2 #caveofthewindshero {
+  width: 100%;
 }
 #attractions #attractionshero2 #text1 {
   margin-right: 5%;
@@ -545,12 +551,8 @@ header #row2 #headerbutton {
   color: white;
   font-family: "Open Sans", sans-serif;
 }
-#attractions #attractionshero3 #attractionsherospot3 {
-  background-image: url(../img/attractionhero3.png);
-  min-height: 505px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5%;
+#attractions #attractionshero3 #attractionsherospot3 #aquariumofniagarahero {
+  width: 100%;
 }
 #attractions #attractionshero3 #text2 {
   margin-right: 5%;
@@ -569,11 +571,9 @@ header #row2 #headerbutton {
 }
 @media (min-width: 768px) {
   #attractions {
-    padding-top: 10%;
     display: grid;
     grid-template-columns: 0% 50% 50% 0%;
     grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
-    padding-bottom: 10%;
   }
   #attractions #attractionsmainhero {
     grid-area: h1;
@@ -586,12 +586,6 @@ header #row2 #headerbutton {
   }
   #attractions #attractionsmainhero #attractionsheroimage {
     grid-area: h;
-    background-image: url(../img/attractionhero1.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    max-height: 100%;
   }
   #attractions #attractionsmainhero #attractionsherotext1 {
     grid-area: ht1;
@@ -607,7 +601,12 @@ header #row2 #headerbutton {
     margin-bottom: 0%;
     font-size: 20px;
   }
-  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
+  #attractions #attractionsmainhero #attractionsherotext1 #ht1buttondiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24%;
+  }
+  #attractions #attractionsmainhero #attractionsherotext1 #ht1buttondiv #ht1button {
     background-color: #408274;
     margin-right: 0%;
     color: white;
@@ -629,35 +628,31 @@ header #row2 #headerbutton {
     grid-area: h2;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     grid-template-areas: "ah2" "t1";
     padding-top: 3%;
   }
   #attractions #attractionshero2 #attractionsherospot2 {
-    background-image: url(../img/attractionhero2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 1.5%;
-    min-height: 35vh;
-    background-position: center bottom;
     grid-area: ah2;
-    margin-bottom: 0%;
+    margin-right: 1%;
   }
   #attractions #attractionshero2 #text1 {
     grid-area: t1;
     background-color: #1B4561;
-    margin-right: 1.5%;
     color: white;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 3%;
     padding-top: 3%;
-    margin-right: 1.5%;
+    margin-right: 1%;
     margin-left: 0%;
     margin-bottom: 0%;
     font-size: 20px;
   }
-  #attractions #attractionshero2 #ah2button {
+  #attractions #attractionshero2 #ah2buttonflex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #attractions #attractionshero2 #ah2buttonflex #ah2button {
     background-color: #408274;
     margin-right: 0%;
     color: white;
@@ -669,23 +664,14 @@ header #row2 #headerbutton {
     grid-area: h3;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
     grid-template-areas: "ah3" "t2";
     padding-top: 3%;
   }
   #attractions #attractionshero3 #attractionsherospot3 {
-    background-image: url(../img/attractionhero3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 505px;
-    background-position: top;
-    margin-bottom: 0%;
+    grid-area: ah3;
+    margin-left: 1%;
   }
   #attractions #attractionshero3 #text2 {
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    grid-area: t3;
     grid-area: t2;
     background-color: #1B4561;
     color: white;
@@ -693,12 +679,19 @@ header #row2 #headerbutton {
     padding-right: 2%;
     padding-bottom: 3%;
     padding-top: 3%;
+    margin-right: 0%;
+    margin-left: 1%;
+    margin-bottom: 0%;
     font-size: 20px;
   }
-  #attractions #attractionshero3 #ah3button {
+  #attractions #attractionshero3 #ah3buttonflex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #attractions #attractionshero3 #ah3buttonflex #ah3button {
     background-color: #408274;
     margin-right: 0%;
-    color: white;
+    color: #ffff;
     font-family: "Open Sans", sans-serif;
     white-space: nowrap;
     border: none;
@@ -707,7 +700,14 @@ header #row2 #headerbutton {
     display: block;
     grid-area: b;
     background-color: #408274;
-    color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #ffff;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-left: 50%;
+    margin-top: 2.5%;
+    padding: 3%;
+    border: none;
   }
   #attractions h1 {
     font-family: "PlayfairDisplay-Bold";
@@ -717,352 +717,12 @@ header #row2 #headerbutton {
 }
 @media (min-width: 1024px) {
   #attractions {
-    padding-top: 10%;
-    display: grid;
     grid-template-columns: 10% 40% 40% 10%;
-    grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
-    padding-bottom: 10%;
-  }
-  #attractions #attractionsmainhero {
-    grid-area: h1;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "heading heading" "h h" "ht1 ht2";
-  }
-  #attractions #attractionsmainhero #attractionsheading {
-    grid-area: heading;
-  }
-  #attractions #attractionsmainhero #attractionsheroimage {
-    grid-area: h;
-    background-image: url(../img/attractionhero1.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    max-height: 100%;
-  }
-  #attractions #attractionsmainhero #attractionsherotext1 {
-    grid-area: ht1;
-    color: white;
-    background-color: #1B4561;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-size: 20px;
-  }
-  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    white-space: nowrap;
-    border: none;
-  }
-  #attractions #attractionsmainhero #attractionsherotext2 {
-    display: inline;
-    grid-area: ht2;
-    background-color: #D2E9FF;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero2 {
-    grid-area: h2;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "ah2" "t1";
-    padding-top: 3%;
-  }
-  #attractions #attractionshero2 #attractionsherospot2 {
-    background-image: url(../img/attractionhero2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 1.5%;
-    min-height: 35vh;
-    background-position: center bottom;
-    grid-area: ah2;
-    margin-bottom: 0%;
-  }
-  #attractions #attractionshero2 #text1 {
-    grid-area: t1;
-    background-color: #1B4561;
-    margin-right: 1.5%;
-    color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    margin-right: 1.5%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero2 #ah2button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    white-space: nowrap;
-    border: none;
-    font-size: 20px;
-  }
-  #attractions #attractionshero3 {
-    grid-area: h3;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "ah3" "t2";
-    padding-top: 3%;
-  }
-  #attractions #attractionshero3 #attractionsherospot3 {
-    background-image: url(../img/attractionhero3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 505px;
-    margin-right: 1.5%;
-    background-position: center bottom;
-    margin-bottom: 0%;
-  }
-  #attractions #attractionshero3 #text2 {
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    grid-area: t3;
-    grid-area: t2;
-    background-color: #1B4561;
-    margin-right: 1.5%;
-    color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero3 #ah3button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    white-space: nowrap;
-    border: none;
-  }
-  #attractions #seemoreattractions {
-    display: inline;
-    grid-area: b;
-    margin-left: 60%;
-    margin-top: 2%;
-    background-color: #408274;
-    color: white;
-  }
-  #attractions h1 {
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 70px;
-    color: #EFA541;
   }
 }
 @media (min-width: 1200px) {
   #attractions {
-    padding-top: 10%;
-    display: grid;
     grid-template-columns: 20% 30% 30% 20%;
-    grid-template-areas: ". h1 h1 ." ". h2 h3 ." ". . b .";
-    padding-bottom: 10%;
-  }
-  #attractions #attractionsmainhero {
-    grid-area: h1;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "heading heading" "h h" "ht1 ht2";
-  }
-  #attractions #attractionsmainhero #attractionsheading {
-    grid-area: heading;
-  }
-  #attractions #attractionsmainhero #attractionsheroimage {
-    grid-area: h;
-    background-image: url(../img/attractionhero1.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    max-height: 100%;
-  }
-  #attractions #attractionsmainhero #attractionsherotext1 {
-    grid-area: ht1;
-    color: white;
-    background-color: #1B4561;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-size: 20px;
-  }
-  #attractions #attractionsmainhero #attractionsherotext1 #ht1button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    white-space: nowrap;
-    border: none;
-  }
-  #attractions #attractionsmainhero #attractionsherotext2 {
-    display: inline;
-    grid-area: ht2;
-    background-color: #D2E9FF;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero2 {
-    grid-area: h2;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "ah2" "t1";
-    padding-top: 3%;
-  }
-  #attractions #attractionshero2 #attractionsherospot2 {
-    background-image: url(../img/attractionhero2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 1.5%;
-    min-height: 35vh;
-    background-position: center bottom;
-    grid-area: ah2;
-    margin-bottom: 0%;
-  }
-  #attractions #attractionshero2 #text1 {
-    grid-area: t1;
-    background-color: #1B4561;
-    margin-right: 1.5%;
-    color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    margin-right: 1.5%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero2 #ah2button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    white-space: nowrap;
-    border: none;
-    font-size: 20px;
-  }
-  #attractions #attractionshero3 {
-    grid-area: h3;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "ah3" "t2";
-    padding-top: 3%;
-  }
-  #attractions #attractionshero3 #attractionsherospot3 {
-    background-image: url(../img/attractionhero3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 505px;
-    margin-right: 1.5%;
-    background-position: center bottom;
-    margin-bottom: 0%;
-  }
-  #attractions #attractionshero3 #text2 {
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    grid-area: t3;
-    grid-area: t2;
-    background-color: #1B4561;
-    margin-right: 1.5%;
-    color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    font-size: 20px;
-  }
-  #attractions #attractionshero3 #ah3button {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    background-color: #408274;
-    margin-left: 70%;
-    margin-right: 0%;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    white-space: nowrap;
-    border: none;
-  }
-  #attractions #seemoreattractions {
-    display: inline;
-    grid-area: b;
-    margin-left: 60%;
-    margin-top: 2%;
-    background-color: #408274;
-    color: white;
-  }
-  #attractions h1 {
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 70px;
-    color: #EFA541;
   }
 }
 
@@ -1070,15 +730,13 @@ header #row2 #headerbutton {
     Discoverypass
 ============= */
 #discoverypass {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  margin-top: 10%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "h" "lc" "rc";
+  grid-template-areas: "h" "lc" "rc" "b";
 }
-#discoverypass #discoverybuttonflex {
-  display: flex;
-  justify-content: center;
+#discoverypass p {
+  font-size: 16px;
 }
 #discoverypass #discoverypassheading {
   grid-area: h;
@@ -1102,13 +760,24 @@ header #row2 #headerbutton {
   margin-right: 5%;
   padding-bottom: 7%;
 }
+#discoverypass #leftcolumn p {
+  font-size: 16px;
+}
 #discoverypass #rightcolumn {
   grid-area: rc;
   margin-left: 5%;
   margin-right: 5%;
   padding-bottom: 7%;
 }
-#discoverypass #rightcolumn #discoverybutton {
+#discoverypass #rightcolumn p {
+  font-size: 16px;
+}
+#discoverypass #discoverybuttonflex {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+}
+#discoverypass #discoverybuttonflex #discoverybutton {
   background-color: #408274;
   padding-left: 3%;
   padding-right: 3%;
@@ -1118,19 +787,10 @@ header #row2 #headerbutton {
   font-family: "Open Sans", sans-serif;
   margin-top: 5%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #discoverypass {
-    padding-top: 0%;
-    display: grid;
-    grid-template-columns: 30% 13.3% 13.3% 13.3% 30%;
-    grid-template-rows: max-content;
-    grid-template-areas: ". h h h ." ". lc lc rc .";
-    padding-bottom: 15%;
-  }
-  #discoverypass h1 {
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 70px;
-    color: #EFA541;
+    grid-template-columns: 10% 26.6% 26.6% 26.6% 10%;
+    grid-template-areas: ". h h h ." ". lc lc rc ." ". lc lc b .";
   }
   #discoverypass h2 {
     font-family: "Open Sans", sans-serif;
@@ -1141,10 +801,14 @@ header #row2 #headerbutton {
     font-size: 30px;
   }
   #discoverypass p {
-    font-size: 30px;
+    font-size: 16px;
   }
   #discoverypass #discoverypassheading {
     grid-area: h;
+  }
+  #discoverypass #discoverypassheading h1 {
+    font-size: 70px;
+    margin-left: 0%;
   }
   #discoverypass #discoverypassheading p {
     margin-left: 0%;
@@ -1155,94 +819,133 @@ header #row2 #headerbutton {
   #discoverypass #leftcolumn {
     grid-area: lc;
     border-right: 8px solid #1B4561;
+    border-bottom: none;
     padding-right: 5%;
     margin-left: 0%;
     margin-right: 0%;
     padding-bottom: 0%;
-    border-bottom: none;
   }
   #discoverypass #leftcolumn p {
-    font-size: 25px;
+    font-size: 16px;
   }
   #discoverypass #rightcolumn {
     padding-left: 15%;
     grid-area: rc;
   }
-  #discoverypass #rightcolumn #discoverybutton {
-    margin-top: 50%;
+  #discoverypass #rightcolumn p {
+    font-size: 16px;
+  }
+  #discoverypass #discoverybuttonflex {
+    grid-area: b;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  #discoverypass #discoverybuttonflex #discoverybutton {
     background-color: #408274;
     margin-left: 30%;
-    border-radius: 15%;
-    color: white;
-    margin-left: 0%;
     margin-right: 0%;
-    padding-bottom: 0%;
-    margin-top: 0%;
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  #discoverypass {
+    grid-template-columns: 15% 23.3% 23.3% 23.3% 15%;
+  }
+  #discoverypass p {
+    font-size: 20px;
   }
   #discoverypass #rightcolumn p {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #discoverypass #leftcolumn p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #discoverypass {
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
 }
 
 #feelthepower {
-  background-image: url(../img/circlehero2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom left;
-  min-height: 40vh;
+  margin-top: 10%;
+}
+#feelthepower #circlehero2div {
   display: flex;
-  padding-top: 5%;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+#feelthepower #circlehero2div #circlehero2 {
+  width: 60%;
+  height: 60%;
 }
 #feelthepower #feelthepowerdiv {
-  margin-right: 20%;
+  margin-bottom: -5%;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: ". h ." ". p .";
   color: #1B4561;
+  padding-bottom: 5%;
 }
 #feelthepower #feelthepowerdiv #feelthepowerh {
+  grid-area: h;
+}
+#feelthepower #feelthepowerdiv #feelthepowerh h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  white-space: nowrap;
-  margin-bottom: 0%;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 #feelthepower #feelthepowerdiv #feelthepowerp {
+  grid-area: p;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  margin-bottom: 120%;
-  margin-right: 5%;
-  margin-left: 5%;
 }
-@media (min-width: 1200px) {
-  #feelthepower {
-    padding-top: 5%;
-    background-image: url(../img/circlehero2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left;
-    min-height: 80vh;
-    display: flex;
-  }
+@media (min-width: 768px) {
   #feelthepower #feelthepowerdiv {
-    margin-right: 20%;
-    color: #1B4561;
-    margin-left: 50%;
-    margin-top: -10%;
+    grid-template-columns: 50% 40% 10%;
   }
   #feelthepower #feelthepowerdiv #feelthepowerh {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    white-space: nowrap;
-    margin-right: 0%;
-    margin-left: 0%;
+    margin-bottom: -8%;
   }
-  #feelthepower #feelthepowerdiv #feelthepowerp {
-    font-family: "Open Sans", sans-serif;
+  #feelthepower #feelthepowerdiv #feelthepowerh h2 {
+    font-size: 20px;
+  }
+  #feelthepower #feelthepowerdiv p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #feelthepower #feelthepowerdiv {
+    grid-template-columns: 45% 40% 15%;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerh {
+    margin-bottom: -8%;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerh h2 {
     font-size: 25px;
-    margin-top: -4%;
-    margin-right: 0%;
-    margin-left: 0%;
+  }
+  #feelthepower #feelthepowerdiv p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #feelthepower #circlehero2div #circlehero2 {
+    width: 50%;
+    height: 50%;
+  }
+  #feelthepower #feelthepowerdiv {
+    margin-bottom: -8%;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerh {
+    margin-bottom: -8%;
+  }
+  #feelthepower #feelthepowerdiv #feelthepowerh h2 {
+    font-size: 50px;
   }
 }
 
@@ -1253,11 +956,12 @@ header #row2 #headerbutton {
   background-color: #1B4561;
   color: white;
   padding-bottom: 17%;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 #history p {
   margin-right: 5%;
   margin-left: 5%;
+  font-size: 16px;
 }
 #history h1 {
   font-family: "PlayfairDisplay-Bold";
@@ -1266,35 +970,36 @@ header #row2 #headerbutton {
   margin-left: 5%;
 }
 #history #historyhero1 {
-  max-width: 100%;
+  width: 100%;
 }
 #history #historyhero2 {
-  max-width: 100%;
+  width: 100%;
 }
 #history #historyhero3 {
-  max-width: 100%;
+  width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #history {
-    display: grid;
-    grid-template-columns: 15% 40% 30% 15%;
-    grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
-    background-color: #1B4561;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 6%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   #history p {
     margin-right: 0%;
     margin-left: 0%;
   }
-  #history h1 {
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 80px;
-    color: #EFA541;
+}
+@media (min-width: 1024px) {
+  #history {
+    padding-top: 8%;
+    padding-bottom: 6%;
+    padding-right: 0%;
+    padding-left: 0%;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-areas: ". h h ." ". cr cl1 ." ". cr cl2 .";
   }
-  #history p {
-    font-size: 30px;
+  #history h1 {
+    margin-left: 0%;
   }
   #history #historyheader {
     grid-area: h;
@@ -1321,52 +1026,61 @@ header #row2 #headerbutton {
     width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  #history {
+    grid-template-columns: 2% 48% 48% 2%;
+  }
+  #history h1 {
+    font-size: 70px;
+  }
+  #history p {
+    font-size: 18px;
+  }
+}
 
 #planyourtriphero {
-  padding-top: 20%;
-  padding-bottom: 20%;
+  margin-top: 10%;
 }
-#planyourtriphero #planmainhero {
-  background-image: url(../img/planyourtriphero1.png);
-  min-height: 10vh;
-  background-size: cover;
-  background-position: right;
+#planyourtriphero #planyourtripherodiv {
+  display: none;
 }
 #planyourtriphero h1 {
   font-family: "PlayfairDisplay-Bold";
   font-size: 40px;
   color: #EFA541;
 }
+@media (min-width: 768px) {
+  #planyourtriphero #planyourtripherodiv {
+    display: block;
+  }
+  #planyourtriphero #planyourtripherodiv #planyourtripheroimg {
+    width: 100%;
+  }
+}
 @media (min-width: 1200px) {
-  #planyourtriphero {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin-top: 8%;
-    margin-bottom: 8%;
-  }
   #planyourtriphero h1 {
-    font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
-    color: #EFA541;
     margin-left: 2%;
-  }
-  #planyourtriphero #planmainhero {
-    background-image: url(../img/planyourtriphero1.png);
-    min-height: 30vh;
-    background-size: cover;
-    background-position: right;
   }
 }
 
 /* =============
     planyourtrip
 ============= */
+#planyourtrip {
+  margin-top: 10%;
+}
+#planyourtrip h2 {
+  color: #1B4561;
+  font-family: 18px;
+}
 #planyourtrip .planyourtripbuttonflex {
   display: flex;
   justify-content: center;
 }
-#planyourtrip .planyourtripbutton {
+#planyourtrip .planyourtripbuttonflex .planyourtripbutton {
   background-color: #408274;
+  border: none;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -1375,27 +1089,27 @@ header #row2 #headerbutton {
   font-family: "Open Sans", sans-serif;
 }
 #planyourtrip #pg1 {
-  background-image: url(../img/planyourtriphero2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 25vh;
   margin-bottom: 8%;
 }
+#planyourtrip #pg1 #pg1hero {
+  width: 100%;
+  height: 100%;
+}
 #planyourtrip #pg2 {
+  padding: 3%;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 12%;
 }
 #planyourtrip #pg3 {
-  background-image: url(../img/planyourtriphero3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 25vh;
   margin-bottom: 8%;
 }
+#planyourtrip #pg3 #pg3hero {
+  width: 100%;
+  height: 100%;
+}
 #planyourtrip #pg4 {
+  padding: 3%;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 12%;
@@ -1408,6 +1122,9 @@ header #row2 #headerbutton {
   padding: 8%;
   margin-bottom: 12%;
 }
+#planyourtrip #pg5 #pg5header1 {
+  color: white;
+}
 #planyourtrip #pg6 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -1416,126 +1133,170 @@ header #row2 #headerbutton {
   padding: 12%;
   margin-bottom: 25%;
 }
+#planyourtrip #pg6 #pg6header1 {
+  color: white;
+}
+@media (min-width: 768px) {
+  #planyourtrip h2 {
+    font-size: 20px;
+  }
+  #planyourtrip #plangrid {
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas: ". pg1h pg2h ." ". pg1 pg3 ." ". pg2 pg4 ." ". pg5 pg6 .";
+  }
+  #planyourtrip #plangrid #pg1h {
+    grid-area: pg1h;
+    margin-right: 2%;
+  }
+  #planyourtrip #plangrid #pg2h {
+    grid-area: pg2h;
+    margin-left: 2%;
+  }
+  #planyourtrip #plangrid #pg1 {
+    grid-area: pg1;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  #planyourtrip #plangrid #pg2 {
+    grid-area: pg2;
+    background-color: #D2E9FF;
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #planyourtrip #plangrid #pg3 {
+    grid-area: pg3;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #planyourtrip #plangrid #pg4 {
+    grid-area: pg4;
+    background-color: #D2E9FF;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 0%;
+  }
+  #planyourtrip #plangrid #pg5 {
+    grid-area: pg5;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #planyourtrip #plangrid #pg6 {
+    grid-area: pg6;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
 @media (min-width: 1200px) {
-  #planyourtrip {
-    margin-bottom: 8%;
+  #planyourtrip h2 {
+    font-size: 30px;
   }
   #planyourtrip #plangrid {
     display: grid;
     grid-template-columns: 2% 32% 32% 32% 2%;
     grid-template-areas: ". pg1h pg2h . ." ". pg1 pg3 pg5 ." ". pg2 pg4 pg6 .";
   }
-  #planyourtrip #plangrid #pg1h {
-    grid-area: pg1h;
-  }
-  #planyourtrip #plangrid #pg2h {
-    grid-area: pg2h;
-  }
-  #planyourtrip #plangrid #pg1 {
-    grid-area: pg1;
-    background-image: url(../img/planyourtriphero2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 20vh;
-    margin: 2%;
-  }
-  #planyourtrip #plangrid #pg2 {
-    grid-area: pg2;
-    background-color: #D2E9FF;
-    padding-top: 5%;
-    padding-bottom: 8%;
-    margin: 2%;
-    font-size: 30px;
-    padding-right: 2%;
-    padding-left: 2%;
-  }
   #planyourtrip #plangrid #pg3 {
-    grid-area: pg3;
-    background-image: url(../img/planyourtriphero3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 20vh;
-    margin: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
   }
   #planyourtrip #plangrid #pg4 {
-    grid-area: pg4;
-    background-color: #D2E9FF;
-    padding-top: 5%;
-    padding-bottom: 8%;
-    margin: 2%;
-    font-size: 30px;
-    padding-right: 2%;
-    padding-left: 2%;
+    margin-right: 2%;
   }
   #planyourtrip #plangrid #pg5 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: #1B4561;
-    grid-area: pg5;
-    margin: 2%;
-    padding: 8%;
+    margin-left: 2%;
+    margin-top: 0%;
+    margin-right: 0%;
   }
   #planyourtrip #plangrid #pg6 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: #1B4561;
-    grid-area: pg6;
-    margin: 2%;
-    padding: 8%;
+    margin-left: 2%;
+    margin-right: 0%;
   }
 }
 
 #comeforthewonder {
-  background-image: url(../img/circlehero3.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 40vh;
-  display: flex;
-  background-position: bottom right;
+  margin-top: 10%;
 }
-#comeforthewonder #comeforthewonderdiv #wonderheader {
-  margin-left: 10%;
+#comeforthewonder #circlehero3div {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+#comeforthewonder #circlehero3div #circlehero3 {
+  width: 60%;
+  height: 60%;
+}
+#comeforthewonder #comeforthewonderdiv {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: ". h ." ". p .";
+  color: #1B4561;
+  padding-bottom: 5%;
+}
+#comeforthewonder #comeforthewonderdiv #comeforthewonderh {
+  grid-area: h;
+}
+#comeforthewonder #comeforthewonderdiv #comeforthewonderh h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  color: #1B4561;
-  margin-top: -3%;
+  font-size: 40px;
+  white-space: nowrap;
 }
-#comeforthewonder #comeforthewonderdiv #wonderheaderp {
-  margin-left: 10%;
-  margin-right: 10%;
+#comeforthewonder #comeforthewonderdiv #comeforthewonderp {
+  grid-area: p;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  padding-bottom: 90%;
+}
+@media (min-width: 768px) {
+  #comeforthewonder #comeforthewonderdiv {
+    grid-template-columns: 10% 40% 50%;
+  }
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh {
+    margin-bottom: -8%;
+  }
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh h2 {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  #comeforthewonder #comeforthewonderdiv p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #comeforthewonder #comeforthewonderdiv {
+    grid-template-columns: 15% 40% 45%;
+  }
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh {
+    margin-bottom: -8%;
+  }
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh h2 {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  #comeforthewonder #comeforthewonderdiv p {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1200px) {
-  #comeforthewonder {
-    margin-top: 18%;
-    background-image: url(../img/circlehero3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100vh;
-    display: flex;
-    background-position: right;
+  #comeforthewonder #circlehero3div #circlehero3 {
+    width: 50%;
+    height: 50%;
   }
   #comeforthewonder #comeforthewonderdiv {
-    margin-top: -3%;
+    margin-bottom: -8%;
   }
-  #comeforthewonder #comeforthewonderdiv #wonderheader {
-    margin-left: 10%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 75px;
-    color: #1B4561;
-    margin-top: 3%;
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh {
+    margin-bottom: -8%;
   }
-  #comeforthewonder #comeforthewonderdiv #wonderheaderp {
-    margin-left: 10%;
-    margin-right: 60%;
-    font-size: 30px;
+  #comeforthewonder #comeforthewonderdiv #comeforthewonderh h2 {
+    font-size: 50px;
   }
 }
 
@@ -1545,141 +1306,188 @@ header #row2 #headerbutton {
   color: white;
 }
 #mapanddirections #mapheader {
+  margin-left: 5%;
   grid-area: mh;
   font-family: "PlayfairDisplay-Bold";
-  font-size: 20px;
+  font-size: 18px;
   color: #EFA541;
   white-space: nowrap;
 }
-#mapanddirections #mobilemaphero {
-  background-image: url(../img/googlemap.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 60vh;
+#mapanddirections #googlemap iframe {
+  left: 0;
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
 }
 #mapanddirections #mapanddirectionstext {
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 15%;
-  margin-top: -15%;
+  padding-top: 5%;
   font-size: 16px;
 }
-#mapanddirections #googlemap {
-  display: none;
-}
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #mapanddirections {
-    padding-top: 0%;
+    padding-top: 5%;
     padding-bottom: 0%;
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 5% 45% 45% 5%;
     grid-template-areas: ". mh mh ." ". mt mm .";
-    padding: 4%;
     padding-bottom: 8%;
     background-color: #1B4561;
     color: white;
   }
   #mapanddirections #mapheader {
+    margin-left: 0%;
     grid-area: mh;
     font-family: "PlayfairDisplay-Bold";
     font-size: 35px;
     color: #EFA541;
   }
   #mapanddirections #mapanddirectionstext {
+    padding-left: 0%;
+    padding-right: 0%;
     margin-left: 0%;
     margin-right: 6%;
     padding-bottom: 0%;
     grid-area: mt;
   }
   #mapanddirections #mapanddirectionstext p {
-    font-size: 25px;
+    font-size: 18px;
   }
   #mapanddirections #googlemap {
     grid-area: mm;
     display: inline;
   }
+  #mapanddirections #googlemap iframe {
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: unset;
+    max-height: 100px;
+    min-height: 600px;
+  }
 }
-
 @media (min-width: 1200px) {
-  #getdirections {
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-areas: ". gd .";
-  }
-  #getdirections #getdirectionsdiv {
-    grid-area: gd;
-  }
-  #getdirections #getdirectionsdiv #gdtext {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-areas: ". gtd .";
-  }
-  #getdirections #getdirectionsdiv #gdtext p {
-    font-size: 30px;
-  }
-  #getdirections #getdirectionsdiv #gdtext #gdt {
-    grid-area: gtd;
+  #mapanddirections {
+    grid-template-columns: 10% 40% 40% 10%;
   }
 }
 
-#getdirectionstext {
-  margin-right: 5%;
-  margin-left: 5%;
-  padding-top: 20%;
+#getdirections {
+  margin-top: 10%;
 }
-#getdirectionstext h1 {
-  font-family: "Open Sans";
-  font-weight: bold;
-  color: #1B4561;
-  font-size: 30px;
-}
-#getdirectionstext .getdirectionsbuttonsclass {
-  display: block;
+#getdirections .getdirectionsbuttonsclass {
   width: 100%;
+  margin-bottom: 8%;
   padding: 20%;
   background-color: #408274;
-  margin-bottom: 5%;
   font-family: "Open Sans";
   font-weight: bold;
   color: white;
   font-size: 20px;
 }
-@media (min-width: 1200px) {
-  #getdirectionstext {
-    padding-top: 0%;
+@media (min-width: 768px) {
+  #getdirections {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-areas: ". gdt1 .";
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-areas: ". getdirectionsheader getdirectionsheader ." ". getdirectionsbutton1 getdirectionsbutton2 ." ". getdirectionsbutton3 getdirectionsbutton4 ." ". . getdirectionsbutton5 ." ". gdtext gdtext .";
   }
-  #getdirectionstext #getdirectionstextdiv {
-    grid-area: gdt1;
+  #getdirections .getdirectionsbuttonsclass {
+    width: unset;
+    margin-bottom: 0%;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    background-color: #408274;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+  #getdirections #getdirectionsbutton1 {
+    grid-area: getdirectionsbutton1;
+    margin: 2%;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  #getdirections #getdirectionsbutton2 {
+    grid-area: getdirectionsbutton2;
+    margin: 2%;
+  }
+  #getdirections #getdirectionsbutton3 {
+    grid-area: getdirectionsbutton3;
+    margin: 2%;
+  }
+  #getdirections #getdirectionsbutton4 {
+    grid-area: getdirectionsbutton4;
+    margin: 2%;
+  }
+  #getdirections #getdirectionsbutton5 {
+    grid-area: getdirectionsbutton5;
+    margin: 2%;
+  }
+}
+#getdirections #getdirectionsheader {
+  grid-area: getdirectionsheader;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 35px;
+  color: #EFA541;
+}
+#getdirections #gdtext {
+  grid-area: gdtext;
+  padding-top: 5%;
+}
+@media (min-width: 1024px) {
+  #getdirections {
+    grid-template-columns: 10% 26.7% 26.7% 26.7% 10%;
+    grid-template-areas: ". getdirectionsheader getdirectionsheader getdirectionsheader." ". getdirectionsbutton1 getdirectionsbutton2 getdirectionsbutton3 ." ".  getdirectionsbutton4 getdirectionsbutton5  . ." ". gdtext gdtext gdtext.";
+  }
+  #getdirections #getdirectionsbutton1 {
+    grid-area: getdirectionsbutton1;
+  }
+  #getdirections #getdirectionsbutton2 {
+    grid-area: getdirectionsbutton2;
+  }
+  #getdirections #getdirectionsbutton3 {
+    grid-area: getdirectionsbutton3;
+  }
+  #getdirections #getdirectionsbutton4 {
+    grid-area: getdirectionsbutton4;
+  }
+  #getdirections #getdirectionsbutton5 {
+    grid-area: getdirectionsbutton5;
+  }
+  #getdirections #gdtext {
+    margin-right: 20%;
+    margin-left: 20%;
   }
 }
 
 #stateparkmap {
   margin-top: 10%;
-  margin-bottom: 20%;
 }
 #stateparkmap #stateparkmapheader {
-  grid-area: spmh;
   font-family: "PlayfairDisplay-Bold";
   font-size: 35px;
   color: #EFA541;
   margin-left: 5%;
 }
-#stateparkmap #stateparkmaphero {
-  grid-area: spmhero;
-  background-image: url(../img/stateparkmaphero1.png);
-  min-height: 40vh;
-  background-repeat: no-repeat;
-  background-size: contain;
+#stateparkmap #stateparkmapherodiv #stateparkmaphero {
+  width: 100%;
 }
-#stateparkmap #stateparkbuttonflex {
+#stateparkmap #stateparkmapbuttondiv {
   display: flex;
   justify-content: center;
 }
-#stateparkmap #stateparkbuttonflex #stateparkmapbutton {
+#stateparkmap #stateparkmapbuttondiv #stateparkmapbutton {
   background-color: #408274;
   padding-left: 3%;
   padding-right: 3%;
@@ -1687,38 +1495,36 @@ header #row2 #headerbutton {
   padding-bottom: 3%;
   color: white;
   font-family: "Open Sans", sans-serif;
+  border: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #stateparkmap {
     margin-top: 10%;
     margin-bottom: 0%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-areas: ". spmh ." ". spmhero ." ". spmb .";
+    grid-template-areas: ". stateparkmapheader ." ". stateparkmaphero ." ". stateparkmapbutton .";
   }
   #stateparkmap #stateparkmapheader {
-    grid-area: spmh;
+    grid-area: stateparkmapheader;
+    margin-left: 0%;
     font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
     color: #EFA541;
     margin-right: 5%;
-    margin-left: 0%;
   }
-  #stateparkmap #stateparkmaphero {
-    grid-area: spmhero;
-    background-image: url(../img/stateparkmaphero1.png);
-    min-height: 80vh;
-    background-repeat: no-repeat;
-    background-size: contain;
+  #stateparkmap #stateparkmapherodiv {
+    grid-area: stateparkmaphero;
   }
-  #stateparkmap #stateparkmapbutton {
-    grid-area: spmb;
-    margin-left: 80%;
+  #stateparkmap #stateparkmapbuttondiv {
+    grid-area: stateparkmapbutton;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
 #parking {
-  padding-bottom: 5%;
+  margin-top: 10%;
 }
 #parking h1 {
   font-family: "PlayfairDisplay-Bold";
@@ -1736,9 +1542,6 @@ header #row2 #headerbutton {
     display: grid;
     grid-template-columns: 35% 30% 35%;
     grid-template-areas: ". parkingdiv .";
-    margin-top: 14%;
-    margin-bottom: 2%;
-    padding-bottom: 0%;
   }
   #parking h1 {
     font-family: "PlayfairDisplay-Bold";
@@ -1747,7 +1550,7 @@ header #row2 #headerbutton {
     margin-left: 0%;
   }
   #parking p {
-    font-size: 30px;
+    font-size: 18px;
     margin-right: 0%;
     margin-left: 0%;
   }
@@ -1757,10 +1560,10 @@ header #row2 #headerbutton {
 }
 
 #contactus {
+  margin-top: 10%;
   background-color: #D2E9FF;
   padding-top: 2%;
   padding-bottom: 8%;
-  margin-top: 15%;
 }
 #contactus #contactusheader {
   font-family: "PlayfairDisplay-Bold";
@@ -1798,31 +1601,19 @@ header #row2 #headerbutton {
   font-size: 40px;
   margin-left: 5%;
   padding-bottom: 5%;
-  display: grid;
-  grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
-  grid-template-areas: ". contactusicon1 contactusicon2 contactusicon3 contactusicon4 .";
 }
-#contactus #contactusicondiv #contactusicon1 {
-  grid-area: contactusicon1;
-}
-#contactus #contactusicondiv #contactusicon2 {
-  grid-area: contactusicon2;
-}
-#contactus #contactusicondiv #contactusicon3 {
-  grid-area: contactusicon3;
-}
-#contactus #contactusicondiv #contactusicon4 {
-  grid-area: contactusicon4;
-}
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #contactus {
     display: grid;
-    grid-template-columns: 10% 40% 50%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-areas: ". contactus1 .";
     background-color: #D2E9FF;
     padding-top: 2%;
     padding-bottom: 8%;
-    margin-top: 15%;
+  }
+  #contactus .contactustextclass {
+    margin-right: 5%;
+    margin-left: 5%;
   }
   #contactus p {
     font-weight: bold;
@@ -1833,7 +1624,6 @@ header #row2 #headerbutton {
     font-family: "PlayfairDisplay-Bold";
     font-size: 70px;
     color: #EFA541;
-    margin-left: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
   }
@@ -1850,12 +1640,27 @@ header #row2 #headerbutton {
     padding-bottom: 0%;
   }
   #contactus #contactusicondiv {
+    display: flex;
+    justify-content: space-between;
     font-size: 100px;
-    margin-left: 0%;
     padding-bottom: 0%;
   }
   #contactus #contactusgrid {
     grid-area: contactus1;
+  }
+}
+@media (min-width: 1024px) {
+  #contactus {
+    grid-template-columns: 10% 60% 30%;
+  }
+  #contactus .contactustextclass {
+    margin-right: 30%;
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  #contactus {
+    grid-template-columns: 10% 50% 40%;
   }
 }
 
@@ -1866,9 +1671,17 @@ header #row2 #headerbutton {
   padding-top: 5%;
   padding-bottom: 10%;
   background-color: #1B4561;
-  color: white;
-  font-family: "OpenSans-Regular";
-  font-size: 16px;
+  color: #ffff;
+  font-family: OpenSans-Regular;
+}
+#footer #footerlogodesktopid {
+  display: none;
+}
+#footer a {
+  color: #ffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
 }
 #footer #footerlogomobilediv {
   display: flex;
@@ -1881,9 +1694,8 @@ header #row2 #headerbutton {
   font-size: 20px;
 }
 #footer #footerrow2 {
-  margin-left: 20%;
-  margin-right: 50%;
   font-weight: bold;
+  padding-left: 5%;
 }
 #footer #footerdirections {
   margin-left: 30%;
@@ -1891,7 +1703,6 @@ header #row2 #headerbutton {
   font-family: "OpenSans-Regular";
 }
 #footer #footericondiv {
-  font-size: 40px;
   grid-area: fr4;
   display: grid;
   grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
@@ -1910,51 +1721,64 @@ header #row2 #headerbutton {
 #footer #footericondiv #footericon4 {
   grid-area: fi4;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #footer {
     display: grid;
     grid-template-areas: "fr1" "fr2" "fr3" "fr4";
-    background-color: #1B4561;
     padding-bottom: 5%;
     padding-top: 1.5%;
-    color: white;
-    font-family: OpenSans-Regular;
-    font-size: 25px;
   }
-  #footer #footerlogodiv {
+  #footer #mobilelogotext {
+    display: none;
+  }
+  #footer #footerlogomobilediv {
+    display: none;
+  }
+  #footer #footerdesktoplogodiv {
     grid-area: fr1;
     display: grid;
     grid-template-columns: 45% 10% 45%;
     grid-template-areas: ". fl .";
   }
-  #footer #footerlogodiv #footerlogo {
+  #footer #footerdesktoplogodiv #footerlogodesktopid {
     grid-area: fl;
   }
   #footer #footerrow2 {
     margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     grid-area: fr2;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 .";
-    margin-left: 8.7%;
   }
   #footer #footerrow2 #footer1 {
     grid-area: f1;
   }
   #footer #footerrow2 #footer2 {
     grid-area: f2;
+    display: flex;
+    justify-content: center;
   }
   #footer #footerrow2 #footer3 {
     grid-area: f3;
+    display: flex;
+    justify-content: flex-end;
   }
   #footer #footerrow2 #footer4 {
     grid-area: f4;
   }
   #footer #footerrow2 #footer5 {
     grid-area: f5;
+    display: flex;
+    justify-content: center;
   }
   #footer #footerrow2 #footer6 {
     grid-area: f6;
+    display: flex;
+    justify-content: flex-end;
   }
   #footer #footerdirections {
     margin-left: 0%;
@@ -1963,17 +1787,18 @@ header #row2 #headerbutton {
     display: grid;
     grid-template-columns: 45% 10% 45%;
     grid-template-areas: ". fd .";
-    margin-right: 4%;
   }
   #footer #footerdirections #footerdirectionstext {
     grid-area: fd;
   }
   #footer #footericondiv {
     grid-area: fr4;
-    display: grid;
-    grid-template-columns: 30% 10% 10% 10% 10% 30%;
-    grid-template-areas: ". fi1 fi2 fi3 fi4 .";
-    margin-left: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-top: 3%;
+    font-size: 50px;
   }
   #footer #footericondiv #footericon1 {
     grid-area: fi1;
@@ -1986,5 +1811,11 @@ header #row2 #headerbutton {
   }
   #footer #footericondiv #footericon4 {
     grid-area: fi4;
+  }
+  #footer a {
+    font-size: 25px;
+  }
+  #footer p {
+    font-size: 25px;
   }
 }

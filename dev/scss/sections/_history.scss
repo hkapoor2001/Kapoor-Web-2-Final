@@ -6,10 +6,11 @@
     background-color: #1B4561;
     color: white;
     padding-bottom: 17%;
-    padding-top: 5%;
+    padding-top: 10%;
     p{
         margin-right: 5%;
         margin-left: 5%;
+        font-size: 16px;
     }
     h1{
         font-family: 'PlayfairDisplay-Bold';
@@ -18,30 +19,36 @@
         margin-left: 5%;
     }
     #historyhero1{
-        max-width: 100%;
+        width: 100%;
     }
     #historyhero2{
-        max-width: 100%;
+        width: 100%;
     }
     #historyhero3{
-        max-width: 100%;
+        width: 100%;
     }
-    @include xl {
+
+    @include md{
+        padding-right: 10%;
+        padding-left: 10%;
         p{
             margin-right: 0%;
             margin-left: 0%;
         }
+    }
+
+    @include lg {
+        padding-top: 8%;
+        padding-bottom: 6%;
+        padding-right: 0%;
+        padding-left: 0%;
+        
         h1{
-            font-family: 'PlayfairDisplay-Bold';
-            font-size: 80px;
-            color: #EFA541;
-        }
-        p{
-            font-size: 30px;
+            margin-left: 0%;
         }
     
         display: grid;
-        grid-template-columns: 15% 40% 30% 15%;
+        grid-template-columns: 10% 40% 40% 10%;
         grid-template-areas:
         ". h h ."
         ". cr cl1 ."
@@ -74,11 +81,16 @@
             }
             margin-left: 1.5%;
         }
-    
-        background-color: #1B4561;
-        color: white;
-        padding-top: 2%;
-        padding-bottom: 6%;
+    }
+
+    @include xl{
+        grid-template-columns: 2% 48% 48% 2%;
+        h1{
+            font-size: 70px;
+        }
+        p{
+            font-size: 18px;
+        }
     }
 }
     

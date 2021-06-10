@@ -9,31 +9,31 @@
         background-color: #D2E9FF;
         display: flex;
         background-image: url(../img/Videobackground.png);
-        min-width: 80vh;
-        min-height: 60vh;
+        min-width: 30vh;
+        min-height: 50vh;
         max-height: 100%;
         max-width: 100%;
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
         p{
-            font-size: 20px;
+            font-size: 16px;
             margin-right: 5%;
             margin-left: 5%;
+            margin-bottom: 35%;
         }
         margin-top: -1%;
     }
 
 
-    @include md{
+    @include md{ 
+
         #videotext{
             p{
-                font-size: 20px;
-                margin-right: 5%;
-                margin-left: 5%;
                 padding-top: 5%;
+                margin-right: 40%;
+                
             }
-            margin-top: -1%;
         }
     }
 
@@ -42,11 +42,7 @@
         #videotext{
             p{
                 font-size: 30px;
-                margin-right: 45%;
-                margin-left: 5%;
-                padding-top: 5%;
             }
-            margin-top: -1%;
         }
     }
 
@@ -55,14 +51,11 @@
     @include xl{
 
         #videotext{
+            min-height: 80vh;
             p{
                 font-size: 40px;
-                margin-right: 45%;
-                margin-left: 5%;
-                padding-top: 5%;
                 margin-top: -1%;
             }
-            margin-top: -1%;
         }
     }
     }

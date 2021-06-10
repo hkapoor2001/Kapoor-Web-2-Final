@@ -1,14 +1,10 @@
 #planyourtriphero{
 
-    padding-top: 20%;
-    padding-bottom: 20%;
+    margin-top: 10%;
     
-    #planmainhero{
-        background-image: url(../img/planyourtriphero1.png);
-        min-height: 10vh;
-        background-size: cover;
-        background-position: right;
-     }
+    #planyourtripherodiv{
+        display: none;
+    }
 
     h1{
         font-family: 'PlayfairDisplay-Bold';
@@ -16,22 +12,19 @@
         color: #EFA541;
     }
 
-    @include xl {
-        padding-top: 0%;
-        padding-bottom: 0%;
-        margin-top: 8%;
-        margin-bottom: 8%;
-        h1{
-            font-family: 'PlayfairDisplay-Bold';
-            font-size: 70px;
-            color: #EFA541;
-            margin-left: 2%;
+    @include md{
+        #planyourtripherodiv{
+            display: block;
+            #planyourtripheroimg{
+                width: 100%;
+            }
         }
-        #planmainhero{
-           background-image: url(../img/planyourtriphero1.png);
-           min-height: 30vh;
-           background-size: cover;
-           background-position: right;
+    }
+
+    @include xl {
+        h1{
+            font-size: 70px;
+            margin-left: 2%;
         }
     }
 }

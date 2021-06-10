@@ -1,22 +1,19 @@
 #stateparkmap{
+    margin-top: 10%;
     #stateparkmapheader{
-        grid-area: spmh;
         font-family: 'PlayfairDisplay-Bold';
         font-size: 35px;
         color: #EFA541;
         margin-left: 5%;
     }
-    
 
-    #stateparkmaphero{
-        grid-area: spmhero;
-        background-image: url(../img/stateparkmaphero1.png) ;
-        min-height: 40vh;
-        background-repeat: no-repeat;
-        background-size: contain;
+    #stateparkmapherodiv{
+        #stateparkmaphero{
+            width: 100%;
+        }
     }
 
-    #stateparkbuttonflex{
+    #stateparkmapbuttondiv{
         display: flex;
         justify-content: center;
         #stateparkmapbutton{
@@ -27,41 +24,38 @@
             padding-bottom: 3%;
             color: white;
             font-family: 'Open Sans', sans-serif;
+            border: none;
         }
     }
 
-    margin-top: 10%;
-    margin-bottom: 20%;
 
-
-    @include xl {
+    @include md {
         margin-top: 10%;
         margin-bottom: 0%;
         display: grid;
         grid-template-columns: 20% 60% 20%;
         grid-template-areas: 
-        ". spmh ."
-        ". spmhero ."
-        ". spmb .";
+        ". stateparkmapheader ."
+        ". stateparkmaphero ."
+        ". stateparkmapbutton .";
     
         #stateparkmapheader{
-            grid-area: spmh;
+            grid-area: stateparkmapheader;
+            margin-left: 0%;
             font-family: 'PlayfairDisplay-Bold';
             font-size: 70px;
             color: #EFA541;
             margin-right: 5%;
-            margin-left: 0%;
         }
-        #stateparkmaphero{
-            grid-area: spmhero;
-            background-image: url(../img/stateparkmaphero1.png) ;
-            min-height: 80vh;
-            background-repeat: no-repeat;
-            background-size: contain;
+
+        #stateparkmapherodiv{
+            grid-area: stateparkmaphero;
         }
-        #stateparkmapbutton{
-            grid-area: spmb;
-            margin-left: 80%;
+
+        #stateparkmapbuttondiv{
+            grid-area: stateparkmapbutton;
+            display: flex;
+            justify-content: flex-end;
+        }
         }
     }
-}

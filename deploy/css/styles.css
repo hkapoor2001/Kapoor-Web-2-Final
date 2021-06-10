@@ -1072,7 +1072,7 @@ header #row2 {
 }
 #planyourtrip h2 {
   color: #1B4561;
-  font-family: 18px;
+  font-size: 18px;
 }
 #planyourtrip .planyourtripbuttonflex {
   display: flex;

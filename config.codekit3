@@ -380,28 +380,28 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
-    "\/design\/Desktop HD.png" : {
-      "ft" : 32768,
-      "iS" : 9569494,
+    "\/design\/Desktop HD.jpg" : {
+      "ft" : 16384,
+      "iS" : 4313842,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Desktop HD.png",
+      "oAP" : "\/design\/Desktop HD.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/design\/Desktop.png" : {
-      "ft" : 32768,
-      "iS" : 7254479,
+    "\/design\/Desktop.jpg" : {
+      "ft" : 16384,
+      "iS" : 3299024,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Desktop.png",
+      "oAP" : "\/design\/Desktop.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -414,28 +414,28 @@
       "oAP" : "\/design\/Kapoor_Hemani_Niagara_Falls.sketch",
       "oF" : 0
     },
-    "\/design\/Mobile.png" : {
-      "ft" : 32768,
-      "iS" : 2566781,
+    "\/design\/Mobile.jpg" : {
+      "ft" : 16384,
+      "iS" : 1656151,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Mobile.png",
+      "oAP" : "\/design\/Mobile.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/design\/Tablet.png" : {
-      "ft" : 32768,
-      "iS" : 5565351,
+    "\/design\/Tablet.jpg" : {
+      "ft" : 16384,
+      "iS" : 2910869,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Tablet.png",
+      "oAP" : "\/design\/Tablet.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

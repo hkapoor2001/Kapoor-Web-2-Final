@@ -10,12 +10,13 @@ header{
     }
 
     #row1{
-        padding-top: 2%;
+        padding-top: 1%;
         padding-bottom: 1%;
         #mobilemenu{
             display: grid;
             grid-template-columns: 1% 10% 74% 10% 5%;
             grid-template-areas: ". logo . burger ." ;
+
     
             #mobilelogo{
                 grid-area: logo;
@@ -49,24 +50,10 @@ header{
             #desktopnav{
                 display: flex;
                 justify-content: space-evenly;
+                align-items: center;
                 #headerlogo{
                     width: 8%;
                 }
-            }
-        }
-        #row2{
-            display: flex;
-            justify-content: flex-end;
-            #headerbutton{
-                background-color: $green;
-                color: $white;
-                font-family: 'Open Sans', sans-serif;
-                border: none;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                padding-right: 1%;
-                padding-left: 1%;
-                font-size: 16px;
             }
         }
 

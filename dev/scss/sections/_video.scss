@@ -11,7 +11,7 @@
         background-image: url(../img/Videobackground.png);
         min-width: 30vh;
         min-height: 50vh;
-        max-height: 100%;
+        max-height: 80%;
         max-width: 100%;
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -41,7 +41,7 @@
 
         #videotext{
             p{
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }
@@ -53,7 +53,7 @@
         #videotext{
             min-height: 80vh;
             p{
-                font-size: 40px;
+                font-size: 25px;
                 margin-top: -1%;
             }
         }
